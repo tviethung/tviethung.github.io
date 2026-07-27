@@ -323,16 +323,15 @@
       color: var(--text-dark);
     }
 
-    /* PRINT MEDIA QUERY - OPTIMIZED FOR CLEAR 2-PAGE PRINTING */
     @media print {
       @page {
         size: A4;
-        margin: 10mm 12mm;
+        margin: 8mm 10mm;
       }
 
       body {
         background: #ffffff;
-        font-size: 12px;
+        font-size: 11.5px;
       }
 
       .no-print-bar {
@@ -348,16 +347,16 @@
       }
 
       .section {
-        margin-bottom: 14px;
-      }
-
-      .timeline-item {
         margin-bottom: 10px;
       }
 
+      .timeline-item {
+        margin-bottom: 7px;
+      }
+
       .bullet-list li {
-        font-size: 11.5px;
-        margin-bottom: 3px;
+        font-size: 11px;
+        margin-bottom: 2px;
       }
     }
   </style>
@@ -427,7 +426,6 @@
             <span class="tag">DOTween (Pro)</span>
             <span class="tag">Addressables / CDN</span>
             <span class="tag">Firebase</span>
-            <span class="tag">Object Pooling</span>
             <span class="tag">Custom Level Tooling</span>
             <span class="tag">UniTask / EventBus</span>
             <span class="tag">SmartFoxServer</span>
@@ -448,7 +446,7 @@
         <div class="skill-card">
           <div class="skill-card-title">Chuyên môn Quản lý & Tối ưu</div>
           <div class="skill-tags">
-            <span class="tag">Tối ưu 60 FPS (Low-end Devices, RAM/CPU, GC)</span>
+            <span class="tag">Tối ưu 60 FPS trên Low-End Devices</span>
             <span class="tag">Rapid Prototyping (1-2 tuần)</span>
             <span class="tag">CPI & Retention D1</span>
             <span class="tag">Lead Dev & PM (19+ Games)</span>
