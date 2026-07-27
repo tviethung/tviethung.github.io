@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV - Tạ Việt Hùng | Senior Unity Mobile Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #0f172a;
+      --primary-accent: #059669;
+      --accent-light: #ecfdf5;
+      --text-dark: #1e293b;
+      --text-muted: #64748b;
+      --border-color: #e2e8f0;
+      --bg-card: #f8fafc;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      color: var(--text-dark);
+      background-color: #f1f5f9;
+      line-height: 1.5;
+      font-size: 13.5px;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    .no-print-bar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: #0f172a;
+      color: #fff;
+      padding: 12px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    .btn-print {
+      background-color: #10b981;
+      color: #0f172a;
+      border: none;
+      padding: 8px 18px;
+      font-weight: 700;
+      font-size: 13px;
+      border-radius: 4px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.2s ease;
+      text-decoration: none;
+    }
+
+    .btn-print:hover {
+      background-color: #34d399;
+      transform: translateY(-1px);
+    }
+
+    .cv-container {
+      max-width: 840px;
+      margin: 24px auto;
+      background: #ffffff;
+      padding: 40px 48px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+      border-radius: 8px;
+      border: 1px solid var(--border-color);
+    }
+
+    /* HEADER */
+    .header {
+      border-b: 2px solid var(--primary-accent);
+      padding-bottom: 20px;
+      margin-bottom: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    .header-left h1 {
+      font-size: 28px;
+      font-weight: 800;
+      color: var(--primary);
+      letter-spacing: -0.5px;
+      text-transform: uppercase;
+    }
+
+    .header-left h2 {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--primary-accent);
+      margin-top: 4px;
+      letter-spacing: 0.2px;
+    }
+
+    .contact-info {
+      list-style: none;
+      text-align: right;
+      font-size: 12.5px;
+      color: var(--text-muted);
+    }
+
+    .contact-info li {
+      margin-bottom: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 6px;
+    }
+
+    .contact-info a {
+      color: var(--text-dark);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .contact-info a:hover {
+      color: var(--primary-accent);
+    }
+
+    /* SECTION STYLES */
+    .section {
+      margin-bottom: 24px;
+    }
+
+    .section-title {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--primary);
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      border-bottom: 1.5px solid var(--border-color);
+      padding-bottom: 6px;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .section-title::before {
+      content: '';
+      display: inline-block;
+      width: 4px;
+      height: 14px;
+      background-color: var(--primary-accent);
+      border-radius: 2px;
+    }
+
+    .summary-text {
+      font-size: 13.5px;
+      color: var(--text-dark);
+      line-height: 1.6;
+    }
+
+    /* SKILLS GRID */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+    }
+
+    .skill-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 6px;
+      padding: 10px 14px;
+    }
+
+    .skill-card-title {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--primary-accent);
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+
+    .skill-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+    }
+
+    .tag {
+      background: #ffffff;
+      border: 1px solid #cbd5e1;
+      padding: 2px 7px;
+      border-radius: 4px;
+      font-size: 11.5px;
+      font-weight: 500;
+      color: var(--text-dark);
+    }
+
+    /* EXPERIENCE & EDUCATION */
+    .timeline-item {
+      margin-bottom: 18px;
+      position: relative;
+    }
+
+    .timeline-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 4px;
+    }
+
+    .timeline-company {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    .timeline-role {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--primary-accent);
+    }
+
+    .timeline-period {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--text-muted);
+      background: var(--bg-card);
+      padding: 2px 8px;
+      border-radius: 4px;
+      border: 1px solid var(--border-color);
+    }
+
+    .bullet-list {
+      list-style-type: none;
+      margin-top: 6px;
+    }
+
+    .bullet-list li {
+      position: relative;
+      padding-left: 16px;
+      margin-bottom: 5px;
+      font-size: 13px;
+      color: #334155;
+    }
+
+    .bullet-list li::before {
+      content: '•';
+      position: absolute;
+      left: 4px;
+      color: var(--primary-accent);
+      font-weight: bold;
+    }
+
+    /* PROJECTS TABLE GRID */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+    }
+
+    .project-card {
+      background: #ffffff;
+      border: 1px solid var(--border-color);
+      border-radius: 6px;
+      padding: 12px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .project-card-title {
+      font-size: 13.5px;
+      font-weight: 700;
+      color: var(--primary);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .project-badge {
+      font-size: 10px;
+      font-weight: 700;
+      color: var(--primary-accent);
+      background: var(--accent-light);
+      padding: 2px 6px;
+      border-radius: 4px;
+      border: 1px solid #a7f3d0;
+    }
+
+    .project-desc {
+      font-size: 12px;
+      color: var(--text-muted);
+      margin: 6px 0;
+      line-height: 1.4;
+    }
+
+    .project-meta {
+      font-size: 11.5px;
+      font-weight: 600;
+      color: #047857;
+      background: #f0fdf4;
+      padding: 4px 8px;
+      border-radius: 4px;
+    }
+
+    /* HOBBIES */
+    .hobbies-flex {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .hobby-badge {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      padding: 4px 10px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--text-dark);
+    }
+
+    /* PRINT MEDIA QUERY */
+    @media print {
+      body {
+        background: #ffffff;
+      }
+
+      .no-print-bar {
+        display: none !important;
+      }
+
+      .cv-container {
+        margin: 0;
+        padding: 0;
+        border: none;
+        box-shadow: none;
+        max-width: 100%;
+      }
+
+      .section {
+        page-break-inside: avoid;
+      }
+
+      .timeline-item {
+        page-break-inside: avoid;
+      }
+
+      .project-card {
+        page-break-inside: avoid;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Action Bar for web viewing -->
+  <div class="no-print-bar">
+    <div>
+      <strong>TẠ VIỆT HUNG - PORTFOLIO CV</strong> &nbsp;|&nbsp; <span>Standard ATS Resume Format</span>
+    </div>
+    <button class="btn-print" onclick="window.print()">
+      <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 9V2h12v7M6 18H4a2 2 0 01-2-2v-5a2 2 0 012-2h16a2 2 0 012 2v5a2 2 0 01-2 2h-2M6 14h12v8H6z"></path></svg>
+      IN / LƯU THÀNH PDF
+    </button>
+  </div>
+
+  <div class="cv-container">
+    <!-- HEADER -->
+    <div class="header">
+      <div class="header-left">
+        <h1>TẠ VIỆT HÙNG</h1>
+        <h2>Senior Unity Mobile Developer & Lead Developer</h2>
+        <div style="font-size: 12.5px; color: #64748b; margin-top: 4px;">📍 Hà Nội, Việt Nam</div>
+      </div>
+      <ul class="contact-info">
+        <li>✉️ <a href="mailto:tviethung20@gmail.com">tviethung20@gmail.com</a></li>
+        <li>✈️ Telegram: <a href="https://t.me/chemandercn4" target="_blank">@chemandercn4</a></li>
+        <li>🦊 GitLab: <a href="https://gitlab.com/tviethung20" target="_blank">gitlab.com/tviethung20</a></li>
+        <li>🌐 Portfolio: <a href="https://tviethung.github.io/" target="_blank">tviethung.github.io</a></li>
+      </ul>
+    </div>
+
+    <!-- SUMMARY -->
+    <div class="section">
+      <div class="section-title">TỔNG QUAN NĂNG LỰC (SUMMARY)</div>
+      <p class="summary-text">
+        Senior Unity Mobile Developer với hơn <strong>6 năm kinh nghiệm</strong> thiết kế, tối ưu hóa và phát hành <strong>20+ sản phẩm game di động</strong> (đạt mốc hàng triệu lượt tải trên Android/iOS). Xây dựng custom tools giúp tối đa hóa năng suất cho đội ngũ PO, Game Design, Marketing. Có khả năng đọc hiểu, phân tích, đề xuất cải thiện chỉ số game dựa trên Firebase. Yêu thích làm game và mong muốn sản xuất ra được những tựa game hấp dẫn được nhiều người chơi.
+      </p>
+    </div>
+
+    <!-- TECHNICAL SKILLS -->
+    <div class="section">
+      <div class="section-title">KỸ NĂNG & CHUYÊN MÔN (TECHNICAL SKILLS)</div>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-card-title">Ngôn ngữ Lập trình</div>
+          <div class="skill-tags">
+            <span class="tag">C# (6+ Years)</span>
+            <span class="tag">Java / Android (3+ Years)</span>
+            <span class="tag">SQL / Firebase DB</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card-title">Công nghệ & Framework</div>
+          <div class="skill-tags">
+            <span class="tag">Unity (2D/3D, URP)</span>
+            <span class="tag">DOTween (Pro)</span>
+            <span class="tag">Addressables / CDN</span>
+            <span class="tag">Firebase</span>
+            <span class="tag">Object Pooling</span>
+            <span class="tag">Custom Level Tools</span>
+            <span class="tag">UniTask</span>
+            <span class="tag">EventBus</span>
+            <span class="tag">SmartFoxServer</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card-title">Nền tảng & SDK</div>
+          <div class="skill-tags">
+            <span class="tag">Android (Google Play / APK / AAB)</span>
+            <span class="tag">iOS (App Store)</span>
+            <span class="tag">WebGL</span>
+            <span class="tag">AdMob</span>
+            <span class="tag">AppLovin MAX</span>
+            <span class="tag">Unity IAP</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card-title">Chuyên môn Quản lý & Tối ưu</div>
+          <div class="skill-tags">
+            <span class="tag">Tối ưu 60 FPS (Low-end Devices)</span>
+            <span class="tag">Draw Calls / RAM / CPU</span>
+            <span class="tag">Rapid Prototyping (1-2 tuần)</span>
+            <span class="tag">CPI & Retention D1</span>
+            <span class="tag">Lead Dev & PM (19+ Games)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- WORK EXPERIENCE -->
+    <div class="section">
+      <div class="section-title">KINH NGHIỆM LÀM VIỆC (WORK EXPERIENCE)</div>
+
+      <!-- Item 1 -->
+      <div class="timeline-item">
+        <div class="timeline-header">
+          <div>
+            <span class="timeline-company">One Percent Studio (Hà Nội)</span>
+            <span style="color: #cbd5e1; margin: 0 4px;">|</span>
+            <span class="timeline-role">Lead Developer & PM</span>
+          </div>
+          <span class="timeline-period">Oct 2022 - Jun 2026</span>
+        </div>
+        <ul class="bullet-list">
+          <li>Phát triển và phát hành thành công chuỗi 19+ game di động trên các nền tảng Android, iOS và TikTok MiniGame. Tiêu biểu gồm: <em>Merge Drop Master</em> (đạt gần 2M lượt tải) và <em>My Pool Club</em> (đạt hơn 300K lượt tải).</li>
+          <li>Phụ trách quản trị dự án kiêm lập trình viên chính (Lead Developer & PM), tối ưu hóa luồng làm việc giữa đội ngũ lập trình, nghệ thuật (Art) và thiết kế game (Game Design).</li>
+          <li>Tối ưu hiệu năng game (profiling, tối ưu bộ nhớ RAM/CPU, giảm draw calls) giúp game chạy mượt mà trên thiết bị phân khúc thấp.</li>
+          <li>Xây dựng các hệ thống Editor custom tiện ích giúp đẩy nhanh tiến độ làm việc cho studio.</li>
+          <li>Hỗ trợ đưa ra các quyết định thay đổi game dựa trên các số liệu phân tích từ Firebase.</li>
+          <li>Làm việc sát sao với PO và Art để đưa ra quyết định về thay đổi design, gameplay, art style... để tối ưu sản phẩm.</li>
+          <li>Phát triển prototype nhanh (từ 1-2 tuần) cho các ý tưởng game mới. Đánh giá tiềm năng dựa trên CPI và Retention D1.</li>
+        </ul>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="timeline-item">
+        <div class="timeline-header">
+          <div>
+            <span class="timeline-company">Gapu Studio (Hà Nội)</span>
+            <span style="color: #cbd5e1; margin: 0 4px;">|</span>
+            <span class="timeline-role">Game Developer</span>
+          </div>
+          <span class="timeline-period">Jun 2022 - Oct 2022</span>
+        </div>
+        <ul class="bullet-list">
+          <li>Phát triển hoàn thiện 3 dự án game Puzzle trên nền tảng Unity: 1 game Hyper Casual, 1 game Tower Hero và 1 game giải đố Logic.</li>
+          <li>Chịu trách nhiệm lập trình cơ chế gameplay chính, thiết kế kiến trúc hệ thống và tích hợp UI chuyển động mượt mà.</li>
+        </ul>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="timeline-item">
+        <div class="timeline-header">
+          <div>
+            <span class="timeline-company">Freelancer</span>
+            <span style="color: #cbd5e1; margin: 0 4px;">|</span>
+            <span class="timeline-role">Game Server Developer</span>
+          </div>
+          <span class="timeline-period">Jul 2021 - May 2022</span>
+        </div>
+        <ul class="bullet-list">
+          <li>Phát triển hệ thống máy chủ (Game Server Developer) trong đội ngũ 5 người cho các dự án game NFT thể loại Farm, Tower Defense và Battle War.</li>
+          <li>Trực tiếp lập trình các tính năng game phía server: Chỉ số hero, Trang bị, Tiền tệ, Ghép trận PvP với Bot, Hệ thống Gacha Pooling và Nâng cấp Hero (Tech stack: SmartFoxServer (Java) và Unity).</li>
+        </ul>
+      </div>
+
+      <!-- Item 4 -->
+      <div class="timeline-item">
+        <div class="timeline-header">
+          <div>
+            <span class="timeline-company">SVMC - Samsung Electronics Vietnam</span>
+            <span style="color: #cbd5e1; margin: 0 4px;">|</span>
+            <span class="timeline-role">Software Engineer</span>
+          </div>
+          <span class="timeline-period">Dec 2019 - May 2021</span>
+        </div>
+        <ul class="bullet-list">
+          <li>Tham gia nghiên cứu, lập trình phần mềm thương mại và tối ưu hóa ứng dụng hệ thống trên thiết bị di động di động Android.</li>
+          <li>Đạt giải thưởng giải giải bài toán thuật toán xuất sắc cấp trung tâm SVMC năm 2020.</li>
+        </ul>
+      </div>
+
+      <!-- Item 5 -->
+      <div class="timeline-item">
+        <div class="timeline-header">
+          <div>
+            <span class="timeline-company">Vintech (Vingroup)</span>
+            <span style="color: #cbd5e1; margin: 0 4px;">|</span>
+            <span class="timeline-role">AI / Software Intern</span>
+          </div>
+          <span class="timeline-period">Apr 2019 - Nov 2019</span>
+        </div>
+        <ul class="bullet-list">
+          <li>Tham gia nhóm nghiên cứu giải pháp xử lý hình ảnh và thuật toán nhận diện khuôn mặt (Face Recognition) áp dụng cho camera an ninh.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- FEATURED PROJECTS HIGHLIGHT -->
+    <div class="section">
+      <div class="section-title">DỰ ÁN TIÊU BIỂU (FEATURED PROJECTS)</div>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-card-title">
+            <span>1. Merge Drop Master</span>
+            <span class="project-badge">⭐ FAVORITE</span>
+          </div>
+          <p class="project-desc">Game Merge vật lý 2D. Tối ưu va chạm, combo merge, Remote Config, Leaderboard & Battle Pass.</p>
+          <div class="project-meta">Retention D1: 34% | Lượt tải: 1.800.000+</div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-title">
+            <span>2. My Pool Club: Tycoon Game</span>
+            <span class="project-badge">⭐ FAVORITE</span>
+          </div>
+          <p class="project-desc">Tựa game Idle Arcade thành công nhất về chỉ số giữ chân người dùng. Xây dựng môi trường & NPC tự động.</p>
+          <div class="project-meta">Retention D1: 33% | Lượt tải: 200.000+</div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-title">
+            <span>3. Brave Miner: Build & Fight</span>
+            <span class="project-badge">⭐ FAVORITE</span>
+          </div>
+          <p class="project-desc">Trò chơi phiêu lưu khai thác 3D Voxel Idle Mining kết hợp thợ mỏ và chiến đấu quái vật.</p>
+          <div class="project-meta">Retention D1: 38%</div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-title">
+            <span>4. JigMaster : HD Beauty</span>
+            <span class="project-badge">⭐ PUZZLE 60FPS</span>
+          </div>
+          <p class="project-desc">Thuật toán chia nhỏ ảnh puzzle 2D & tính spline cạnh ghép thời gian thực. Tối ưu logic 60FPS.</p>
+          <div class="project-meta">Retention D1: 40% (CPI rẻ hơn benchmark)</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- EDUCATION -->
+    <div class="section">
+      <div class="section-title">HỌC VẤN (EDUCATION)</div>
+      <div class="timeline-item" style="margin-bottom: 0;">
+        <div class="timeline-header">
+          <div>
+            <span class="timeline-company">Học viện Công nghệ Bưu chính Viễn thông (PTIT)</span>
+            <span style="color: #cbd5e1; margin: 0 4px;">|</span>
+            <span class="timeline-role">Kỹ sư Công nghệ Thông tin</span>
+          </div>
+          <span class="timeline-period">Jan 2015 - Mar 2019</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- HOBBIES -->
+    <div class="section">
+      <div class="section-title">SỞ THÍCH & ĐỜI SỐNG (HOBBIES)</div>
+      <div class="hobbies-flex">
+        <span class="hobby-badge">🎮 Chơi Game (Hack 'n' Slash)</span>
+        <span class="hobby-badge">⚽ Bóng đá (Team Captain)</span>
+        <span class="hobby-badge">🏊 Bơi lội (Endurance)</span>
+        <span class="hobby-badge">🔍 Truyện Trinh thám (Logic Mindset)</span>
+        <span class="hobby-badge">🏃 Chạy bộ (Stamina)</span>
+        <span class="hobby-badge">📚 Truyện tranh (Manga)</span>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
