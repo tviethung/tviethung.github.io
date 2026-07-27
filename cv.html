@@ -276,6 +276,16 @@
       color: var(--text-dark);
     }
 
+    .project-link {
+      color: var(--text-dark);
+      text-decoration: none;
+    }
+
+    .project-link:hover {
+      color: var(--primary-accent);
+      border-color: var(--primary-accent);
+    }
+
     /* PRINT MEDIA QUERY - GUARANTEED FIT ON 2 A4 PAGES */
     @media print {
       @page {
@@ -355,11 +365,10 @@
     <div class="section">
       <div class="section-title">TỔNG QUAN NĂNG LỰC (SUMMARY)</div>
       <p class="summary-text">
-        Senior Unity Mobile Developer với hơn <strong>6 năm kinh nghiệm</strong> thiết kế, tối ưu hóa và phát hành
-        <strong>20+ sản phẩm game di động</strong> (đạt mốc hàng triệu lượt tải trên Android). Xây dựng custom tools
-        giúp tối đa hóa năng suất cho đội ngũ PO, Game Design, Marketing. Có khả năng đọc hiểu, phân tích, đề xuất cải
-        thiện chỉ số game dựa trên Firebase. Yêu thích làm game và mong muốn sản xuất ra được những tựa game hấp dẫn
-        được nhiều người chơi.
+        Senior Unity Mobile Developer & Lead Developer với hơn <strong>6 năm kinh nghiệm</strong> phát triển phần mềm
+        di động và game Unity. Đã phát hành <strong>20+ sản phẩm trên Android</strong>, gồm các game đạt hàng triệu lượt
+        tải; dẫn dắt triển khai giữa Dev, Art và Game Design; đồng thời xây dựng tooling, tối ưu hiệu năng và sử dụng
+        Firebase để đưa ra quyết định cải thiện sản phẩm.
       </p>
     </div>
 
@@ -368,45 +377,44 @@
       <div class="section-title">KỸ NĂNG & CHUYÊN MÔN (TECHNICAL SKILLS)</div>
       <div class="skills-grid">
         <div class="skill-card">
-          <div class="skill-card-title">Ngôn ngữ Lập trình</div>
+          <div class="skill-card-title">Unity & C#</div>
           <div class="skill-tags">
             <span class="tag">C# (6+ Years)</span>
-            <span class="tag">Java / Android (3+ Years)</span>
-            <span class="tag">SQL / Firebase DB (2+ Years)</span>
+            <span class="tag">Unity Engine (2D/3D, URP, Physics)</span>
+            <span class="tag">DOTween (Pro)</span>
+            <span class="tag">UniTask / EventBus</span>
           </div>
         </div>
 
         <div class="skill-card">
-          <div class="skill-card-title">Công nghệ & Framework</div>
+          <div class="skill-card-title">Architecture & Tooling</div>
           <div class="skill-tags">
-            <span class="tag">Unity Engine (2D/3D, URP, Physics)</span>
-            <span class="tag">DOTween (Pro)</span>
             <span class="tag">Addressables / CDN</span>
-            <span class="tag">Firebase</span>
             <span class="tag">Custom Level Tooling</span>
-            <span class="tag">UniTask / EventBus</span>
+            <span class="tag">Object Pooling</span>
             <span class="tag">SmartFoxServer</span>
           </div>
         </div>
 
         <div class="skill-card">
-          <div class="skill-card-title">Nền tảng & SDK</div>
+          <div class="skill-card-title">Mobile Publishing & Monetization</div>
           <div class="skill-tags">
             <span class="tag">Android (Google Play / APK / AAB)</span>
-            <span class="tag">WebGL</span>
             <span class="tag">AdMob</span>
             <span class="tag">AppLovin MAX</span>
             <span class="tag">Unity IAP</span>
+            <span class="tag">WebGL</span>
           </div>
         </div>
 
         <div class="skill-card">
-          <div class="skill-card-title">Chuyên môn Quản lý & Tối ưu</div>
+          <div class="skill-card-title">Performance & Product Analytics</div>
           <div class="skill-tags">
             <span class="tag">Tối ưu 60 FPS trên Low-End Devices</span>
+            <span class="tag">Profiling RAM / CPU / Draw Calls</span>
+            <span class="tag">Firebase Analytics</span>
             <span class="tag">Rapid Prototyping (1-2 tuần)</span>
             <span class="tag">CPI & Retention D1</span>
-            <span class="tag">Lead Dev & PM (19+ Games)</span>
           </div>
         </div>
       </div>
@@ -427,22 +435,17 @@
           <span class="timeline-period">Oct 2022 - Jun 2026</span>
         </div>
         <ul class="bullet-list">
-          <li>Phát triển và phát hành thành công chuỗi 19+ game di động trên các nền tảng Android. Tiêu biểu gồm:
+          <li>Phát triển và phát hành 19+ game di động trên Android. Tiêu biểu gồm:
             <em>Merge Drop Master</em> (đạt gần 2M lượt tải), <em>Trending AR Soundboard</em>
             (đạt hơn 2M lượt tải) và <em>My Pool Club</em> (đạt hơn 300K lượt tải).
           </li>
-          <li>Phụ trách quản trị dự án kiêm lập trình viên chính (Lead Developer & PM), tối ưu hóa luồng làm việc giữa
-            đội ngũ lập trình, nghệ thuật (Art) và thiết kế game (Game Design).</li>
-          <li>Tối ưu hiệu năng game (profiling, tối ưu bộ nhớ RAM/CPU, giảm draw calls) giúp game chạy mượt mà trên
-            thiết bị phân khúc thấp.</li>
-          <li>Xây dựng các hệ thống Editor custom tiện ích giúp đẩy nhanh tiến độ làm việc cho studio.</li>
-          <li>Hỗ trợ đưa ra các quyết định thay đổi game dựa trên các số liệu phân tích từ Firebase.</li>
-          <li>Làm việc sát sao với PO và Art để đưa ra quyết định về thay đổi design, gameplay, art style, ... để tối ưu
-            sản phẩm.</li>
-          <li>Phát triển prototype nhanh (từ 1-2 tuần) cho các ý tưởng game mới. Đánh giá tiềm năng dựa trên CPI và
-            Retention.</li>
-          <li>Tham gia họp đề xuất các thay đổi về game để tối ưu sản phẩm based trên data và creative.</li>
-          <li>Chịu trách nhiệm chính trong việc phát triển các tính năng mới, đảm bảo chất lượng và tiến độ dự án.</li>
+          <li>Đảm nhiệm Lead Developer & PM, điều phối triển khai giữa Dev, Art và Game Design; chịu trách nhiệm chất
+            lượng tính năng và tiến độ phát hành.</li>
+          <li>Tối ưu hiệu năng bằng profiling RAM/CPU và giảm draw calls, giúp game vận hành mượt trên thiết bị phân
+            khúc thấp.</li>
+          <li>Xây dựng custom Editor tools, chuẩn hóa quy trình tạo nội dung và rút ngắn thời gian triển khai cho đội ngũ.</li>
+          <li>Phát triển prototype trong 1-2 tuần và sử dụng Firebase, CPI cùng Retention để đánh giá, ưu tiên các thay
+            đổi về gameplay, design và creative.</li>
         </ul>
       </div>
 
@@ -586,16 +589,16 @@
       </div>
     </div>
 
-    <!-- HOBBIES -->
+    <!-- SELECTED PROJECTS -->
     <div class="section" style="margin-bottom: 0;">
-      <div class="section-title">SỞ THÍCH & ĐỜI SỐNG (HOBBIES)</div>
-      <div class="hobbies-flex">
-        <span class="hobby-badge">🎮 Chơi Game (Hack 'n' Slash)</span>
-        <span class="hobby-badge">⚽ Bóng đá (Team Captain)</span>
-        <span class="hobby-badge">🏊 Bơi lội (Endurance)</span>
-        <span class="hobby-badge">🔍 Truyện Trinh thám (Logic Mindset)</span>
-        <span class="hobby-badge">🏃 Chạy bộ (Stamina)</span>
-        <span class="hobby-badge">📚 Truyện tranh (Manga)</span>
+      <div class="section-title">DỰ ÁN TIÊU BIỂU (SELECTED PROJECTS)</div>
+      <div class="hobbies-flex selected-projects">
+        <a class="hobby-badge project-link" href="https://play.google.com/store/apps/details?gl=US&amp;hl=en-US&amp;id=com.merge.master.drop.fun.viral.fruit.animal.animash" target="_blank">
+          <strong>Merge Drop Master</strong> · Game Developer &amp; PM · gần 2M lượt tải · Google Play
+        </a>
+        <a class="hobby-badge project-link" href="https://www.youtube.com/watch?v=etbhQ2U3Irs" target="_blank">
+          <strong>Trending AR Soundboard</strong> · Game Developer &amp; PM · hơn 2M lượt tải · Gameplay video
+        </a>
       </div>
     </div>
 
