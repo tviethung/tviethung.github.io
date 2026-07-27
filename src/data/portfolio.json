@@ -1,0 +1,755 @@
+{
+  "personalInfo": {
+    "fullName": "Tạ Việt Hùng",
+    "title": "Senior Unity Mobile Developer",
+    "location": "Ha Noi, Vietnam",
+    "email": "tviethung20@gmail.com",
+    "gitlab": "https://gitlab.com/tviethung20",
+    "linkedin": "https://linkedin.com/in/username",
+    "telegram": "https://t.me/chemandercn4",
+    "summary": "Senior Unity Mobile Developer với hơn 6 năm kinh nghiệm thiết kế, tối ưu hóa và phát hành 20+ sản phẩm game di động (đạt mốc hàng triệu lượt tải trên Android/iOS). Xây dựng custom tools giúp tối đa hóa năng suất cho đội ngũ PO, Game Design, Marketing. Có khả năng đọc hiểu, phân tích, đề xuất cải thiện chỉ số game dựa trên Firebase. Yêu thích làm game và mong muốn sản xuất ra được những tựa game hấp dẫn được nhiều người chơi."
+  },
+  "telemetry": {
+    "stats": [
+      {
+        "name": "UNITY ENGINE",
+        "value": "6+ YEARS",
+        "progress": 100
+      },
+      {
+        "name": "OPTIMIZATION",
+        "value": "4+ YEARS",
+        "progress": 70
+      },
+      {
+        "name": "ARCHITECTURE (C#)",
+        "value": "5+ YEARS",
+        "progress": 80
+      },
+      {
+        "name": "LEADERSHIP & PM",
+        "value": "3+ YEARS",
+        "progress": 60
+      }
+    ],
+    "projectCount": "19",
+    "latestPlatform": "ANDROID",
+    "memoryStatus": "NOMINAL // ZERO GC"
+  },
+  "skills": {
+    "languages": [
+      "C# (6+ Years)",
+      "Java / Android (3+ Years)",
+      "SQL / Firebase DB (2+ Years)"
+    ],
+    "enginesAndFrameworks": [
+      "Unity Engine (2D/3D, URP, Physics)",
+      "DOTween (Pro) / Addressables / CDN",
+      "Firebase (Remote Config, Analytics, DB)",
+      "Object Pooling / Occlusion Culling",
+      "Custom Level Editor & Tooling",
+      "UniTask / EventBus",
+      "SmartFoxServer (Java Game Server)"
+    ],
+    "platforms": [
+      "Android (Google Play / APK / AAB)",
+      "WebGL (Web Desktop / Mobile)"
+    ],
+    "expertises": [
+      "Tối ưu hiệu năng 60 FPS (Low-end Devices, RAM/CPU, Draw Calls, GC, ASTC)",
+      "Rapid Prototyping (1-2 tuần) & Đánh giá tiềm năng qua CPI, Retention D1",
+      "Data-Driven Iteration (Phân tích Firebase data, phối hợp cùng PO & Art tối ưu gameplay)",
+      "Tích hợp SDK (AdMob, AppLovin MAX, Unity IAP, Firebase)",
+      "Lead Dev & PM (Quản lý tiến độ, quy trình sản xuất 19+ dự án game mobile)"
+    ]
+  },
+  "projects": [
+    {
+      "id": "drop-clash",
+      "title": "Drop Clash",
+      "description": "Game giải đố vật lý di động hỗ trợ tương tác thời gian thực. Được xây dựng dựa trên mô hình Service-Oriented MVC.",
+      "role": "Lead Client Programmer",
+      "technologies": [
+        "Unity",
+        "C#",
+        "DOTween",
+        "UniTask",
+        "Odin Inspector"
+      ],
+      "platforms": [
+        "Android",
+        "iOS",
+        "TikTok MiniGame"
+      ],
+      "metrics": "Đạt 60 FPS ổn định trên thiết bị RAM 2GB; giảm 35% mức tiêu thụ pin nhờ tối ưu vòng lặp Update và giảm thiểu GC Allocations.",
+      "demoLink": "https://play.google.com/store",
+      "sourceLink": "https://github.com",
+      "imageUrl": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      "id": "shiro-dash",
+      "title": "Shiro Dash",
+      "description": "Game chạy vô tận 3D nhịp độ nhanh với hệ thống kỹ năng phức tạp và hiệu ứng hình ảnh sống động sử dụng Custom Shaders.",
+      "role": "Senior Gameplay Developer",
+      "technologies": [
+        "Unity3D",
+        "C#",
+        "Shader Graph",
+        "Addressables",
+        "DOTween"
+      ],
+      "platforms": [
+        "Android",
+        "iOS"
+      ],
+      "metrics": "Tối ưu hóa dung lượng tải ban đầu từ 180MB xuống còn 75MB bằng cách tách tài nguyên động qua hệ thống Addressables.",
+      "demoLink": "https://apps.apple.com",
+      "sourceLink": "https://github.com",
+      "imageUrl": "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      "id": "unity-editor-tools",
+      "title": "Unity Node-Based Dialog System",
+      "description": "Một bộ công cụ (Editor Tool) mã nguồn mở trong Unity Editor hỗ trợ thiết kế kịch bản hội thoại phi tuyến tính bằng Graph View.",
+      "role": "Sole Creator",
+      "technologies": [
+        "Unity Editor Scripting",
+        "UIToolkit",
+        "C#"
+      ],
+      "platforms": [
+        "Editor Extension"
+      ],
+      "metrics": "Được sử dụng bởi 10+ game designer trong studio, giúp tăng tốc độ tích hợp hội thoại lên gấp 3 lần.",
+      "demoLink": "https://github.com",
+      "sourceLink": "https://github.com",
+      "imageUrl": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=600&q=80"
+    }
+  ],
+  "experience": [
+    {
+      "company": "One Percent Studio (Hanoi)",
+      "role": "Lead Developer & PM",
+      "period": "Oct 2022 - Jun 2026",
+      "bulletPoints": [
+        "Phát triển và phát hành thành công chuỗi 19+ game di động trên các nền tảng Android, iOS và TikTok MiniGame. Tiêu biểu gồm: Merge Drop Master (đạt gần 2M lượt tải) và My Pool Club (đạt hơn 300K lượt tải).",
+        "Phụ trách quản trị dự án kiêm lập trình viên chính (Lead Developer & PM), tối ưu hóa luồng làm việc giữa đội ngũ lập trình, nghệ thuật (Art) và thiết kế game (Game Design).",
+        "Tối ưu hiệu năng game (profiling, tối ưu bộ nhớ RAM/CPU, giảm draw calls) giúp game chạy mượt mà trên thiết bị phân khúc thấp.",
+        "Xây dựng các hệ thống Editor custom tiện ích giúp đẩy nhanh tiến độ làm việc cho studio.",
+        "Hỗ trợ đưa ra các quyết định thay đổi game dựa trên các số liệu phân tích từ Firebase.",
+        "Làm việc sát sao với PO và Art để đưa ra quyết định về thay đổi design, gameplay, art style, ... để tối ưu sản phẩm.",
+        "Phát triển prototype nhanh (từ 1-2 tuần) cho các ý tưởng game mới. Đánh giá tiềm năng dựa trên CPI và Retention.",
+        "Tham gia họp đề xuất các thay đổi về game để tối ưu sản phẩm based trên data và creative.",
+        "Chịu trách nhiệm chính trong việc phát triển các tính năng mới, đảm bảo chất lượng và tiến độ dự án."
+      ]
+    },
+    {
+      "company": "Gapu Studio (Hanoi)",
+      "role": "Game Developer",
+      "period": "Jun 2022 - Oct 2022",
+      "bulletPoints": [
+        "Phát triển hoàn thiện 3 dự án game Puzzle trên nền tảng Unity: 1 game Hyper Casual, 1 game Tower Hero và 1 game giải đố Logic (Logic game).",
+        "Chịu trách nhiệm lập trình cơ chế gameplay chính, thiết kế kiến trúc hệ thống và tích hợp UI chuyển động mượt mà."
+      ]
+    },
+    {
+      "company": "Freelancer",
+      "role": "Game Server Developer",
+      "period": "Jul 2021 - May 2022",
+      "bulletPoints": [
+        "Phát triển hệ thống máy chủ (Game Server Developer) trong đội ngũ 5 người cho các dự án game NFT thể loại Farm (nông trại), Tower Defense (tháp phòng thủ) và Battle War (chiến thuật).",
+        "Trực tiếp lập trình các tính năng game phía server: Chỉ số anh hùng (Hero Attribution), Trang bị anh hùng (Hero Equipment), Hệ thống tiền tệ (Currency), Ghép trận PvP với Bot (PvP Matching), Hệ thống Gacha Pooling (tạo Hero mới) và Nâng cấp anh hùng (Upgrade Hero).",
+        "Thiết kế cơ sở dữ liệu và xử lý đồng bộ hóa dữ liệu thời gian thực giữa client và server bảo mật (Tech stack: SmartFoxServer (Java) cho server và Unity (Web/Android) cho client)."
+      ]
+    },
+    {
+      "company": "Apero (Hanoi)",
+      "role": "Game Developer",
+      "period": "May 2021 - Jul 2021",
+      "bulletPoints": [
+        "Tham gia phát triển dự án game Tower Defense (tiền thân của tựa game NFT Rise of Defenders).",
+        "Chịu trách nhiệm chính thiết lập và triển khai các hệ thống cốt lõi: Chỉ số anh hùng (Hero Attribution), Lập trình xây tháp (Building Tower System), Hệ thống túi đồ (Inventory), Chế tạo (Craft) và Nâng cấp vật phẩm (Upgrade Item)."
+      ]
+    },
+    {
+      "company": "TTC-Solutions (Hanoi)",
+      "role": "Full-Stack Developer",
+      "period": "Dec 2019 - May 2021",
+      "bulletPoints": [
+        "Quản lý CMS của game application: Registered users, Cashout, Recharge, Campaign Marketing, Giftcode. Duy trì hệ thống hiện tại và phát triển các tính năng mới (Tech stack: Spring Boot, Angular, Docker).",
+        "Phát triển dịch vụ OTP: Kiểm tra trạng thái của SIM card, gửi tin nhắn tùy chỉnh và OTP (Tech stack: Spring Boot, Angular).",
+        "Phát triển dịch vụ tracking: Theo dõi (tracking) hiệu quả của các chiến dịch marketing (Tech stack: Golang, Docker).",
+        "Outsourcing game Corona Virus (Hàn Quốc): Phát triển các tính năng bao gồm thêm obstacles cho màn chơi, thu thập và nâng cấp medal, hệ thống inventory, và Mission Objective cho từng level.",
+        "Outsourcing game Poker: Ghép UI/UX cho các màn hình và gameplay, xử lý đồng bộ dữ liệu (data synchronization) từ server tương thích với thiết kế trên [Figma](https://www.figma.com/design/RoMGNq5hbl0Ek0u1ztnC4e/Bond_Poker-App_2020)."
+      ]
+    },
+    {
+      "company": "Freelancer (Hanoi)",
+      "role": "Android Developer",
+      "period": "Apr 2019 - Nov 2019",
+      "bulletPoints": [
+        "Phát triển ứng dụng Android.",
+        "Phát triển ứng dụng StoryReader (https://github.com/chemander/StoryReader) - ứng dụng đọc truyện hỗ trợ các tính năng read, bookmark, download, thay đổi font, color, text size (Tech stack: Retrofit 2, Room, Android Paging, LiveData, Data Binding, ViewModel)."
+      ]
+    },
+    {
+      "company": "Samsung Vietnam Mobile R&D Center (SVMC)",
+      "role": "Senior Engineer / Engineer III",
+      "period": "Jan 2015 - Mar 2019",
+      "bulletPoints": [
+        "Hợp tác cùng đội ngũ 6 kỹ sư phần mềm để phân tích và xây dựng kịch bản cho Samsung Internal Development Library (dựa trên Android system APIs) với 1000+ APIs và 5000+ Testcases sử dụng AndroidTestCase (Thời gian dự án: 2 năm). Phụ trách UI/UX (Touchwiz), Camera, Pedometer APIs, SMS; tối ưu hóa và giảm thời gian thực thi của Test Suite.",
+        "Phát triển công cụ BFT (Basic Functional Test Suite): test 100+ functions cho các ứng dụng cài sẵn (preload) của Samsung (My Files, Call, Messenger, Notification bar, Contacts...), tự động flash binary cho thiết bị, tự động setup preconditions và run Test Suite (Tech stack: Java, UIAutomator).",
+        "Testing API của web service.",
+        "Phát triển công cụ Trade Federation (Tradefed - dùng để chạy Compatibility Test Suite (CTS) và Vendor Test Suite (VTS)) tùy chỉnh riêng cho các Samsung APIs (Tech stack: Java).",
+        "Cấu hình Quickbuild, Jenkins: Tự động lấy dự án từ P4 để build và chạy Test Suite."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "school": "Posts and Telecommunications Institute of Technology (PTIT)",
+      "degree": "Information Technology Engineer",
+      "period": "2009 - 2014"
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Samsung Software Certificate - Advance",
+      "issuer": "Samsung Vietnam Mobile R&D Center",
+      "year": "2015"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "title": "Crafter Legends",
+      "genre": "Hyper Casual",
+      "description": "Trò chơi mô phỏng khai thác mỏ 3D voxel Idle Clicker kết hợp cơ chế Merge nâng cấp thợ mỏ và chiến đấu quái vật để khám phá tài nguyên quý hiếm.",
+      "releaseDate": "05/04/2023",
+      "status": "Removed",
+      "storeLink": null,
+      "gameplay": "https://www.youtube.com/watch?v=Tn0SvI_TKbE",
+      "icon": "/icons/1.crafter_legends.png",
+      "role": "Lead Developer",
+      "teamSize": "4 người (2 Dev, 1 Artist, 1 Game Designer (PO))",
+      "technologies": [
+        "Unity",
+        "C#",
+        "DOTween",
+        "Sprite Atlas",
+        "GPU Instancing",
+        "Object Pooling",
+        "UIEffect"
+      ],
+      "achievements": "- Hệ thống tìm đường\n- Hệ thống merge nâng cấp\n- Hệ thống generate map\n- Hệ thống battle phá huỷ từng phần enemy",
+      "metrics": "Retention D1: 24%",
+      "note": "Dự án 3D Voxel đầu tay đặt nền móng kiến trúc hệ thống cho chuỗi game Idle Tycoon.",
+      "isFavorite": true
+    },
+    {
+      "id": 2,
+      "title": "Rumble Miners:Idle Craft Merge",
+      "genre": "Idle Tycoon",
+      "description": "Trò chơi mô phỏng khai thác vàng 3D Idle Mining Tycoon kết hợp cơ chế Merge nâng cấp thợ mỏ, thu thập thẻ nâng cấp building và chiến đấu chống quái vật để bảo vệ kho báu.",
+      "releaseDate": "16/07/2023",
+      "status": "Removed",
+      "storeLink": null,
+      "gameplay": null,
+      "icon": "/icons/2.Rumble Miners Idle Craft Merge.png",
+      "role": "Lead Developer",
+      "teamSize": "5 người (2 Dev, 2 Artist, 1 Game Designer (PO))",
+      "technologies": [
+        "Unity",
+        "C#",
+        "DOTween",
+        "Sprite Atlas",
+        "GPU Instancing",
+        "Object Pooling",
+        "UIEffect"
+      ],
+      "achievements": "- Thiết kế hệ thống income, offline income\n- Tích hợp Object Pooling.\n- Hệ thống nâng cấp thẻ bài.\n- Hệ thống nâng cấp building",
+      "metrics": "Retention D1: 30%",
+      "note": "",
+      "isFavorite": false
+    },
+    {
+      "id": 3,
+      "title": "Brave Miner: Build & Fight",
+      "genre": "Idle Tycoon",
+      "description": "Trò chơi phiêu lưu khai thác Idle Mining bối cảnh 3D voxel, người chơi khai thác tài nguyên, Merge đội quân thợ mỏ để xây dựng lại đế chế bị tàn phá và chiến đấu chống quái vật bảo vệ ngôi làng.",
+      "releaseDate": "10/10/2023",
+      "status": "Removed",
+      "storeLink": null,
+      "gameplay": "https://www.youtube.com/watch?v=OyfPFI4eEqY",
+      "icon": "/icons/3.Brave Miner Build & Fight.png",
+      "role": "Lead Developer",
+      "teamSize": "6 người (2 Dev, 3 Artist, 1 Game Designer (PO))",
+      "technologies": [
+        "Unity",
+        "C#",
+        "DOTween",
+        "Sprite Atlas",
+        "GPU Instancing",
+        "Object Pooling",
+        "UIEffect"
+      ],
+      "achievements": "- Thêm hệ thống Battle với Skill cho từng hero, kết hợp với hệ thống thu thập thẻ bài để nâng cấp hero\n- Xây dựng công trình phụ trợ với tác dụng tăng passive cho income, miner, hero.\n- Hệ thống Achievement\n- Thêm Live-ops event",
+      "metrics": "Retention D1: 30%",
+      "note": "Game có hệ thống đầy đủ từ Gameplay, Battle, Building, Event và được nâng cấp hình ảnh tốt hơn",
+      "isFavorite": true
+    },
+    {
+      "id": 4,
+      "title": "My Pool Club: Tycoon Game",
+      "genre": "Idle Arcade",
+      "description": "Trò chơi quản lý câu lạc bộ Billiards, người chơi quản lý từ bàn Billiards đến tuyển dụng nhân sự, nâng cấp trang thiết bị giải trí và mở rộng chuỗi câu lạc bộ trên nhiều khu vực.",
+      "releaseDate": "23/01/2024",
+      "status": "Removed",
+      "storeLink": null,
+      "gameplay": "https://www.youtube.com/watch?v=SmdquDqhTKQ",
+      "icon": "/icons/4.My Pool Club Tycoon Game.png",
+      "role": "Lead Developer",
+      "teamSize": "5 người (2 Dev, 3 Artist, 1 Game Designer (PO))",
+      "technologies": [
+        "Unity",
+        "C#",
+        "Unity Physics 3D",
+        "URP",
+        "Optimizations",
+        "Occlusion culling",
+        "Static object",
+        "Cinemachine Camera",
+        "NavMesh",
+        "Object Pooling",
+        "Sprite Atlas"
+      ],
+      "achievements": "- Xây dựng nền tảng tương tác của Character với môi trường\n- Hệ thống điều khiển camera\n- Nâng cấp công trình\n- Hệ thống NPC tự động thực hiện task\n- Hệ thống mở rộng map\n- Hệ thống Verhicle",
+      "metrics": "Retention D1: 33% | Lượt tải: 200.000+",
+      "note": "Tựa game Idle Arcade thành công nhất về chỉ số giữ chân người dùng.",
+      "isFavorite": true
+    },
+    {
+      "id": 5,
+      "title": "My Z Base",
+      "genre": "Idle Arcade",
+      "description": "Trò chơi Idle Defence kết hợp Merge Tower Defense, người chơi xây dựng và quản lý căn cứ, merge các đơn vị chiến đấu để chống lại làn sóng zombie tấn công và mở rộng đế chế sinh tồn.",
+      "releaseDate": "09/04/2024",
+      "status": "Removed",
+      "storeLink": null,
+      "gameplay": "https://www.youtube.com/watch?v=Wkwh0-yiZ5c",
+      "icon": "/icons/5.My Z Base.png",
+      "role": "Game Developer",
+      "teamSize": "4 người (1 Dev, 2 Artist, 1 Game Designer (PO))",
+      "technologies": [
+        "Unity",
+        "C#",
+        "URP",
+        "Occlusion culling",
+        "Static object",
+        "Cinemachine Camera",
+        "NavMesh",
+        "Object Pooling",
+        "Sprite Atlas"
+      ],
+      "achievements": "- Xây dựng hệ thống quản lý zombie tấn công căn cứ.\n- Hệ thống nâng cấp vũ khí và zombie\n- Tối ưu Particle",
+      "metrics": "Retention D1: 32%",
+      "note": "Có gameplay thú vị và gặp nhiều vấn đề về tối ưu nhất vì số lượng zombie và particle đạn cho từng loại súng.",
+      "isFavorite": true
+    },
+    {
+      "id": 6,
+      "title": "Animals inn: simulator game",
+      "genre": "Idle Arcade",
+      "description": "Trò chơi mô phỏng quản lý nhà trọ cho các loài động vật đáng yêu, người chơi dọn dẹp phòng, phục vụ quầy kem, hoàn thành các mini puzzle để mở khóa nhiều loài động vật mới giúp tối đa hóa thu nhập.",
+      "releaseDate": "04/07/2024",
+      "status": "Removed",
+      "storeLink": null,
+      "gameplay": "https://www.youtube.com/watch?v=hqrIkg_Yo0k",
+      "icon": "/icons/6.Animals inn simulator game.png",
+      "role": "Game Developer",
+      "teamSize": "4 người (1 Dev, 2 Artist, 1 Game Designer (PO))",
+      "technologies": [
+        "Unity",
+        "C#",
+        "URP",
+        "Occlusion culling",
+        "Static object",
+        "Cinemachine Camera",
+        "NavMesh",
+        "Object Pooling",
+        "Toony Shader",
+        "Sprite Atlas"
+      ],
+      "achievements": "- Hệ thống quản lý, nâng cấp pet\n- Hệ thống Pet battle\n- Thêm Battle Pass\n- Minigame",
+      "metrics": "Retention D1: 27%",
+      "note": "CPI đạt benchmark. Game có tiềm năng phát triển.",
+      "isFavorite": false
+    },
+    {
+      "id": 7,
+      "title": "Military life: Idle game",
+      "genre": "Idle Arcade",
+      "description": "Trò chơi mô phỏng quản lý Military Idle Simulation, người chơi huấn luyện binh lính, nâng cấp các phòng chức năng và dẫn dắt quân đội thực hiện các chiến dịch mở rộng căn cứ.",
+      "releaseDate": "15/01/2025",
+      "status": "Removed",
+      "storeLink": null,
+      "gameplay": "https://www.youtube.com/watch?v=mvxYdsbPtFI",
+      "icon": "/icons/7.Military life Idle game.png",
+      "role": "Game Developer & PM",
+      "teamSize": "4 người (1 Dev(PM), 2 Artist, 1 Game Designer)",
+      "technologies": [
+        "Unity",
+        "C#",
+        "URP",
+        "Occlusion culling",
+        "Static object",
+        "Cinemachine Camera",
+        "NavMesh",
+        "Object Pooling",
+        "Toony Shader",
+        "Sprite Atlas"
+      ],
+      "achievements": "- Thiết kế hệ thống nâng cấp room.\n- Thiết kế các phòng tính năng: huấn luyện, phòng ăn, phòng tập bắn, phòng gym và phòng y tế.\n- Cơ chế xếp hàng và NPC follow character\n- Thiết kế behavior cho NPC support",
+      "metrics": "Retention D1: 25%",
+      "note": "CPI không đạt benchmark.",
+      "isFavorite": false
+    },
+    {
+      "id": 8,
+      "title": "Screw Pet 3D: Removal Master",
+      "genre": "Puzzle",
+      "description": "Trò chơi giải đố 3D (Physics Puzzle), người chơi thực hiện xoay, tháo gỡ các chốt pin và ốc vít để vượt qua hàng trăm cấp độ thử thách với cơ chế vật lý mô phỏng.",
+      "releaseDate": "04/03/2025",
+      "status": "Removed",
+      "storeLink": null,
+      "gameplay": "https://www.youtube.com/watch?v=SrLupquyQ3c",
+      "icon": "/icons/8.Screw Pet 3D Removal Master.png",
+      "role": "Game Developer & PM",
+      "teamSize": "4 người (1 Dev(PM), 2 Artist, 1 Game Designer)",
+      "technologies": [
+        "Unity",
+        "C#",
+        "Raycasting",
+        "Unity joints",
+        "Toony Shader"
+      ],
+      "achievements": "- Xây dựng cơ chế xoay và tháo ốc vít 3D\n- Build Support tool cho việc gắn ốc\n- Thêm minigame ở Home",
+      "metrics": "Retention D1: 30%",
+      "note": "CPI không đạt benchmark.",
+      "isFavorite": false
+    },
+    {
+      "id": 9,
+      "title": "Perfect Room: Cozy Decor",
+      "genre": "Puzzle",
+      "description": "Trò chơi giải đố trang trí phòng phong cách dễ thương (Cozy Decor Puzzle), người chơi sắp xếp đồ nội thất.",
+      "releaseDate": "28/04/2025",
+      "status": "Removed",
+      "storeLink": null,
+      "gameplay": "https://www.youtube.com/shorts/j750Om9jjfQ",
+      "icon": "/icons/9.Perfect Room Cozy Decor.png",
+      "role": "Game Developer & PM",
+      "teamSize": "4 người (1 Dev(PM), 2 Artist, 1 Game Designer)",
+      "technologies": [
+        "Unity",
+        "C#",
+        "Sprite Atlas",
+        "DOTween"
+      ],
+      "achievements": "Tải động hàng trăm đồ nội thất trang trí phòng thông qua Addressables từ CDN, giúp giảm 50% dung lượng file cài đặt APK. Xây dựng giao diện trang trí trực quan, phản hồi tức thời.",
+      "metrics": "Retention D1: 25%",
+      "note": "CPI đạt benchmark, game có tiềm năng phát triển tuy nhiên không đủ nhân sự để tiếp tục phát triển",
+      "isFavorite": false
+    },
+    {
+      "id": 10,
+      "title": "AI Fusion: Create Character",
+      "genre": "Hyper Casual",
+      "description": "Trò chơi sáng tạo nhân vật bằng công nghệ AI (AI Character Creator), cho phép người chơi kết hợp (merge) hai thực thể bất kỳ như động vật, anh hùng, nhân vật anime hay meme thịnh hành để tạo ra các sinh vật lai độc nhất vô nhị.",
+      "releaseDate": "23/05/2025",
+      "status": "Removed",
+      "storeLink": null,
+      "gameplay": null,
+      "icon": "/icons/10.AI Fusion Create Character.png",
+      "role": "Game Developer & PM",
+      "teamSize": "3 người (1 Dev(PM), 1 Artist, 1 Game Designer)",
+      "technologies": [
+        "Unity",
+        "C#",
+        "WebRequest",
+        "DOTween"
+      ],
+      "achievements": "",
+      "metrics": "Retention D1: 22%",
+      "note": "CPI không đạt benchmark.",
+      "isFavorite": false
+    },
+    {
+      "id": 11,
+      "title": "Viral AR Soundboard (Removed) - Trending AR Soundboard (Reup)",
+      "genre": "Hyper Casual",
+      "description": "Ứng dụng giải trí tương tác thực tế ảo (AR Soundboard) tích hợp camera AR cho phép đưa các nhân vật quái vật meme nhảy múa vào không gian thực tế.",
+      "releaseDate": "27/05/2025",
+      "status": "Removed - Reup",
+      "storeLink": null,
+      "gameplay": "https://www.youtube.com/watch?v=etbhQ2U3Irs",
+      "icon": "/icons/11. Viral AR Soundboard.png",
+      "role": "Game Developer & PM",
+      "teamSize": "4 người (1 Dev, 2 Artist, 1 Game Designer)",
+      "technologies": [
+        "Unity",
+        "C#",
+        "Audio Mixer",
+        "Android Plugins",
+        "Sprite Atlas",
+        "DOTween"
+      ],
+      "achievements": "- Hệ thống sử dụng Camera device và Record Scene để export ra video mp4\n- Record List với thumbnails",
+      "metrics": "Retention D1: 21% | Lượt tải: >1.000.000",
+      "note": "CPI đạt benchmark và có doanh thu ổn định.",
+      "isFavorite": false
+    },
+    {
+      "id": 12,
+      "title": "Merge Drop Master",
+      "genre": "Puzzle",
+      "description": "Trò chơi giải đố thả và gộp (Merge Drop Puzzle) mang đậm tính giải trí, người chơi tính toán thả các nhân vật meme và trào lưu thịnh hành (zombie, baby, poppy...) để gộp thành những cấp tiến hóa meme.",
+      "releaseDate": "13/06/2025",
+      "status": "Live",
+      "storeLink": "https://play.google.com/store/apps/details?gl=US&hl=en-US&id=com.merge.master.drop.fun.viral.fruit.animal.animash",
+      "gameplay": "https://www.youtube.com/watch?v=5961LlfIXT0",
+      "icon": "/icons/12.Merge Drop Master.png",
+      "role": "Game Developer & PM",
+      "teamSize": "3 người (1 Dev, 1 Artist, 1 Game Designer)",
+      "technologies": [
+        "Unity",
+        "C#",
+        "2D Physics",
+        "Object Pooling",
+        "Sprite Atlas",
+        "DOTween",
+        "Addressables",
+        "Firebase Remote Config",
+        "Firebase Database"
+      ],
+      "achievements": "- Tối ưu hóa cơ chế vật lý va chạm và gộp các loại trái cây/động vật 2D.\n- Tối ưu luồng skin cho game\n- Tối ưu doanh thu bằng Remote Config\n- Thêm Leaderboard, Building và Battle Pass\n- Hiệu ứng combo khi merge",
+      "metrics": "Retention D1: 34% | Lượt tải: ~1.800.000+",
+      "note": "CPI đạt benchmark và có doanh thu ổn định. Đây là dự án đi sâu nhất và có nhiều phase phát triển cũng như cải tiến sản phẩm",
+      "isFavorite": true
+    },
+    {
+      "id": 13,
+      "title": "Hidden World: Zoom & Spot",
+      "genre": "Puzzle",
+      "description": "Trò chơi giải đố tìm đồ vật ẩn (Hidden Object Puzzle), người chơi tận dụng tính năng thu phóng (zoom) để phát hiện các manh mối và đồ vật được ẩn giấu khéo léo trong các bức tranh.",
+      "releaseDate": "08/07/2025",
+      "status": "Removed",
+      "storeLink": null,
+      "gameplay": null,
+      "icon": "/icons/13.Hidden World Zoom & Spot.png",
+      "role": "Game Developer & PM",
+      "teamSize": "3 người (1 Dev, 1 Artist, 1 Game Designer)",
+      "technologies": [
+        "Unity",
+        "C#",
+        "Sprite Atlas",
+        "DOTween",
+        "Addressable"
+      ],
+      "achievements": "- Tối ưu Canvas UI",
+      "metrics": "Retention D1: 26%",
+      "note": "CPI đạt benchmark, game có tiềm năng phát triển tuy nhiên không đủ nhân sự để tiếp tục phát triển",
+      "isFavorite": false
+    },
+    {
+      "id": 14,
+      "title": "Meme Music Fire",
+      "genre": "Rhythm",
+      "description": "Trò chơi âm nhạc nhịp điệu (Rhythm Game), nơi người chơi lướt theo nhịp beat bài hát để mở khóa các hiệu ứng âm thanh và hình ảnh chuyển động của các nhân vật meme.",
+      "releaseDate": "20/10/2025",
+      "status": "Removed",
+      "storeLink": null,
+      "gameplay": null,
+      "icon": "/icons/14.Meme Music Fire.png",
+      "role": "Game Developer & PM",
+      "teamSize": "3 người (1 Dev, 1 Artist, 1 Game Designer)",
+      "technologies": [
+        "Unity",
+        "C#",
+        "DOTween",
+        "Sprite Atlas",
+        "Addressable"
+      ],
+      "achievements": "- Tối ưu hóa nhịp điệu game, đọc và sinh các nốt nhạc theo config",
+      "metrics": "Retention D1: 20%",
+      "note": "CPI đạt benchmark, game có tiềm năng phát triển",
+      "isFavorite": false
+    },
+    {
+      "id": 15,
+      "title": "Cute Drop World",
+      "genre": "Puzzle",
+      "description": "Trò chơi giải đố thả và gộp (Merge Drop Puzzle) phong cách dễ thương, cho phép người chơi thả và kết hợp các loại trái cây, động vật, đồ uống hay thạch slime mềm mại để tiến hóa thành các dạng lớn hơn.",
+      "releaseDate": "05/12/2025",
+      "status": "Live",
+      "storeLink": "https://play.google.com/store/apps/details?gl=US&hl=en-US&id=com.cute.drop.world.party.animals.merge.dessert.slime",
+      "gameplay": "https://www.youtube.com/watch?v=hCSm7xkdcS0",
+      "icon": "/icons/15.Cute Drop World.png",
+      "role": "Game Developer & PM",
+      "teamSize": "3 người (1 Dev, 1 Artist, 1 Game Designer)",
+      "technologies": [
+        "Unity",
+        "C#",
+        "2D Physics",
+        "Object Pooling",
+        "Sprite Atlas",
+        "DOTween",
+        "Addressables",
+        "Firebase Remote Config",
+        "Firebase Database"
+      ],
+      "achievements": "- Thêm cơ chế thay đổi màn chơi, Combo khi merge.",
+      "metrics": "Retention D1: 28%",
+      "note": "CPI đạt benchmark, game có tiềm năng phát triển",
+      "isFavorite": false
+    },
+    {
+      "id": 16,
+      "title": "JigMaster: Photo Match",
+      "genre": "Puzzle",
+      "description": "Trò chơi giải đố ghép hình (Jigsaw Puzzle), kết hợp lối chơi vuốt thả để sắp xếp các mảnh ghép bức ảnh khớp nối (snap) hoàn hảo với nhau theo nhiều chủ đề phong cảnh, động vật đa dạng.",
+      "releaseDate": "05/01/2026",
+      "status": "Live",
+      "storeLink": "https://play.google.com/store/apps/details?gl=US&hl=en-US&id=com.jig.master.photo.match.puzzle.jigsaw",
+      "gameplay": "https://www.youtube.com/watch?v=Dl1OO2MGWaM",
+      "icon": "/icons/16.JigMaster Photo Match.png",
+      "role": "Game Developer & PM",
+      "teamSize": "3 người (1 Dev, 1 Artist, 1 Game Designer)",
+      "technologies": [
+        "Unity",
+        "C#",
+        "DOTween",
+        "Sprite Atlas",
+        "Addressable"
+      ],
+      "achievements": "- Viết thuật toán tự động chia nhỏ bất kỳ bức ảnh nào thành các mảnh ghép puzzle 2D\n- Tính toán spline cho các cạnh của miếng ghép\n- Tối ưu hoá logic cho 60FPS\n- Quản lý tải ảnh từ máy chủ thông qua Addressables",
+      "metrics": "Retention D1: 40%",
+      "note": "CPI rẻ hơn benchmark, game có tiềm năng phát triển",
+      "isFavorite": false
+    },
+    {
+      "id": 17,
+      "title": "JigCharm : HD Beauty",
+      "genre": "Puzzle",
+      "description": "Trò chơi giải đố ghép hình, kết hợp lối chơi kéo thả mượt mà để hoàn thành và mở khóa các bức ảnh nghệ thuật quyến rũ cùng hệ thống sưu tầm thẻ hình hấp dẫn.",
+      "releaseDate": "02/04/2026",
+      "status": "Live",
+      "storeLink": "https://play.google.com/store/apps/details?gl=US&hl=en-US&id=jigcharm.hd.beauty.hot.puzzle",
+      "gameplay": null,
+      "icon": "/icons/17. JigCharm HD Beauty.png",
+      "role": "Game Developer & PM",
+      "teamSize": "3 người (1 Dev, 1 Artist, 1 Designer)",
+      "technologies": [
+        "Unity",
+        "C#",
+        "Addressables",
+        "Texture Compression ASTC",
+        "Memory Management"
+      ],
+      "achievements": "- Thêm media player để thay đổi Music Background cho game\n- Thêm Album có thể tải ảnh về máy",
+      "metrics": "Retention D1: 25%",
+      "note": "CPI rẻ hơn benchmark, game có tiềm năng phát triển",
+      "isFavorite": false
+    },
+    {
+      "id": 18,
+      "title": "My Talking Zoo",
+      "genre": "Idle Arcade",
+      "description": "Trò chơi tương tác âm thanh (Voice Interaction Game), người chơi thực hiện ghi âm giọng nói của mình để lồng tiếng cho các sinh vật meme, mở rộng quy mô sở thú độc đáo của riêng mình.",
+      "releaseDate": "04/05/2026",
+      "status": "Live",
+      "storeLink": "https://play.google.com/store/apps/details?gl=US&hl=en-US&id=my.talking.zoo.meme.sound",
+      "gameplay": null,
+      "icon": "/icons/18.My Talking Zoo.png",
+      "role": "Game Developer & PM",
+      "teamSize": "3 người (1 Dev, 1 Artist, 1 Designer)",
+      "technologies": [
+        "Unity",
+        "C#",
+        "DOTween",
+        "Audio Mixer"
+      ],
+      "achievements": "- Logic Gacha ra Animal theo map.\n- Logic mua/bán và income từ animal.\n- Tạo logic record sound và gán cho 1 Animal.",
+      "metrics": "Retention D1: 18%",
+      "note": "CPI không đạt benchmark",
+      "isFavorite": false
+    },
+    {
+      "id": 19,
+      "title": "Maze Dash Escape",
+      "genre": "Puzzle",
+      "description": "Trò chơi hành động phản xạ mê cung tốc độ cao (Fast-paced Arcade Action), người chơi thực hiện các thao tác vuốt để di chuyển chớp nhoáng (dash) giữa các bức tường, né tránh chướng ngại vật nguy hiểm để tìm lối thoát.",
+      "releaseDate": "26/05/2026",
+      "status": "Live",
+      "storeLink": "https://play.google.com/store/apps/details?gl=US&hl=en-US&id=com.maze.dash.escape.challenge",
+      "gameplay": null,
+      "icon": "/icons/19.Maze Dash Escape.png",
+      "role": "Game Developer & PM",
+      "teamSize": "3 người (1 Dev, 1 Artist, 1 Designer)",
+      "technologies": [
+        "Unity",
+        "C#",
+        "LeanTouch",
+        "DOTween"
+      ],
+      "achievements": "- Thiết kế tool xếp map dựa trên Tilemap, cho phép nhiều cơ chế xếp map (Bằng prefab hoặc Position)\n- Thêm hệ thống skin nhân vật.",
+      "metrics": "Retention D1: 17%",
+      "note": "CPI không đạt benchmark",
+      "isFavorite": false
+    }
+  ],
+  "hobbies": [
+    {
+      "id": "gaming",
+      "category": "GAMING & DISCOVERY",
+      "title": "Chơi Game",
+      "description": "Đam mê trải nghiệm đa dạng các thể loại game, đặc biệt thích dòng Hack 'n' Slash để nghiên cứu nhịp độ combat, cơ chế combo và hiệu ứng phản hồi va chạm (Hit Feeling).",
+      "tag": "Hack 'n' Slash Fan"
+    },
+    {
+      "id": "football",
+      "category": "TEAMWORK & ATHLETICS",
+      "title": "Bóng Đá (Football)",
+      "description": "Thường xuyên tham gia đá bóng giúp rèn luyện phản xạ nhanh, tinh thần phối hợp đồng đội (Teamwork) và giữ năng lượng làm việc tích cực.",
+      "tag": "Team Captain & Player"
+    },
+    {
+      "id": "swimming",
+      "category": "ENDURANCE & HEALTH",
+      "title": "Bơi Lội (Swimming)",
+      "description": "Duy trì thói quen bơi lội rèn luyện sức bền, giải tỏa áp lực và duy trì trạng thái thể lực dẻo dai cho các chiến dịch phát triển game dài hạn.",
+      "tag": "Stamina & Balance"
+    },
+    {
+      "id": "detective",
+      "category": "LOGIC & INVESTIGATION",
+      "title": "Truyện Trinh Thám",
+      "description": "Yêu thích đọc sách/truyện trinh thám giúp tôi rèn luyện tư duy logic, phân tích nguyên nhân - kết quả và giải quyết các bài toán kỹ thuật phức tạp.",
+      "tag": "Logic Mindset"
+    },
+    {
+      "id": "running",
+      "category": "CARDIO & STAMINA",
+      "title": "Chạy Bộ (Running)",
+      "description": "Thói quen chạy bộ thường xuyên giúp rèn luyện ý chí kiên trì, nâng cao sức bền thể lực và giữ tâm trí luôn tỉnh táo, minh mẫn.",
+      "tag": "Endurance Runner"
+    },
+    {
+      "id": "manga",
+      "category": "ART & STORYTELLING",
+      "title": "Truyện Tranh (Manga)",
+      "description": "Yêu thích đọc truyện tranh giúp kích thích trí tưởng tượng sáng tạo, học hỏi nghệ thuật kể chuyện thị giác (Visual Storytelling) và tạo hình nhân vật.",
+      "tag": "Manga & Art Fan"
+    }
+  ]
+}

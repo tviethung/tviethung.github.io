@@ -1,0 +1,318 @@
+﻿1.Crafter Legends
+Thể loại: Hyper Casual
+Mô tả: Trò chơi mô phỏng khai thác mỏ 3D voxel Idle Clicker kết hợp cơ chế Merge nâng cấp thợ mỏ và chiến đấu quái vật để khám phá tài nguyên quý hiếm.
+Ngày ra mắt: 05/04/2023
+Trạng thái: Removed
+Gameplay: https://www.youtube.com/watch?v=Tn0SvI_TKbE
+Vai trò: Lead Developer
+Quy mô: 4 người (2 Dev, 1 Artist, 1 Game Designer (PO))
+Công nghệ: Unity, C#, DOTween, Sprite Atlas, GPU Instancing, Object Pooling, UIEffect
+Thành tựu kỹ thuật:
+- Hệ thống tìm đường
+- Hệ thống merge nâng cấp
+- Hệ thống generate map
+- Hệ thống battle phá huỷ từng phần enemy
+Chỉ số: Retention D1: 24%
+Ghi chú: Dự án 3D Voxel đầu tay đặt nền móng kiến trúc hệ thống cho chuỗi game Idle Tycoon. 
+Yêu thích: Có
+
+2.Rumble Miners:Idle Craft Merge
+Thể loại: Idle Tycoon
+Mô tả: Trò chơi mô phỏng khai thác vàng 3D Idle Mining Tycoon kết hợp cơ chế Merge nâng cấp thợ mỏ, thu thập thẻ nâng cấp building và chiến đấu chống quái vật để bảo vệ kho báu.
+Ngày ra mắt: 16/07/2023
+Trạng thái: Removed
+Gameplay: None
+Vai trò: Lead Developer
+Quy mô: 5 người (2 Dev, 2 Artist, 1 Game Designer (PO))
+Công nghệ: Unity, C#, DOTween, Sprite Atlas, GPU Instancing, Object Pooling, UIEffect
+Thành tựu kỹ thuật:
+- Thiết kế hệ thống income, offline income
+- Tích hợp Object Pooling.
+- Hệ thống nâng cấp thẻ bài.
+- Hệ thống nâng cấp building
+Chỉ số: Retention D1: 30%
+Ghi chú: 
+Yêu thích: Không
+
+3. Brave Miner: Build & Fight
+Thể loại: Idle Tycoon
+Mô tả: Trò chơi phiêu lưu khai thác Idle Mining bối cảnh 3D voxel, người chơi khai thác tài nguyên, Merge đội quân thợ mỏ để xây dựng lại đế chế bị tàn phá và chiến đấu chống quái vật bảo vệ ngôi làng.
+Ngày ra mắt: 10/10/2023
+Trạng thái: Removed
+Gameplay: https://www.youtube.com/watch?v=OyfPFI4eEqY
+Vai trò: Lead Developer
+Quy mô: 6 người (2 Dev, 3 Artist, 1 Game Designer (PO))
+Công nghệ: Unity, C#, DOTween, Sprite Atlas, GPU Instancing, Object Pooling, UIEffect
+Thành tựu kỹ thuật: 
+- Thêm hệ thống Battle với Skill cho từng hero, kết hợp với hệ thống thu thập thẻ bài để nâng cấp hero
+- Xây dựng công trình phụ trợ với tác dụng tăng passive cho income, miner, hero.
+- Hệ thống Achievement
+- Thêm Live-ops event
+Chỉ số: Retention D1: 30%
+Ghi chú: Game có hệ thống đầy đủ từ Gameplay, Battle, Building, Event và được nâng cấp hình ảnh tốt hơn
+Yêu thích: Có
+
+4. My Pool Club: Tycoon Game
+Thể loại: Idle Arcade
+Mô tả: Trò chơi quản lý câu lạc bộ Billiards, người chơi quản lý từ bàn Billiards đến tuyển dụng nhân sự, nâng cấp trang thiết bị giải trí và mở rộng chuỗi câu lạc bộ trên nhiều khu vực.
+Ngày ra mắt: 23/01/2024
+Trạng thái: Removed
+Gameplay: https://www.youtube.com/watch?v=SmdquDqhTKQ
+Vai trò: Lead Developer
+Quy mô: 5 người (2 Dev, 3 Artist, 1 Game Designer (PO))
+Công nghệ: Unity, C#, Unity Physics 3D, URP, Optimizations, Occlusion culling, Static object, Cinemachine Camera, NavMesh, Object Pooling, Sprite Atlas
+Thành tựu kỹ thuật: 
+- Xây dựng nền tảng tương tác của Character với môi trường
+- Hệ thống điều khiển camera 
+- Nâng cấp công trình
+- Hệ thống NPC tự động thực hiện task
+- Hệ thống mở rộng map 
+- Hệ thống Verhicle
+Chỉ số: Retention D1: 33% | Lượt tải: 200.000+
+Ghi chú: Tựa game Idle Arcade thành công nhất về chỉ số giữ chân người dùng.
+Yêu thích: Có
+
+5. My Z Base
+Thể loại: Idle Arcade
+Mô tả: Trò chơi Idle Defence kết hợp Merge Tower Defense, người chơi xây dựng và quản lý căn cứ, merge các đơn vị chiến đấu để chống lại làn sóng zombie tấn công và mở rộng đế chế sinh tồn.
+Ngày ra mắt: 09/04/2024
+Trạng thái: Removed
+Gameplay: https://www.youtube.com/watch?v=Wkwh0-yiZ5c
+Vai trò: Game Developer
+Quy mô: 4 người (1 Dev, 2 Artist, 1 Game Designer (PO))
+Công nghệ: Unity, C#, URP, Occlusion culling, Static object, Cinemachine Camera, NavMesh, Object Pooling, Sprite Atlas
+Thành tựu kỹ thuật: 
+- Xây dựng hệ thống quản lý zombie tấn công căn cứ. 
+- Hệ thống nâng cấp vũ khí và zombie
+- Tối ưu Particle
+Chỉ số: Retention D1: 32%
+Ghi chú: Có gameplay thú vị và gặp nhiều vấn đề về tối ưu nhất vì số lượng zombie và particle đạn cho từng loại súng.
+Yêu thích: Có
+
+6. Animals inn: simulator game
+Thể loại: Idle Arcade
+Mô tả: Trò chơi mô phỏng quản lý nhà trọ cho các loài động vật đáng yêu, người chơi dọn dẹp phòng, phục vụ quầy kem, hoàn thành các mini puzzle để mở khóa nhiều loài động vật mới giúp tối đa hóa thu nhập.
+Ngày ra mắt: 04/07/2024
+Trạng thái: Removed
+Gameplay: https://www.youtube.com/watch?v=hqrIkg_Yo0k
+Vai trò: Game Developer
+Quy mô: 4 người (1 Dev, 2 Artist, 1 Game Designer (PO))
+Công nghệ: Unity, C#, URP, Occlusion culling, Static object, Cinemachine Camera, NavMesh, Object Pooling, Toony Shader, Sprite Atlas
+Thành tựu kỹ thuật:
+- Hệ thống quản lý, nâng cấp pet
+- Hệ thống Pet battle
+- Thêm Battle Pass
+- Minigame
+Chỉ số: Retention D1: 27%
+Ghi chú: CPI đạt benchmark. Game có tiềm năng phát triển.
+Yêu thích: Không
+
+7. Military life: Idle game
+Thể loại: Idle Arcade
+Mô tả: Trò chơi mô phỏng quản lý Military Idle Simulation, người chơi huấn luyện binh lính, nâng cấp các phòng chức năng và dẫn dắt quân đội thực hiện các chiến dịch mở rộng căn cứ.
+Ngày ra mắt: 15/01/2025
+Trạng thái: Removed
+Gameplay: https://www.youtube.com/watch?v=mvxYdsbPtFI
+Vai trò: Game Developer & PM
+Quy mô: 4 người (1 Dev(PM), 2 Artist, 1 Game Designer)
+Công nghệ: Unity, C#, URP, Occlusion culling, Static object, Cinemachine Camera, NavMesh, Object Pooling, Toony Shader, Sprite Atlas
+Thành tựu kỹ thuật: 
+- Thiết kế hệ thống nâng cấp room.
+- Thiết kế các phòng tính năng: huấn luyện, phòng ăn, phòng tập bắn, phòng gym và phòng y tế.
+- Cơ chế xếp hàng và NPC follow character
+- Thiết kế behavior cho NPC support
+Chỉ số: Retention D1: 25%
+Ghi chú: CPI không đạt benchmark.
+Yêu thích: Không
+
+8. Screw Pet 3D: Removal Master
+Thể loại: Puzzle
+Mô tả: Trò chơi giải đố 3D (Physics Puzzle), người chơi thực hiện xoay, tháo gỡ các chốt pin và ốc vít để vượt qua hàng trăm cấp độ thử thách với cơ chế vật lý mô phỏng.
+Ngày ra mắt: 04/03/2025
+Trạng thái: Removed
+Gameplay: https://www.youtube.com/watch?v=SrLupquyQ3c
+Vai trò: Game Developer & PM
+Quy mô: 4 người (1 Dev(PM), 2 Artist, 1 Game Designer)
+Công nghệ: Unity, C#, Raycasting, Unity joints, Toony Shader
+Thành tựu kỹ thuật: 
+- Xây dựng cơ chế xoay và tháo ốc vít 3D
+- Build Support tool cho việc gắn ốc
+- Thêm minigame ở Home
+Chỉ số: Retention D1: 30%
+Ghi chú: CPI không đạt benchmark.
+Yêu thích: Không
+
+9. Perfect Room: Cozy Decor
+Thể loại: Puzzle
+Mô tả: Trò chơi giải đố trang trí phòng phong cách dễ thương (Cozy Decor Puzzle), người chơi sắp xếp đồ nội thất.
+Ngày ra mắt: 28/04/2025
+Trạng thái: Removed
+Gameplay: https://www.youtube.com/shorts/j750Om9jjfQ
+Vai trò: Game Developer & PM
+Quy mô: 4 người (1 Dev(PM), 2 Artist, 1 Game Designer)
+Công nghệ: Unity, C#, Sprite Atlas, DOTween
+Thành tựu kỹ thuật: Tải động hàng trăm đồ nội thất trang trí phòng thông qua Addressables từ CDN, giúp giảm 50% dung lượng file cài đặt APK. Xây dựng giao diện trang trí trực quan, phản hồi tức thời.
+Chỉ số: Retention D1: 25%
+Ghi chú: CPI đạt benchmark, game có tiềm năng phát triển tuy nhiên không đủ nhân sự để tiếp tục phát triển
+Yêu thích: Không
+
+10. AI Fusion: Create Character
+Thể loại: Hyper Casual
+Mô tả: Trò chơi sáng tạo nhân vật bằng công nghệ AI (AI Character Creator), cho phép người chơi kết hợp (merge) hai thực thể bất kỳ như động vật, anh hùng, nhân vật anime hay meme thịnh hành để tạo ra các sinh vật lai độc nhất vô nhị.
+Ngày ra mắt: 23/05/2025
+Trạng thái: Removed
+Gameplay: None
+Vai trò: Game Developer & PM
+Quy mô: 3 người (1 Dev(PM), 1 Artist, 1 Game Designer)
+Công nghệ: Unity, C#, WebRequest, DOTween
+Thành tựu kỹ thuật: 
+Chỉ số: Retention D1: 22%
+Ghi chú: CPI không đạt benchmark.
+Yêu thích: Không
+
+11. Viral AR Soundboard (Removed) - Trending AR Soundboard (Reup)
+Thể loại: Hyper Casual
+Mô tả: Ứng dụng giải trí tương tác thực tế ảo (AR Soundboard) tích hợp camera AR cho phép đưa các nhân vật quái vật meme nhảy múa vào không gian thực tế.
+Ngày ra mắt: 27/05/2025
+Trạng thái: Removed - Reup
+Gameplay: https://www.youtube.com/watch?v=etbhQ2U3Irs
+Vai trò: Game Developer & PM
+Quy mô: 4 người (1 Dev, 2 Artist, 1 Game Designer)
+Công nghệ: Unity, C#, Audio Mixer, Android Plugins, Sprite Atlas, DOTween
+Thành tựu kỹ thuật: 
+- Hệ thống sử dụng Camera device và Record Scene để export ra video mp4
+- Record List với thumbnails
+Chỉ số: Retention D1: 21% | Lượt tải: >1.000.000
+Ghi chú: CPI đạt benchmark và có doanh thu ổn định.
+Yêu thích: Không
+
+12. Merge Drop Master
+Thể loại: Puzzle
+Mô tả: Trò chơi giải đố thả và gộp (Merge Drop Puzzle) mang đậm tính giải trí, người chơi tính toán thả các nhân vật meme và trào lưu thịnh hành (zombie, baby, poppy...) để gộp thành những cấp tiến hóa meme.
+Ngày ra mắt: 13/06/2025
+Trạng thái: Live - https://play.google.com/store/apps/details?gl=US&hl=en-US&id=com.merge.master.drop.fun.viral.fruit.animal.animash
+Gameplay: https://www.youtube.com/watch?v=5961LlfIXT0
+Vai trò: Game Developer & PM
+Quy mô: 3 người (1 Dev, 1 Artist, 1 Game Designer)
+Công nghệ: Unity, C#, 2D Physics, Object Pooling, Sprite Atlas, DOTween, Addressables, Firebase Remote Config, Firebase Database
+Thành tựu kỹ thuật: 
+- Tối ưu hóa cơ chế vật lý va chạm và gộp các loại trái cây/động vật 2D.
+- Tối ưu luồng skin cho game
+- Tối ưu doanh thu bằng Remote Config
+- Thêm Leaderboard, Building và Battle Pass
+- Hiệu ứng combo khi merge
+Chỉ số: Retention D1: 34% | Lượt tải: ~1.800.000+ 
+Ghi chú: CPI đạt benchmark và có doanh thu ổn định. Đây là dự án đi sâu nhất và có nhiều phase phát triển cũng như cải tiến sản phẩm
+Yêu thích: Có
+
+13. Hidden World: Zoom & Spot
+Thể loại: Puzzle
+Mô tả: Trò chơi giải đố tìm đồ vật ẩn (Hidden Object Puzzle), người chơi tận dụng tính năng thu phóng (zoom) để phát hiện các manh mối và đồ vật được ẩn giấu khéo léo trong các bức tranh.
+Ngày ra mắt: 08/07/2025
+Trạng thái: Removed
+Gameplay: None
+Vai trò: Game Developer & PM
+Quy mô: 3 người (1 Dev, 1 Artist, 1 Game Designer)
+Công nghệ: Unity, C#, Sprite Atlas, DOTween, Addressable 
+Thành tựu kỹ thuật: 
+- Tối ưu Canvas UI
+Chỉ số: Retention D1: 26%
+Ghi chú: CPI đạt benchmark, game có tiềm năng phát triển tuy nhiên không đủ nhân sự để tiếp tục phát triển
+Yêu thích: Không
+
+14. Meme Music Fire
+Thể loại: Rhythm
+Mô tả: Trò chơi âm nhạc nhịp điệu (Rhythm Game), nơi người chơi lướt theo nhịp beat bài hát để mở khóa các hiệu ứng âm thanh và hình ảnh chuyển động của các nhân vật meme.
+Ngày ra mắt: 20/10/2025
+Trạng thái: Removed
+Gameplay:
+Vai trò: Game Developer & PM
+Quy mô: 3 người (1 Dev, 1 Artist, 1 Game Designer)
+Công nghệ: Unity, C#, DOTween, Sprite Atlas, Addressable
+Thành tựu kỹ thuật: 
+- Tối ưu hóa nhịp điệu game, đọc và sinh các nốt nhạc theo config
+Chỉ số: Retention D1: 20%
+Ghi chú: CPI đạt benchmark, game có tiềm năng phát triển
+Yêu thích: Không
+
+15. Cute Drop World
+Thể loại: Puzzle
+Mô tả: Trò chơi giải đố thả và gộp (Merge Drop Puzzle) phong cách dễ thương, cho phép người chơi thả và kết hợp các loại trái cây, động vật, đồ uống hay thạch slime mềm mại để tiến hóa thành các dạng lớn hơn.
+Ngày ra mắt: 05/12/2025
+Trạng thái: Live - https://play.google.com/store/apps/details?gl=US&hl=en-US&id=com.cute.drop.world.party.animals.merge.dessert.slime
+Gameplay: https://www.youtube.com/watch?v=hCSm7xkdcS0
+Vai trò: Game Developer & PM
+Quy mô: 3 người (1 Dev, 1 Artist, 1 Game Designer)
+Công nghệ: Unity, C#, 2D Physics, Object Pooling, Sprite Atlas, DOTween, Addressables, Firebase Remote Config, Firebase Database
+Thành tựu kỹ thuật: 
+- Thêm cơ chế thay đổi màn chơi, Combo khi merge.
+Chỉ số: Retention D1: 28%
+Ghi chú: CPI đạt benchmark, game có tiềm năng phát triển
+Yêu thích: Không
+
+16. JigMaster: Photo Match
+Thể loại: Puzzle
+Mô tả: Trò chơi giải đố ghép hình (Jigsaw Puzzle), kết hợp lối chơi vuốt thả để sắp xếp các mảnh ghép bức ảnh khớp nối (snap) hoàn hảo với nhau theo nhiều chủ đề phong cảnh, động vật đa dạng.
+Ngày ra mắt: 05/01/2026
+Trạng thái: Live - https://play.google.com/store/apps/details?gl=US&hl=en-US&id=com.jig.master.photo.match.puzzle.jigsaw
+Gameplay: https://www.youtube.com/watch?v=Dl1OO2MGWaM
+Vai trò: Game Developer & PM
+Quy mô: 3 người (1 Dev, 1 Artist, 1 Game Designer)
+Công nghệ: Unity, C#, DOTween, Sprite Atlas, Addressable
+Thành tựu kỹ thuật:
+- Viết thuật toán tự động chia nhỏ bất kỳ bức ảnh nào thành các mảnh ghép puzzle 2D 
+- Tính toán spline cho các cạnh của miếng ghép
+- Tối ưu hoá logic cho 60FPS
+- Quản lý tải ảnh từ máy chủ thông qua Addressables
+Chỉ số: Retention D1: 40%
+Ghi chú: CPI rẻ hơn benchmark, game có tiềm năng phát triển
+Yêu thích: Không
+
+17. JigCharm : HD Beauty
+Thể loại: Puzzle
+Mô tả: Trò chơi giải đố ghép hình, kết hợp lối chơi kéo thả mượt mà để hoàn thành và mở khóa các bức ảnh nghệ thuật quyến rũ cùng hệ thống sưu tầm thẻ hình hấp dẫn.
+Ngày ra mắt: 02/04/2026
+Trạng thái: Live - https://play.google.com/store/apps/details?gl=US&hl=en-US&id=jigcharm.hd.beauty.hot.puzzle
+Gameplay: None
+Vai trò: Game Developer & PM
+Quy mô: 3 người (1 Dev, 1 Artist, 1 Designer)
+Công nghệ: Unity, C#, Addressables, Texture Compression ASTC, Memory Management
+Thành tựu kỹ thuật: 
+- Thêm media player để thay đổi Music Background cho game
+- Thêm Album có thể tải ảnh về máy
+Chỉ số: Retention D1: 25%
+Ghi chú: CPI rẻ hơn benchmark, game có tiềm năng phát triển
+Yêu thích: Không
+
+18. My Talking Zoo
+Thể loại: Idle Arcade
+Mô tả: Trò chơi tương tác âm thanh (Voice Interaction Game), người chơi thực hiện ghi âm giọng nói của mình để lồng tiếng cho các sinh vật meme, mở rộng quy mô sở thú độc đáo của riêng mình.
+Ngày ra mắt: 04/05/2026
+Trạng thái: Live - https://play.google.com/store/apps/details?gl=US&hl=en-US&id=my.talking.zoo.meme.sound
+Gameplay: None
+Vai trò: Game Developer & PM
+Quy mô: 3 người (1 Dev, 1 Artist, 1 Designer)
+Công nghệ: Unity, C#, DOTween, Audio Mixer
+Thành tựu kỹ thuật: 
+- Logic Gacha ra Animal theo map.
+- Logic mua/bán và income từ animal.
+- Tạo logic record sound và gán cho 1 Animal.
+Chỉ số: Retention D1: 18%
+Ghi chú: CPI không đạt benchmark
+Yêu thích: Không
+
+19. Maze Dash Escape
+Thể loại: Puzzle
+Mô tả: Trò chơi hành động phản xạ mê cung tốc độ cao (Fast-paced Arcade Action), người chơi thực hiện các thao tác vuốt để di chuyển chớp nhoáng (dash) giữa các bức tường, né tránh chướng ngại vật nguy hiểm để tìm lối thoát.
+Ngày ra mắt: 26/05/2026
+Trạng thái: Live - https://play.google.com/store/apps/details?gl=US&hl=en-US&id=com.maze.dash.escape.challenge
+Gameplay: None
+Vai trò: Game Developer & PM
+Quy mô: 3 người (1 Dev, 1 Artist, 1 Designer)
+Công nghệ: Unity, C#, LeanTouch, DOTween
+Thành tựu kỹ thuật: 
+- Thiết kế tool xếp map dựa trên Tilemap, cho phép nhiều cơ chế xếp map (Bằng prefab hoặc Position)
+- Thêm hệ thống skin nhân vật.
+Chỉ số: Retention D1: 17%
+Ghi chú: CPI không đạt benchmark
+Yêu thích: Không

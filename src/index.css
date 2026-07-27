@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  
+  --color-bg-dark: #07080b;
+  --color-card-dark: #0f111a;
+  --color-border-dark: #1e2230;
+  --color-accent-green: #00ff66;
+  --color-accent-orange: #ff6600;
+  --color-text-primary: #f3f4f6;
+  --color-text-secondary: #9ca3af;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-bg-dark);
+    color: var(--color-text-primary);
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+  }
+
+  /* Custom Scrollbar for HUD Tech feel */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #07080b;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #1e2230;
+    border-radius: 0px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-accent-green);
+  }
+}
+
+/* Background scanlines grid effect for HUD style */
+.hud-grid {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(30, 34, 48, 0.2) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(30, 34, 48, 0.2) 1px, transparent 1px);
+}
+
+.hud-scanlines {
+  position: relative;
+}
+.hud-scanlines::before {
+  content: " ";
+  display: block;
+  position: fixed;
+  top: 0; left: 0; bottom: 0; right: 0;
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.15) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.03), rgba(0, 255, 0, 0.01), rgba(0, 0, 255, 0.03));
+  z-index: -1;
+  background-size: 100% 4px, 6px 100%;
+  pointer-events: none;
+  opacity: 0.4;
+}
+
+/* Glow effects */
+.glow-green {
+  text-shadow: 0 0 10px rgba(0, 255, 102, 0.5);
+}
+.glow-orange {
+  text-shadow: 0 0 10px rgba(255, 102, 0, 0.5);
+}
+
+.border-glow-green {
+  box-shadow: 0 0 15px rgba(0, 255, 102, 0.15);
+  border: 1px solid rgba(0, 255, 102, 0.3);
+}
+
+.border-glow-orange {
+  box-shadow: 0 0 15px rgba(255, 102, 0, 0.15);
+  border: 1px solid rgba(255, 102, 0, 0.3);
+}
+
+/* Tech corners deco */
+.tech-corner-container {
+  position: relative;
+}
+
+.tech-corner-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  border-top: 2px solid var(--color-accent-green);
+  border-left: 2px solid var(--color-accent-green);
+}
+
+.tech-corner-container::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 8px;
+  height: 8px;
+  border-bottom: 2px solid var(--color-accent-green);
+  border-right: 2px solid var(--color-accent-green);
+}
