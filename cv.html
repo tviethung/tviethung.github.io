@@ -28,11 +28,14 @@
     }
 
     body {
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-family: 'Arial', 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
       color: var(--text-dark);
       background-color: #f1f5f9;
       line-height: 1.48;
       font-size: 13px;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      text-rendering: optimizeLegibility;
       -webkit-print-color-adjust: exact;
       print-color-adjust: exact;
     }
@@ -295,9 +298,17 @@
         margin: 10mm 12mm;
       }
 
+      * {
+        -webkit-font-smoothing: antialiased !important;
+        -moz-osx-font-smoothing: grayscale !important;
+        text-rendering: geometricPrecision !important;
+      }
+
       body {
         background: #ffffff;
+        font-family: 'Segoe UI', 'Arial', -apple-system, sans-serif !important;
         font-size: 12px;
+        color: #1e293b;
       }
 
       .no-print-bar {
