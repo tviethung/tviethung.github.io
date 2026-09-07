@@ -1,66 +1,68 @@
 {
   "personalInfo": {
     "fullName": "Tạ Việt Hùng",
-    "title": "Senior Unity Mobile Developer",
+    "title": "Senior Unity Developer",
     "location": "Ha Noi, Vietnam",
     "email": "tviethung20@gmail.com",
+    "phone": "0398962424",
     "gitlab": "https://gitlab.com/tviethung20",
-    "linkedin": "https://linkedin.com/in/username",
-    "telegram": "https://t.me/chemandercn4",
-    "summary": "Senior Unity Mobile Developer với hơn 6 năm kinh nghiệm thiết kế, tối ưu hóa và phát hành 20+ sản phẩm game di động (đạt mốc hàng triệu lượt tải trên Android/iOS). Xây dựng custom tools giúp tối đa hóa năng suất cho đội ngũ PO, Game Design, Marketing. Có khả năng đọc hiểu, phân tích, đề xuất cải thiện chỉ số game dựa trên Firebase. Yêu thích làm game và mong muốn sản xuất ra được những tựa game hấp dẫn được nhiều người chơi."
+    "summary": "Senior Unity Developer với 10+ năm kinh nghiệm Software Engineering và 6+ năm phát triển Unity Mobile Games. Đã phát hành 19+ sản phẩm trên Android với các tựa game đạt hàng triệu lượt tải. Làm chủ kiến trúc game trên C# (OOP, Design Patterns, Event-Driven), tối ưu hóa hiệu năng 60 FPS trên Low-End devices, xây dựng Custom Editor Tools và Addressables pipeline. Kết hợp tư duy kỹ thuật vững chắc với phân tích dữ liệu sản phẩm để tối ưu gameplay loop."
   },
   "telemetry": {
     "stats": [
       {
-        "name": "UNITY ENGINE",
+        "name": "UNITY & C# ARCHITECTURE",
         "value": "6+ YEARS",
-        "progress": 100
+        "progress": 95
       },
       {
-        "name": "OPTIMIZATION",
-        "value": "4+ YEARS",
-        "progress": 70
+        "name": "MOBILE OPTIMIZATION (60 FPS)",
+        "value": "6+ YEARS",
+        "progress": 90
       },
       {
-        "name": "ARCHITECTURE (C#)",
-        "value": "5+ YEARS",
-        "progress": 80
-      },
-      {
-        "name": "LEADERSHIP & PM",
+        "name": "CUSTOM TOOLS & PIPELINES",
         "value": "3+ YEARS",
-        "progress": 60
+        "progress": 85
+      },
+      {
+        "name": "SOFTWARE ENGINEERING",
+        "value": "10+ YEARS",
+        "progress": 100
       }
     ],
     "projectCount": "19",
-    "latestPlatform": "ANDROID",
-    "memoryStatus": "NOMINAL // ZERO GC"
+    "latestPlatform": "ANDROID / CROSS-PLATFORM",
+    "memoryStatus": "OPTIMIZED // ZERO GC"
   },
   "skills": {
     "languages": [
-      "C# (6+ Years)",
-      "Java / Android (3+ Years)",
-      "SQL / Firebase DB (2+ Years)"
+      "C# (.NET / Unity Scripting - 6+ Years)",
+      "Java / Android Native (3+ Years)",
+      "C / C++ (Core Principles)",
+      "SQL / Firebase Realtime DB"
     ],
     "enginesAndFrameworks": [
-      "Unity Engine (2D/3D, URP, Physics)",
-      "DOTween (Pro) / Addressables / CDN",
-      "Firebase (Remote Config, Analytics, DB)",
-      "Object Pooling / Occlusion Culling",
-      "Custom Level Editor & Tooling",
-      "UniTask / EventBus",
-      "SmartFoxServer (Java Game Server)"
+      "Unity Engine (2D/3D, URP, Physics 2D/3D)",
+      "C# Clean Architecture (EventBus, UniTask, ScriptableObject)",
+      "DOTween Pro / Cinemachine / NavMesh",
+      "Addressables / CDN Asset Management",
+      "Object Pooling / GPU Instancing / Occlusion Culling",
+      "Custom Unity Editor Tools & Level Design Tooling",
+      "Firebase (Remote Config, Analytics, Crashlytics)",
+      "Mobile Monetization (AdMob, AppLovin MAX, Unity IAP)"
     ],
     "platforms": [
-      "Android (Google Play / APK / AAB)",
-      "WebGL (Web Desktop / Mobile)"
+      "Android (Google Play / Gradle / AAB)",
+      "Cross-Platform Mobile (Android & iOS Architecture)",
+      "WebGL (Browser Deployment)"
     ],
     "expertises": [
-      "Tối ưu hiệu năng 60 FPS (Low-end Devices, RAM/CPU, Draw Calls, GC, ASTC)",
-      "Rapid Prototyping (1-2 tuần) & Đánh giá tiềm năng qua CPI, Retention D1",
-      "Data-Driven Iteration (Phân tích Firebase data, phối hợp cùng PO & Art tối ưu gameplay)",
-      "Tích hợp SDK (AdMob, AppLovin MAX, Unity IAP, Firebase)",
-      "Lead Dev & PM (Quản lý tiến độ, quy trình sản xuất 19+ dự án game mobile)"
+      "Tối ưu hiệu năng 60 FPS (Low-end Devices, RAM/CPU profiling, Draw Calls, GC Allocations, ASTC)",
+      "Thiết kế Custom Editor Tools & Level Editors tăng tốc độ sản xuất nội dung cho Designer & Artist",
+      "Lập trình Core Gameplay, tương tác vật lý 2D/3D và cơ chế Puzzle / Arcade",
+      "Phát triển Internal Analytics Tools (GA4 & Firebase Cohort LTV, IAP/Ads LTV, Retention D0-D60, Timeplay per User)",
+      "Data-Driven Optimization (A/B testing gameplay qua Firebase Remote Config, tối ưu Retention D1/D7)"
     ]
   },
   "projects": [
@@ -68,7 +70,7 @@
       "id": "drop-clash",
       "title": "Drop Clash",
       "description": "Game giải đố vật lý di động hỗ trợ tương tác thời gian thực. Được xây dựng dựa trên mô hình Service-Oriented MVC.",
-      "role": "Lead Client Programmer",
+      "role": "Senior Gameplay Programmer",
       "technologies": [
         "Unity",
         "C#",
@@ -77,11 +79,9 @@
         "Odin Inspector"
       ],
       "platforms": [
-        "Android",
-        "iOS",
-        "TikTok MiniGame"
+        "Android"
       ],
-      "metrics": "Đạt 60 FPS ổn định trên thiết bị RAM 2GB; giảm 35% mức tiêu thụ pin nhờ tối ưu vòng lặp Update và giảm thiểu GC Allocations.",
+      "metrics": "Đạt 60 FPS ổn định trên thiết bị RAM 2GB. Giảm 35% mức tiêu thụ pin nhờ tối ưu vòng lặp Update và giảm thiểu GC Allocations.",
       "demoLink": "https://play.google.com/store",
       "sourceLink": "https://github.com",
       "imageUrl": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=600&q=80"
@@ -99,8 +99,7 @@
         "DOTween"
       ],
       "platforms": [
-        "Android",
-        "iOS"
+        "Android"
       ],
       "metrics": "Tối ưu hóa dung lượng tải ban đầu từ 180MB xuống còn 75MB bằng cách tách tài nguyên động qua hệ thống Addressables.",
       "demoLink": "https://apps.apple.com",
@@ -128,19 +127,17 @@
   ],
   "experience": [
     {
-      "company": "One Percent Studio (Hanoi)",
-      "role": "Lead Developer & PM",
-      "period": "Oct 2022 - Jun 2026",
+      "company": "One Percent Studio (VGP) (Hanoi)",
+      "role": "Senior Unity Developer",
+      "period": "Oct 2022 - Jul 2026",
       "bulletPoints": [
-        "Phát triển và phát hành thành công chuỗi 19+ game di động trên các nền tảng Android, iOS và TikTok MiniGame. Tiêu biểu gồm: Merge Drop Master (đạt gần 2M lượt tải) và My Pool Club (đạt hơn 300K lượt tải).",
-        "Phụ trách quản trị dự án kiêm lập trình viên chính (Lead Developer & PM), tối ưu hóa luồng làm việc giữa đội ngũ lập trình, nghệ thuật (Art) và thiết kế game (Game Design).",
-        "Tối ưu hiệu năng game (profiling, tối ưu bộ nhớ RAM/CPU, giảm draw calls) giúp game chạy mượt mà trên thiết bị phân khúc thấp.",
-        "Xây dựng các hệ thống Editor custom tiện ích giúp đẩy nhanh tiến độ làm việc cho studio.",
-        "Hỗ trợ đưa ra các quyết định thay đổi game dựa trên các số liệu phân tích từ Firebase.",
-        "Làm việc sát sao với PO và Art để đưa ra quyết định về thay đổi design, gameplay, art style, ... để tối ưu sản phẩm.",
-        "Phát triển prototype nhanh (từ 1-2 tuần) cho các ý tưởng game mới. Đánh giá tiềm năng dựa trên CPI và Retention.",
-        "Tham gia họp đề xuất các thay đổi về game để tối ưu sản phẩm based trên data và creative.",
-        "Chịu trách nhiệm chính trong việc phát triển các tính năng mới, đảm bảo chất lượng và tiến độ dự án."
+        "Phát triển và phát hành thành công chuỗi 19+ game di động trên nền tảng Android. Tiêu biểu gồm: Merge Drop Master (~1.8M lượt tải), Trending AR Soundboard (>2M lượt tải) và My Pool Club (>200K lượt tải).",
+        "Chịu trách nhiệm thiết kế kiến trúc hệ thống (Unity / C#), xây dựng Core Gameplay loop và các cơ chế tương tác vật lý phức tạp (Physics 2D/3D, Drag & Drop, Merge mechanics).",
+        "Đảm nhiệm tối ưu hóa hiệu năng (Deep Mobile Optimization): Profiling RAM/CPU, giảm Draw Calls bằng Sprite Atlas/GPU Instancing, tối ưu bộ nhớ với ASTC compression và Object Pooling, đảm bảo game vận hành ổn định 60 FPS trên thiết bị phân khúc thấp (Low-End Devices).",
+        "Thiết kế và phát triển các hệ thống Custom Editor Tools (Level Editor, Level Config Generator), hỗ trợ đội ngũ Game Design và Art tạo nội dung nhanh chóng.",
+        "Xây dựng hệ thống công cụ phân tích dữ liệu nội bộ (GA4 & Firebase LTV Cohort Dashboard): Tự động hóa bóc tách và trực quan hóa các chỉ số vận hành quan trọng (Total LTV, IAP LTV, Ads LTV, Cohort Retention D0-D60, % LTV Growth và Average Timeplay) theo từng Quốc gia và Version, hỗ trợ PO và đội ngũ UA tối ưu hóa chiến dịch Marketing và gameplay loop.",
+        "Xây dựng hệ thống Data Structure, Config động và Event-driven architecture, tích hợp Firebase Remote Config để A/B test gameplay và tối ưu hóa doanh thu (IAP & Ads Mediation với AdMob, AppLovin MAX).",
+        "Trực tiếp phát triển Rapid Prototyping cho các ý tưởng game mới, phối hợp chặt chẽ cùng PO, Art và GD để đưa ra các giải pháp kỹ thuật tối ưu dựa trên data thực tế."
       ]
     },
     {
@@ -148,56 +145,48 @@
       "role": "Game Developer",
       "period": "Jun 2022 - Oct 2022",
       "bulletPoints": [
-        "Phát triển hoàn thiện 3 dự án game Puzzle trên nền tảng Unity: 1 game Hyper Casual, 1 game Tower Hero và 1 game giải đố Logic (Logic game).",
-        "Chịu trách nhiệm lập trình cơ chế gameplay chính, thiết kế kiến trúc hệ thống và tích hợp UI chuyển động mượt mà."
+        "Phát triển hoàn thiện 3 dự án game trên nền tảng Unity: 1 game Hyper Casual, 1 game Tower Hero và 1 game giải đố Logic (Logic game).",
+        "Lập trình core gameplay và cơ chế chiến đấu: Logic thay đổi và nâng cấp tháp, hệ thống Equipment cho Hero (tấn công tầm xa / cận chiến), cơ chế Boss Fight và điều khiển Animation nhân vật mượt mà.",
+        "Xây dựng hệ thống Level Config động và tích hợp các SDKs của bên thứ ba phục vụ tracking hành vi người chơi và Monetization (Ads Mediation / IAP)."
       ]
     },
     {
       "company": "Freelancer",
-      "role": "Game Server Developer",
-      "period": "Jul 2021 - May 2022",
+      "role": "Game Developer (Client & Server)",
+      "period": "Aug 2021 - May 2022",
       "bulletPoints": [
-        "Phát triển hệ thống máy chủ (Game Server Developer) trong đội ngũ 5 người cho các dự án game NFT thể loại Farm (nông trại), Tower Defense (tháp phòng thủ) và Battle War (chiến thuật).",
-        "Trực tiếp lập trình các tính năng game phía server: Chỉ số anh hùng (Hero Attribution), Trang bị anh hùng (Hero Equipment), Hệ thống tiền tệ (Currency), Ghép trận PvP với Bot (PvP Matching), Hệ thống Gacha Pooling (tạo Hero mới) và Nâng cấp anh hùng (Upgrade Hero).",
-        "Thiết kế cơ sở dữ liệu và xử lý đồng bộ hóa dữ liệu thời gian thực giữa client và server bảo mật (Tech stack: SmartFoxServer (Java) cho server và Unity (Web/Android) cho client)."
+        "Phát triển game đa nền tảng (Client & Server) trong đội ngũ 5 người cho các dự án game thể loại Farm (nông trại), Tower Defense (tháp phòng thủ) và Battle War (chiến thuật).",
+        "Lập trình Unity Client: Xây dựng core gameplay loop, hệ thống inventory, giao diện UI/UX và cơ chế điều khiển nhân vật/tháp mượt mà.",
+        "Lập trình Game Server: Chỉ số anh hùng (Hero Attribution), Trang bị anh hùng (Hero Equipment), Hệ thống tiền tệ (Currency), Ghép trận PvP với Bot (PvP Matching), Hệ thống Gacha Pooling (tạo Hero mới) và Nâng cấp anh hùng (Upgrade Hero).",
+        "Thiết kế cơ sở dữ liệu và xử lý đồng bộ hóa dữ liệu thời gian thực giữa client và server bảo mật (Tech stack: Unity C# cho client và SmartFoxServer Java cho server)."
       ]
     },
     {
       "company": "Apero (Hanoi)",
       "role": "Game Developer",
-      "period": "May 2021 - Jul 2021",
+      "period": "May 2021 - Aug 2021",
       "bulletPoints": [
-        "Tham gia phát triển dự án game Tower Defense (tiền thân của tựa game NFT Rise of Defenders).",
+        "Tham gia phát triển dự án game Tower Defense (tiền thân của tựa game Rise of Defenders).",
         "Chịu trách nhiệm chính thiết lập và triển khai các hệ thống cốt lõi: Chỉ số anh hùng (Hero Attribution), Lập trình xây tháp (Building Tower System), Hệ thống túi đồ (Inventory), Chế tạo (Craft) và Nâng cấp vật phẩm (Upgrade Item)."
       ]
     },
     {
       "company": "TTC-Solutions (Hanoi)",
-      "role": "Full-Stack Developer",
+      "role": "Unity Client & Full-Stack Developer",
       "period": "Dec 2019 - May 2021",
       "bulletPoints": [
+        "Lập trình Unity Client cho game Corona Virus (Hàn Quốc): Phát triển các tính năng gameplay, thêm obstacles cho màn chơi, thu thập và nâng cấp medal, hệ thống inventory và Mission Objective cho từng level.",
+        "Lập trình Unity Client cho game Poker: Ghép UI/UX cho các màn hình và gameplay, xử lý đồng bộ dữ liệu thời gian thực (data synchronization) từ server tương thích với thiết kế trên Figma.",
         "Quản lý CMS của game application: Registered users, Cashout, Recharge, Campaign Marketing, Giftcode. Duy trì hệ thống hiện tại và phát triển các tính năng mới (Tech stack: Spring Boot, Angular, Docker).",
-        "Phát triển dịch vụ OTP: Kiểm tra trạng thái của SIM card, gửi tin nhắn tùy chỉnh và OTP (Tech stack: Spring Boot, Angular).",
-        "Phát triển dịch vụ tracking: Theo dõi (tracking) hiệu quả của các chiến dịch marketing (Tech stack: Golang, Docker).",
-        "Outsourcing game Corona Virus (Hàn Quốc): Phát triển các tính năng bao gồm thêm obstacles cho màn chơi, thu thập và nâng cấp medal, hệ thống inventory, và Mission Objective cho từng level.",
-        "Outsourcing game Poker: Ghép UI/UX cho các màn hình và gameplay, xử lý đồng bộ dữ liệu (data synchronization) từ server tương thích với thiết kế trên [Figma](https://www.figma.com/design/RoMGNq5hbl0Ek0u1ztnC4e/Bond_Poker-App_2020)."
-      ]
-    },
-    {
-      "company": "Freelancer (Hanoi)",
-      "role": "Android Developer",
-      "period": "Apr 2019 - Nov 2019",
-      "bulletPoints": [
-        "Phát triển ứng dụng Android.",
-        "Phát triển ứng dụng StoryReader (https://github.com/chemander/StoryReader) - ứng dụng đọc truyện hỗ trợ các tính năng read, bookmark, download, thay đổi font, color, text size (Tech stack: Retrofit 2, Room, Android Paging, LiveData, Data Binding, ViewModel)."
+        "Phát triển dịch vụ OTP & Marketing Tracking: Kiểm tra trạng thái của SIM card, gửi tin nhắn tùy chỉnh, OTP và tracking hiệu quả chiến dịch marketing (Tech stack: Spring Boot, Golang, Docker)."
       ]
     },
     {
       "company": "Samsung Vietnam Mobile R&D Center (SVMC)",
       "role": "Senior Engineer / Engineer III",
-      "period": "Jan 2015 - Mar 2019",
+      "period": "Jan 2015 - Apr 2019",
       "bulletPoints": [
-        "Hợp tác cùng đội ngũ 6 kỹ sư phần mềm để phân tích và xây dựng kịch bản cho Samsung Internal Development Library (dựa trên Android system APIs) với 1000+ APIs và 5000+ Testcases sử dụng AndroidTestCase (Thời gian dự án: 2 năm). Phụ trách UI/UX (Touchwiz), Camera, Pedometer APIs, SMS; tối ưu hóa và giảm thời gian thực thi của Test Suite.",
+        "Hợp tác cùng đội ngũ 6 kỹ sư phần mềm để phân tích và xây dựng kịch bản cho Samsung Internal Development Library (dựa trên Android system APIs) với 1000+ APIs và 5000+ Testcases sử dụng AndroidTestCase (Thời gian dự án: 2 năm). Phụ trách UI/UX (Touchwiz), Camera, Pedometer APIs, SMS, tối ưu hóa và giảm thời gian thực thi của Test Suite.",
         "Phát triển công cụ BFT (Basic Functional Test Suite): test 100+ functions cho các ứng dụng cài sẵn (preload) của Samsung (My Files, Call, Messenger, Notification bar, Contacts...), tự động flash binary cho thiết bị, tự động setup preconditions và run Test Suite (Tech stack: Java, UIAutomator).",
         "Testing API của web service.",
         "Phát triển công cụ Trade Federation (Tradefed - dùng để chạy Compatibility Test Suite (CTS) và Vendor Test Suite (VTS)) tùy chỉnh riêng cho các Samsung APIs (Tech stack: Java).",
@@ -229,7 +218,7 @@
       "status": "Removed",
       "storeLink": null,
       "gameplay": "https://www.youtube.com/watch?v=Tn0SvI_TKbE",
-      "icon": "/icons/1.crafter_legends.png",
+      "icon": "./icons/1.crafter_legends.png",
       "role": "Lead Developer",
       "teamSize": "4 người (2 Dev, 1 Artist, 1 Game Designer (PO))",
       "technologies": [
@@ -242,7 +231,7 @@
         "UIEffect"
       ],
       "achievements": "- Hệ thống tìm đường\n- Hệ thống merge nâng cấp\n- Hệ thống generate map\n- Hệ thống battle phá huỷ từng phần enemy",
-      "metrics": "Retention D1: 24%",
+      "metrics": "",
       "note": "Dự án 3D Voxel đầu tay đặt nền móng kiến trúc hệ thống cho chuỗi game Idle Tycoon.",
       "isFavorite": true
     },
@@ -255,7 +244,7 @@
       "status": "Removed",
       "storeLink": null,
       "gameplay": null,
-      "icon": "/icons/2.Rumble Miners Idle Craft Merge.png",
+      "icon": "./icons/2.Rumble Miners Idle Craft Merge.png",
       "role": "Lead Developer",
       "teamSize": "5 người (2 Dev, 2 Artist, 1 Game Designer (PO))",
       "technologies": [
@@ -268,7 +257,7 @@
         "UIEffect"
       ],
       "achievements": "- Thiết kế hệ thống income, offline income\n- Tích hợp Object Pooling.\n- Hệ thống nâng cấp thẻ bài.\n- Hệ thống nâng cấp building",
-      "metrics": "Retention D1: 30%",
+      "metrics": "",
       "note": "",
       "isFavorite": false
     },
@@ -281,7 +270,7 @@
       "status": "Removed",
       "storeLink": null,
       "gameplay": "https://www.youtube.com/watch?v=OyfPFI4eEqY",
-      "icon": "/icons/3.Brave Miner Build & Fight.png",
+      "icon": "./icons/3.Brave Miner Build & Fight.png",
       "role": "Lead Developer",
       "teamSize": "6 người (2 Dev, 3 Artist, 1 Game Designer (PO))",
       "technologies": [
@@ -294,7 +283,7 @@
         "UIEffect"
       ],
       "achievements": "- Thêm hệ thống Battle với Skill cho từng hero, kết hợp với hệ thống thu thập thẻ bài để nâng cấp hero\n- Xây dựng công trình phụ trợ với tác dụng tăng passive cho income, miner, hero.\n- Hệ thống Achievement\n- Thêm Live-ops event",
-      "metrics": "Retention D1: 30%",
+      "metrics": "",
       "note": "Game có hệ thống đầy đủ từ Gameplay, Battle, Building, Event và được nâng cấp hình ảnh tốt hơn",
       "isFavorite": true
     },
@@ -307,7 +296,7 @@
       "status": "Removed",
       "storeLink": null,
       "gameplay": "https://www.youtube.com/watch?v=SmdquDqhTKQ",
-      "icon": "/icons/4.My Pool Club Tycoon Game.png",
+      "icon": "./icons/4.My Pool Club Tycoon Game.png",
       "role": "Lead Developer",
       "teamSize": "5 người (2 Dev, 3 Artist, 1 Game Designer (PO))",
       "technologies": [
@@ -324,7 +313,7 @@
         "Sprite Atlas"
       ],
       "achievements": "- Xây dựng nền tảng tương tác của Character với môi trường\n- Hệ thống điều khiển camera\n- Nâng cấp công trình\n- Hệ thống NPC tự động thực hiện task\n- Hệ thống mở rộng map\n- Hệ thống Verhicle",
-      "metrics": "Retention D1: 33% | Lượt tải: 200.000+",
+      "metrics": "Lượt tải: 200.000+",
       "note": "Tựa game Idle Arcade thành công nhất về chỉ số giữ chân người dùng.",
       "isFavorite": true
     },
@@ -337,7 +326,7 @@
       "status": "Removed",
       "storeLink": null,
       "gameplay": "https://www.youtube.com/watch?v=Wkwh0-yiZ5c",
-      "icon": "/icons/5.My Z Base.png",
+      "icon": "./icons/5.My Z Base.png",
       "role": "Game Developer",
       "teamSize": "4 người (1 Dev, 2 Artist, 1 Game Designer (PO))",
       "technologies": [
@@ -352,7 +341,7 @@
         "Sprite Atlas"
       ],
       "achievements": "- Xây dựng hệ thống quản lý zombie tấn công căn cứ.\n- Hệ thống nâng cấp vũ khí và zombie\n- Tối ưu Particle",
-      "metrics": "Retention D1: 32%",
+      "metrics": "",
       "note": "Có gameplay thú vị và gặp nhiều vấn đề về tối ưu nhất vì số lượng zombie và particle đạn cho từng loại súng.",
       "isFavorite": true
     },
@@ -365,7 +354,7 @@
       "status": "Removed",
       "storeLink": null,
       "gameplay": "https://www.youtube.com/watch?v=hqrIkg_Yo0k",
-      "icon": "/icons/6.Animals inn simulator game.png",
+      "icon": "./icons/6.Animals inn simulator game.png",
       "role": "Game Developer",
       "teamSize": "4 người (1 Dev, 2 Artist, 1 Game Designer (PO))",
       "technologies": [
@@ -381,7 +370,7 @@
         "Sprite Atlas"
       ],
       "achievements": "- Hệ thống quản lý, nâng cấp pet\n- Hệ thống Pet battle\n- Thêm Battle Pass\n- Minigame",
-      "metrics": "Retention D1: 27%",
+      "metrics": "",
       "note": "CPI đạt benchmark. Game có tiềm năng phát triển.",
       "isFavorite": false
     },
@@ -394,7 +383,7 @@
       "status": "Removed",
       "storeLink": null,
       "gameplay": "https://www.youtube.com/watch?v=mvxYdsbPtFI",
-      "icon": "/icons/7.Military life Idle game.png",
+      "icon": "./icons/7.Military life Idle game.png",
       "role": "Game Developer & PM",
       "teamSize": "4 người (1 Dev(PM), 2 Artist, 1 Game Designer)",
       "technologies": [
@@ -410,7 +399,7 @@
         "Sprite Atlas"
       ],
       "achievements": "- Thiết kế hệ thống nâng cấp room.\n- Thiết kế các phòng tính năng: huấn luyện, phòng ăn, phòng tập bắn, phòng gym và phòng y tế.\n- Cơ chế xếp hàng và NPC follow character\n- Thiết kế behavior cho NPC support",
-      "metrics": "Retention D1: 25%",
+      "metrics": "",
       "note": "CPI không đạt benchmark.",
       "isFavorite": false
     },
@@ -423,7 +412,7 @@
       "status": "Removed",
       "storeLink": null,
       "gameplay": "https://www.youtube.com/watch?v=SrLupquyQ3c",
-      "icon": "/icons/8.Screw Pet 3D Removal Master.png",
+      "icon": "./icons/8.Screw Pet 3D Removal Master.png",
       "role": "Game Developer & PM",
       "teamSize": "4 người (1 Dev(PM), 2 Artist, 1 Game Designer)",
       "technologies": [
@@ -434,7 +423,7 @@
         "Toony Shader"
       ],
       "achievements": "- Xây dựng cơ chế xoay và tháo ốc vít 3D\n- Build Support tool cho việc gắn ốc\n- Thêm minigame ở Home",
-      "metrics": "Retention D1: 30%",
+      "metrics": "",
       "note": "CPI không đạt benchmark.",
       "isFavorite": false
     },
@@ -447,7 +436,7 @@
       "status": "Removed",
       "storeLink": null,
       "gameplay": "https://www.youtube.com/shorts/j750Om9jjfQ",
-      "icon": "/icons/9.Perfect Room Cozy Decor.png",
+      "icon": "./icons/9.Perfect Room Cozy Decor.png",
       "role": "Game Developer & PM",
       "teamSize": "4 người (1 Dev(PM), 2 Artist, 1 Game Designer)",
       "technologies": [
@@ -457,7 +446,7 @@
         "DOTween"
       ],
       "achievements": "Tải động hàng trăm đồ nội thất trang trí phòng thông qua Addressables từ CDN, giúp giảm 50% dung lượng file cài đặt APK. Xây dựng giao diện trang trí trực quan, phản hồi tức thời.",
-      "metrics": "Retention D1: 25%",
+      "metrics": "",
       "note": "CPI đạt benchmark, game có tiềm năng phát triển tuy nhiên không đủ nhân sự để tiếp tục phát triển",
       "isFavorite": false
     },
@@ -470,7 +459,7 @@
       "status": "Removed",
       "storeLink": null,
       "gameplay": null,
-      "icon": "/icons/10.AI Fusion Create Character.png",
+      "icon": "./icons/10.AI Fusion Create Character.png",
       "role": "Game Developer & PM",
       "teamSize": "3 người (1 Dev(PM), 1 Artist, 1 Game Designer)",
       "technologies": [
@@ -480,20 +469,20 @@
         "DOTween"
       ],
       "achievements": "",
-      "metrics": "Retention D1: 22%",
+      "metrics": "",
       "note": "CPI không đạt benchmark.",
       "isFavorite": false
     },
     {
       "id": 11,
-      "title": "Viral AR Soundboard (Removed) - Trending AR Soundboard (Reup)",
+      "title": "Trending AR Soundboard",
       "genre": "Hyper Casual",
       "description": "Ứng dụng giải trí tương tác thực tế ảo (AR Soundboard) tích hợp camera AR cho phép đưa các nhân vật quái vật meme nhảy múa vào không gian thực tế.",
       "releaseDate": "27/05/2025",
-      "status": "Removed - Reup",
-      "storeLink": null,
+      "status": "Live",
+      "storeLink": "https://play.google.com/store/apps/details?id=casual.soundboard.ar.trending&hl=vi",
       "gameplay": "https://www.youtube.com/watch?v=etbhQ2U3Irs",
-      "icon": "/icons/11. Viral AR Soundboard.png",
+      "icon": "./icons/11. Viral AR Soundboard.png",
       "role": "Game Developer & PM",
       "teamSize": "4 người (1 Dev, 2 Artist, 1 Game Designer)",
       "technologies": [
@@ -505,7 +494,7 @@
         "DOTween"
       ],
       "achievements": "- Hệ thống sử dụng Camera device và Record Scene để export ra video mp4\n- Record List với thumbnails",
-      "metrics": "Retention D1: 21% | Lượt tải: >1.000.000",
+      "metrics": "Lượt tải: >2.000.000",
       "note": "CPI đạt benchmark và có doanh thu ổn định.",
       "isFavorite": false
     },
@@ -518,7 +507,7 @@
       "status": "Live",
       "storeLink": "https://play.google.com/store/apps/details?gl=US&hl=en-US&id=com.merge.master.drop.fun.viral.fruit.animal.animash",
       "gameplay": "https://www.youtube.com/watch?v=5961LlfIXT0",
-      "icon": "/icons/12.Merge Drop Master.png",
+      "icon": "./icons/12.Merge Drop Master.png",
       "role": "Game Developer & PM",
       "teamSize": "3 người (1 Dev, 1 Artist, 1 Game Designer)",
       "technologies": [
@@ -533,7 +522,7 @@
         "Firebase Database"
       ],
       "achievements": "- Tối ưu hóa cơ chế vật lý va chạm và gộp các loại trái cây/động vật 2D.\n- Tối ưu luồng skin cho game\n- Tối ưu doanh thu bằng Remote Config\n- Thêm Leaderboard, Building và Battle Pass\n- Hiệu ứng combo khi merge",
-      "metrics": "Retention D1: 34% | Lượt tải: ~1.800.000+",
+      "metrics": "Lượt tải: ~1.800.000+",
       "note": "CPI đạt benchmark và có doanh thu ổn định. Đây là dự án đi sâu nhất và có nhiều phase phát triển cũng như cải tiến sản phẩm",
       "isFavorite": true
     },
@@ -546,7 +535,7 @@
       "status": "Removed",
       "storeLink": null,
       "gameplay": null,
-      "icon": "/icons/13.Hidden World Zoom & Spot.png",
+      "icon": "./icons/13.Hidden World Zoom & Spot.png",
       "role": "Game Developer & PM",
       "teamSize": "3 người (1 Dev, 1 Artist, 1 Game Designer)",
       "technologies": [
@@ -556,9 +545,9 @@
         "DOTween",
         "Addressable"
       ],
-      "achievements": "- Tối ưu Canvas UI",
-      "metrics": "Retention D1: 26%",
-      "note": "CPI đạt benchmark, game có tiềm năng phát triển tuy nhiên không đủ nhân sự để tiếp tục phát triển",
+      "achievements": "- Tối ưu Canvas UI và render ảnh độ phân giải cao\n- Hệ thống zoom đa cấp mượt mà",
+      "metrics": "",
+      "note": "Tối ưu hóa hệ thống tải ảnh dung lượng lớn từ máy chủ thông qua Addressables và quản lý bộ nhớ RAM.",
       "isFavorite": false
     },
     {
@@ -570,8 +559,8 @@
       "status": "Removed",
       "storeLink": null,
       "gameplay": null,
-      "icon": "/icons/14.Meme Music Fire.png",
-      "role": "Game Developer & PM",
+      "icon": "./icons/14.Meme Music Fire.png",
+      "role": "Game Developer",
       "teamSize": "3 người (1 Dev, 1 Artist, 1 Game Designer)",
       "technologies": [
         "Unity",
@@ -580,9 +569,9 @@
         "Sprite Atlas",
         "Addressable"
       ],
-      "achievements": "- Tối ưu hóa nhịp điệu game, đọc và sinh các nốt nhạc theo config",
-      "metrics": "Retention D1: 20%",
-      "note": "CPI đạt benchmark, game có tiềm năng phát triển",
+      "achievements": "- Tối ưu hóa nhịp điệu game, đọc và sinh các nốt nhạc theo config\n- Tích hợp hệ thống đồng bộ âm thanh AudioSource chính xác",
+      "metrics": "",
+      "note": "Xây dựng thuật toán phân tích nhịp beat và tự động tạo đường bay nốt nhạc đồng bộ với audio timeline.",
       "isFavorite": false
     },
     {
@@ -594,8 +583,8 @@
       "status": "Live",
       "storeLink": "https://play.google.com/store/apps/details?gl=US&hl=en-US&id=com.cute.drop.world.party.animals.merge.dessert.slime",
       "gameplay": "https://www.youtube.com/watch?v=hCSm7xkdcS0",
-      "icon": "/icons/15.Cute Drop World.png",
-      "role": "Game Developer & PM",
+      "icon": "./icons/15.Cute Drop World.png",
+      "role": "Game Developer",
       "teamSize": "3 người (1 Dev, 1 Artist, 1 Game Designer)",
       "technologies": [
         "Unity",
@@ -608,9 +597,9 @@
         "Firebase Remote Config",
         "Firebase Database"
       ],
-      "achievements": "- Thêm cơ chế thay đổi màn chơi, Combo khi merge.",
-      "metrics": "Retention D1: 28%",
-      "note": "CPI đạt benchmark, game có tiềm năng phát triển",
+      "achievements": "- Thêm cơ chế thay đổi màn chơi, Combo khi merge.\n- Tối ưu hóa va chạm vật lý 2D mượt mà",
+      "metrics": "",
+      "note": "Thiết kế kiến trúc mở rộng cho phép bổ sung skin và cơ chế merge mới linh hoạt qua Remote Config.",
       "isFavorite": false
     },
     {
@@ -622,8 +611,8 @@
       "status": "Live",
       "storeLink": "https://play.google.com/store/apps/details?gl=US&hl=en-US&id=com.jig.master.photo.match.puzzle.jigsaw",
       "gameplay": "https://www.youtube.com/watch?v=Dl1OO2MGWaM",
-      "icon": "/icons/16.JigMaster Photo Match.png",
-      "role": "Game Developer & PM",
+      "icon": "./icons/16.JigMaster Photo Match.png",
+      "role": "Game Developer",
       "teamSize": "3 người (1 Dev, 1 Artist, 1 Game Designer)",
       "technologies": [
         "Unity",
@@ -633,8 +622,8 @@
         "Addressable"
       ],
       "achievements": "- Viết thuật toán tự động chia nhỏ bất kỳ bức ảnh nào thành các mảnh ghép puzzle 2D\n- Tính toán spline cho các cạnh của miếng ghép\n- Tối ưu hoá logic cho 60FPS\n- Quản lý tải ảnh từ máy chủ thông qua Addressables",
-      "metrics": "Retention D1: 40%",
-      "note": "CPI rẻ hơn benchmark, game có tiềm năng phát triển",
+      "metrics": "",
+      "note": "Thuật toán cắt spline mảnh ghép độc quyền giúp tự động hóa 100% việc tạo level jigsaw từ bất kỳ ảnh nào.",
       "isFavorite": false
     },
     {
@@ -646,8 +635,8 @@
       "status": "Live",
       "storeLink": "https://play.google.com/store/apps/details?gl=US&hl=en-US&id=jigcharm.hd.beauty.hot.puzzle",
       "gameplay": null,
-      "icon": "/icons/17. JigCharm HD Beauty.png",
-      "role": "Game Developer & PM",
+      "icon": "./icons/17.JigCharm-HD-Beauty.png",
+      "role": "Game Developer",
       "teamSize": "3 người (1 Dev, 1 Artist, 1 Designer)",
       "technologies": [
         "Unity",
@@ -656,9 +645,9 @@
         "Texture Compression ASTC",
         "Memory Management"
       ],
-      "achievements": "- Thêm media player để thay đổi Music Background cho game\n- Thêm Album có thể tải ảnh về máy",
-      "metrics": "Retention D1: 25%",
-      "note": "CPI rẻ hơn benchmark, game có tiềm năng phát triển",
+      "achievements": "- Thêm media player để thay đổi Music Background cho game\n- Thêm Album có thể tải ảnh về máy\n- Tối ưu nén Texture ASTC tiết kiệm 50% RAM",
+      "metrics": "",
+      "note": "Tối ưu hóa bộ nhớ với chuẩn nén Texture ASTC và kiến trúc tải ảnh bất đồng bộ Addressables.",
       "isFavorite": false
     },
     {
@@ -670,8 +659,8 @@
       "status": "Live",
       "storeLink": "https://play.google.com/store/apps/details?gl=US&hl=en-US&id=my.talking.zoo.meme.sound",
       "gameplay": null,
-      "icon": "/icons/18.My Talking Zoo.png",
-      "role": "Game Developer & PM",
+      "icon": "./icons/18.My Talking Zoo.png",
+      "role": "Game Developer",
       "teamSize": "3 người (1 Dev, 1 Artist, 1 Designer)",
       "technologies": [
         "Unity",
@@ -680,8 +669,8 @@
         "Audio Mixer"
       ],
       "achievements": "- Logic Gacha ra Animal theo map.\n- Logic mua/bán và income từ animal.\n- Tạo logic record sound và gán cho 1 Animal.",
-      "metrics": "Retention D1: 18%",
-      "note": "CPI không đạt benchmark",
+      "metrics": "",
+      "note": "Xử lý luồng âm thanh thời gian thực với AudioMixer và hệ thống quản lý dữ liệu audio clip linh hoạt.",
       "isFavorite": false
     },
     {
@@ -693,8 +682,8 @@
       "status": "Live",
       "storeLink": "https://play.google.com/store/apps/details?gl=US&hl=en-US&id=com.maze.dash.escape.challenge",
       "gameplay": null,
-      "icon": "/icons/19.Maze Dash Escape.png",
-      "role": "Game Developer & PM",
+      "icon": "./icons/19.Maze Dash Escape.png",
+      "role": "Game Developer",
       "teamSize": "3 người (1 Dev, 1 Artist, 1 Designer)",
       "technologies": [
         "Unity",
@@ -703,8 +692,8 @@
         "DOTween"
       ],
       "achievements": "- Thiết kế tool xếp map dựa trên Tilemap, cho phép nhiều cơ chế xếp map (Bằng prefab hoặc Position)\n- Thêm hệ thống skin nhân vật.",
-      "metrics": "Retention D1: 17%",
-      "note": "CPI không đạt benchmark",
+      "metrics": "",
+      "note": "Xây dựng Custom Level Editor Tool tích hợp trực tiếp vào Unity Inspector để sinh bản đồ tự động.",
       "isFavorite": false
     }
   ],

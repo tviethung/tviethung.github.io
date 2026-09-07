@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV - Tạ Việt Hùng | Senior Unity Mobile & Lead Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=JetBrains+Mono:wght@400;700&display=swap"
+    rel="stylesheet">
+  <style>
+    :root {
+      --primary: #0f172a;
+      --primary-accent: #059669;
+      --accent-light: #ecfdf5;
+      --text-dark: #1e293b;
+      --text-muted: #64748b;
+      --border-color: #cbd5e1;
+      --bg-card: #f8fafc;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+      color: var(--text-dark);
+      background-color: #f1f5f9;
+      line-height: 1.48;
+      font-size: 13px;
+      letter-spacing: -0.01em;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      text-rendering: optimizeLegibility;
+      font-synthesis: none;
+      -webkit-font-synthesis: none;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    .no-print-bar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: #0f172a;
+      color: #fff;
+      padding: 12px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    .btn-print {
+      background-color: #10b981;
+      color: #0f172a;
+      border: none;
+      padding: 8px 18px;
+      font-weight: 700;
+      font-size: 13px;
+      border-radius: 4px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.2s ease;
+    }
+
+    .btn-print:hover {
+      background-color: #34d399;
+    }
+
+    .cv-container {
+      max-width: 840px;
+      margin: 24px auto;
+      background: #ffffff;
+      padding: 36px 44px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+      border-radius: 6px;
+      border: 1px solid var(--border-color);
+    }
+
+    /* HEADER */
+    .header {
+      border-bottom: 2.5px solid var(--primary-accent);
+      padding-bottom: 14px;
+      margin-bottom: 18px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    .header-left h1 {
+      font-size: 25px;
+      font-weight: 800;
+      color: var(--primary);
+      letter-spacing: -0.5px;
+      text-transform: uppercase;
+    }
+
+    .header-left h2 {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--primary-accent);
+      margin-top: 3px;
+    }
+
+    .contact-info {
+      list-style: none;
+      text-align: right;
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+
+    .contact-info li {
+      margin-bottom: 2px;
+    }
+
+    .contact-info a {
+      color: var(--text-dark);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .contact-info a:hover {
+      color: var(--primary-accent);
+    }
+
+    /* SECTION STYLES */
+    .section {
+      margin-bottom: 16px;
+    }
+
+    .section-title {
+      font-size: 13px;
+      font-weight: 800;
+      color: var(--primary);
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      border-bottom: 1.5px solid var(--border-color);
+      padding-bottom: 4px;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      page-break-after: avoid;
+      break-after: avoid;
+    }
+
+    .section-title::before {
+      content: '';
+      display: inline-block;
+      width: 4px;
+      height: 13px;
+      background-color: var(--primary-accent);
+      border-radius: 2px;
+    }
+
+    .summary-text {
+      font-size: 12.5px;
+      color: var(--text-dark);
+      line-height: 1.55;
+    }
+
+    /* SKILLS GRID */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+
+    .skill-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 5px;
+      padding: 9px 12px;
+    }
+
+    .skill-card-title {
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--primary-accent);
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+
+    .skill-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+    }
+
+    .tag {
+      background: #ffffff;
+      border: 1px solid #cbd5e1;
+      padding: 2px 7px;
+      border-radius: 4px;
+      font-size: 11.5px;
+      font-weight: 400;
+      color: var(--text-dark);
+    }
+
+    /* EXPERIENCE & EDUCATION */
+    .timeline-item {
+      margin-bottom: 12px;
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }
+
+    .timeline-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 3px;
+    }
+
+    .timeline-company {
+      font-size: 14.5px;
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    .timeline-role {
+      font-size: 13.2px;
+      font-weight: 700;
+      color: var(--primary-accent);
+    }
+
+    .timeline-period {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11.5px;
+      font-weight: 700;
+      color: var(--text-muted);
+      background: var(--bg-card);
+      padding: 1px 7px;
+      border-radius: 4px;
+      border: 1px solid var(--border-color);
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    .bullet-list {
+      list-style-type: none;
+      margin-top: 4px;
+    }
+
+    .bullet-list li {
+      position: relative;
+      padding-left: 15px;
+      margin-bottom: 3.5px;
+      font-size: 12.8px;
+      color: #334155;
+      line-height: 1.48;
+    }
+
+    .bullet-list li::before {
+      content: '•';
+      position: absolute;
+      left: 3px;
+      color: var(--primary-accent);
+      font-weight: bold;
+    }
+
+    /* HOBBIES */
+    .hobbies-flex {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .hobby-badge {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      padding: 3px 9px;
+      border-radius: 12px;
+      font-size: 11.5px;
+      font-weight: 400;
+      color: var(--text-dark);
+    }
+
+    .project-link {
+      color: var(--text-dark);
+      text-decoration: none;
+    }
+
+    .project-link:hover {
+      color: var(--primary-accent);
+      border-color: var(--primary-accent);
+    }
+
+    /* PRINT MEDIA QUERY - GUARANTEED FIT ON 2 A4 PAGES */
+    @media print {
+      @page {
+        size: A4;
+        margin: 10mm 12mm;
+      }
+
+      * {
+        -webkit-font-smoothing: antialiased !important;
+        -moz-osx-font-smoothing: grayscale !important;
+        text-rendering: optimizeLegibility !important;
+        font-synthesis: none !important;
+        -webkit-font-synthesis: none !important;
+      }
+
+      body {
+        background: #ffffff;
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+        font-size: 12px;
+        color: #1e293b;
+        letter-spacing: -0.01em;
+      }
+
+      strong,
+      b,
+      h1,
+      h2,
+      .timeline-company,
+      .section-title {
+        font-family: 'Inter', sans-serif !important;
+        font-weight: 700 !important;
+      }
+
+      p,
+      li,
+      span,
+      a,
+      div,
+      .bullet-list li,
+      .tag,
+      .hobby-badge,
+      .timeline-role,
+      .summary-text {
+        font-family: 'Inter', sans-serif !important;
+        font-weight: 400 !important;
+      }
+
+      .timeline-period {
+        font-family: 'JetBrains Mono', monospace !important;
+      }
+
+      .no-print-bar {
+        display: none !important;
+      }
+
+      .cv-container {
+        margin: 0;
+        padding: 0;
+        border: none;
+        box-shadow: none;
+        max-width: 100%;
+      }
+
+      .section {
+        margin-bottom: 12px;
+      }
+
+      .timeline-item {
+        margin-bottom: 9px;
+        page-break-inside: avoid;
+        break-inside: avoid;
+      }
+
+      .bullet-list li {
+        font-size: 11.8px;
+        line-height: 1.42;
+        margin-bottom: 2.5px;
+      }
+
+      .skills-grid {
+        gap: 8px;
+      }
+
+      .skill-card {
+        padding: 7px 10px;
+      }
+
+      .header {
+        margin-bottom: 14px;
+        padding-bottom: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- PRINT TOOLBAR (HIDDEN IN PRINT) -->
+  <div class="no-print-bar">
+    <div>📄 <strong>CV - Tạ Việt Hùng (English Version)</strong> | Ready for PDF Export (2 A4 Pages)</div>
+    <div style="display: flex; gap: 12px; align-items: center;">
+      <a href="./cv.html" style="color: #94a3b8; text-decoration: none; font-size: 12px;">🇻🇳 Tiếng Việt</a>
+      <button class="btn-print" onclick="window.print()">
+        🖨️ PRINT / SAVE AS PDF
+      </button>
+    </div>
+  </div>
+
+  <div class="cv-container">
+
+    <!-- HEADER -->
+    <div class="header">
+      <div class="header-left">
+        <h1>TẠ VIỆT HÙNG</h1>
+        <h2>Senior Unity Developer</h2>
+        <div style="font-size: 11.5px; color: #64748b; margin-top: 3px;">📍 Hanoi, Vietnam</div>
+      </div>
+      <ul class="contact-info">
+        <li>📱 <strong>Phone / Zalo:</strong> <a href="tel:0398962424">0398 962 424</a></li>
+        <li>✉️ <strong>Email:</strong> <a href="mailto:tviethung20@gmail.com">tviethung20@gmail.com</a></li>
+        <li>🦊 <strong>GitLab:</strong> <a href="https://gitlab.com/tviethung20"
+            target="_blank">gitlab.com/tviethung20</a></li>
+        <li>🌐 <strong>Portfolio:</strong> <a href="https://tviethung.github.io/"
+            target="_blank">tviethung.github.io</a></li>
+      </ul>
+    </div>
+
+    <!-- SUMMARY OF QUALIFICATIONS -->
+    <div class="section">
+      <div class="section-title">SUMMARY OF QUALIFICATIONS</div>
+      <p class="summary-text">
+        Senior Unity Developer with <strong>10+ years of Software Engineering experience</strong> and <strong>6+ years in Unity Mobile Game Development</strong>. Shipped <strong>19+ mobile games</strong> (reaching millions of downloads on Android). Specialized in <strong>C# game architecture (OOP, Design Patterns, EventBus)</strong>, <strong>60 FPS mobile optimization on low-end devices</strong>, custom Unity Editor tooling, and Addressables CDN pipelines. Combines engineering rigor with data-driven iteration to maximize gameplay retention.
+      </p>
+    </div>
+
+    <!-- TECHNICAL SKILLS -->
+    <div class="section">
+      <div class="section-title">TECHNICAL SKILLS</div>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-card-title">Unity & C# Core</div>
+          <div class="skill-tags">
+            <span class="tag">Unity 2D/3D & URP</span>
+            <span class="tag">C# (.NET - 6+ Years)</span>
+            <span class="tag">Clean Architecture & EventBus</span>
+            <span class="tag">UniTask / DOTween Pro</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-title">Architecture & Tooling</div>
+          <div class="skill-tags">
+            <span class="tag">Custom Level Editor Tools</span>
+            <span class="tag">Addressables / CDN</span>
+            <span class="tag">Object Pooling & Zero GC</span>
+            <span class="tag">SmartFoxServer (Java)</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-title">Mobile Publishing & Monetization</div>
+          <div class="skill-tags">
+            <span class="tag">Android (Google Play / AAB)</span>
+            <span class="tag">Cross-Platform Mobile</span>
+            <span class="tag">Firebase Remote Config</span>
+            <span class="tag">AdMob & AppLovin MAX / IAP</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-title">Performance & Analytics</div>
+          <div class="skill-tags">
+            <span class="tag">60 FPS on Low-End Devices</span>
+            <span class="tag">GA4 & Firebase Cohort LTV Tool</span>
+            <span class="tag">Cohort Retention (D0-D60) & Timeplay</span>
+            <span class="tag">ASTC & Draw Call Profiling</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- WORK EXPERIENCE -->
+    <div class="section">
+      <div class="section-title">WORK EXPERIENCE</div>
+
+      <!-- Item 1 -->
+      <div class="timeline-item">
+        <div class="timeline-header">
+          <div>
+            <span class="timeline-company">One Percent Studio (VGP) (Hanoi)</span>
+            <span style="color: #cbd5e1; margin: 0 4px;">|</span>
+            <span class="timeline-role">Senior Unity Developer</span>
+          </div>
+          <span class="timeline-period">Oct 2022 - Jul 2026</span>
+        </div>
+        <ul class="bullet-list">
+          <li>Engineered and successfully shipped 19+ mobile games on Android. Key titles include:
+            <em>Merge Drop Master</em> (~1.8M downloads), <em>Trending AR Soundboard</em> (>2M downloads), and <em>My Pool
+              Club</em> (>200K downloads).
+          </li>
+          <li>Architected core game systems (Unity/C#), authored core gameplay loops, and implemented complex 2D/3D physics interactions (Drag & Drop, collision detection, merge mechanics).</li>
+          <li>Led deep mobile performance optimizations: RAM/CPU profiling, draw call reduction via Sprite Atlases/GPU Instancing, ASTC texture compression, and Object Pooling, maintaining 60 FPS on low-end devices.</li>
+          <li>Engineered custom Unity Editor tools (Level Editors, Config Generators) to streamline content creation workflows for Design and Art teams.</li>
+          <li>Built an internal GA4 & Firebase LTV/Retention Cohort Analytics Tool: Automated tracking and visualization for live-ops metrics (Total LTV, IAP LTV, Ads LTV, D0-D60 Cohort Retention, % LTV Growth, and User Timeplay) filterable by Country and App Version, enabling data-backed UA and retention optimizations.</li>
+          <li>Built modular data structures and dynamic event-driven architectures with Firebase Remote Config for gameplay A/B testing and ad/IAP revenue optimization (AdMob, AppLovin MAX).</li>
+          <li>Spearheaded rapid prototyping for new gameplay concepts, collaborating closely with PO, Art, and GD teams to deliver data-backed iterations based on production analytics.</li>
+        </ul>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="timeline-item">
+        <div class="timeline-header">
+          <div>
+            <span class="timeline-company">Gapu Studio (Hanoi)</span>
+            <span style="color: #cbd5e1; margin: 0 4px;">|</span>
+            <span class="timeline-role">Game Developer</span>
+          </div>
+          <span class="timeline-period">Jun 2022 - Oct 2022</span>
+        </div>
+        <ul class="bullet-list">
+          <li>Developed 3 complete Unity game titles: 1 Hyper-Casual game, 1 Tower Hero title, and 1 Logic Puzzle game.</li>
+          <li>Programmed core gameplay & combat mechanics: Dynamic tower swapping logic, Hero equipment systems (ranged & melee combat), Boss Fight mechanics, and character animation controllers.</li>
+          <li>Built dynamic Level Config architectures and integrated third-party SDKs for analytics tracking and monetization (Ads Mediation / IAP).</li>
+        </ul>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="timeline-item">
+        <div class="timeline-header">
+          <div>
+            <span class="timeline-company">Freelancer</span>
+            <span style="color: #cbd5e1; margin: 0 4px;">|</span>
+            <span class="timeline-role">Game Developer (Client & Server)</span>
+          </div>
+          <span class="timeline-period">Aug 2021 - May 2022</span>
+        </div>
+        <ul class="bullet-list">
+          <li>Engineered cross-platform game features across Client & Server in a 5-person engineering team for Farm Simulation, Tower Defense, and Tactical Battle projects.</li>
+          <li>Unity Client Development: Implemented core gameplay loops, interactive inventory systems, responsive UI/UX, and unit/tower controls.</li>
+          <li>Game Server Development: Programmed server-side game logic including Hero Attribution, Equipment, Currency Systems, PvP Bot Matching, Gacha Pooling, and Hero Upgrades.</li>
+          <li>Architected secure databases and real-time client-server data synchronization (Tech stack: Unity C# client & SmartFoxServer Java backend).</li>
+        </ul>
+      </div>
+
+      <!-- Item 4 -->
+      <div class="timeline-item">
+        <div class="timeline-header">
+          <div>
+            <span class="timeline-company">Apero (Hanoi)</span>
+            <span style="color: #cbd5e1; margin: 0 4px;">|</span>
+            <span class="timeline-role">Game Developer</span>
+          </div>
+          <span class="timeline-period">May 2021 - Aug 2021</span>
+        </div>
+        <ul class="bullet-list">
+          <li>Contributed to Tower Defense game development (predecessor to Rise of Defenders title).</li>
+          <li>Owned core gameplay systems: Hero Attribution, Building Tower System, Inventory, Crafting, and Item
+            Upgrades.</li>
+        </ul>
+      </div>
+
+      <!-- Item 5 -->
+      <div class="timeline-item">
+        <div class="timeline-header">
+          <div>
+            <span class="timeline-company">TTC-Solutions (Hanoi)</span>
+            <span style="color: #cbd5e1; margin: 0 4px;">|</span>
+            <span class="timeline-role">Unity Client & Full-Stack Developer</span>
+          </div>
+          <span class="timeline-period">Dec 2019 - May 2021</span>
+        </div>
+        <ul class="bullet-list">
+          <li>Unity Client Development for Corona Virus Game (South Korea): Developed obstacle mechanics, medal collection/upgrade systems, inventory, and Mission Objectives.</li>
+          <li>Unity Client Development for Poker Game: Integrated UI/UX screens and gameplay logic, implementing real-time server data synchronization matching Figma designs.</li>
+          <li>Managed game application CMS: User Registration, Cashout, Recharge, Marketing Campaigns, and Giftcodes (Tech stack: Spring Boot, Angular, Docker).</li>
+          <li>Built custom OTP and marketing tracking microservices (Tech stack: Spring Boot, Golang, Docker).</li>
+        </ul>
+      </div>
+
+      <!-- Item 6 -->
+      <div class="timeline-item">
+        <div class="timeline-header">
+          <div>
+            <span class="timeline-company">Samsung Vietnam Mobile R&D Center (SVMC)</span>
+            <span style="color: #cbd5e1; margin: 0 4px;">|</span>
+            <span class="timeline-role">Senior Engineer / Engineer III</span>
+          </div>
+          <span class="timeline-period">Jan 2015 - Apr 2019</span>
+        </div>
+        <ul class="bullet-list">
+          <li>Collaborated with a 6-engineer software team to analyze and develop test suites for Samsung Internal
+            Development Library (Android System APIs) with 1000+ APIs and 5000+ Testcases using AndroidTestCase (2-year
+            project). Responsible for Touchwiz UI/UX, Camera, Pedometer APIs, SMS, optimizing Test Suite execution
+            speed.</li>
+          <li>Developed BFT (Basic Functional Test Suite): Tested 100+ functions for Samsung preloaded apps (My Files,
+            Call, Messenger, Notification bar, Contacts...), automated binary flashing, precondition setups, and Test
+            Suite execution (Tech stack: Java, UIAutomator).</li>
+          <li>Executed Web Service API testing.</li>
+          <li>Developed custom Trade Federation (Tradefed) automation for running Compatibility Test Suite (CTS) and
+            Vendor Test Suite (VTS) on Samsung APIs (Tech stack: Java).</li>
+          <li>Configured Quickbuild & Jenkins CI/CD pipelines to auto-fetch Perforce (P4) source code and run automated
+            Test Suites.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- EDUCATION & CERTIFICATIONS -->
+    <div class="section">
+      <div class="section-title">EDUCATION & CERTIFICATIONS</div>
+      <div class="timeline-item" style="margin-bottom: 8px;">
+        <div class="timeline-header">
+          <div>
+            <span class="timeline-company">Posts and Telecommunications Institute of Technology (PTIT)</span>
+            <span style="color: #cbd5e1; margin: 0 4px;">|</span>
+            <span class="timeline-role">Engineer's Degree in Information Technology</span>
+          </div>
+          <span class="timeline-period">2009 - 2014</span>
+        </div>
+      </div>
+      <div class="hobbies-flex">
+        <span class="hobby-badge">🏆 <strong>Samsung Software Certificate - Advance</strong> · Samsung Vietnam Mobile R&D Center (2015)</span>
+      </div>
+    </div>
+
+    <!-- SELECTED PROJECTS -->
+    <div class="section" style="margin-bottom: 0;">
+      <div class="section-title">SELECTED PROJECTS</div>
+      <div class="hobbies-flex selected-projects">
+        <a class="hobby-badge project-link"
+          href="https://play.google.com/store/apps/details?gl=US&amp;hl=en-US&amp;id=com.merge.master.drop.fun.viral.fruit.animal.animash"
+          target="_blank">
+          <strong>Merge Drop Master</strong> · Game Developer &amp; PM · ~1.8M Downloads · Google Play
+        </a>
+        <a class="hobby-badge project-link"
+          href="https://play.google.com/store/apps/details?id=casual.soundboard.ar.trending&hl=en-US&gl=US"
+          target="_blank">
+          <strong>Trending AR Soundboard</strong> · Game Developer &amp; PM · >2M Downloads · Google Play
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+
+</html>

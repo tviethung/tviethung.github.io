@@ -1,66 +1,55 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Gamepad2, Play, ExternalLink, Calendar, Search, AlertTriangle, LayoutGrid, GitCommit } from 'lucide-react';
-import portfolioData from '../data/portfolio.json';
+import { Gamepad2, Play, ExternalLink, Search, AlertTriangle, LayoutGrid, GitCommit, Sparkles, X, Trophy, Wrench, Clock } from 'lucide-react';
+import { useLanguage } from '../context/LanguageContext';
+import { getFeaturedProducts, getTimelineProducts, timelineFilters } from '../data/portfolioPresentation';
 
 export default function ProductTimeline() {
-  const { products } = portfolioData;
+  const { data, ui, language } = useLanguage();
+  const { products } = data;
   const [searchTerm, setSearchTerm] = useState('');
-  const [statusFilter, setStatusFilter] = useState('ALL'); // 'ALL', 'LIVE', 'REMOVED'
+  const [statusFilter, setStatusFilter] = useState('ALL');
   const [viewMode, setViewMode] = useState('GRID'); // 'GRID', 'TIMELINE'
   const [selectedProduct, setSelectedProduct] = useState(null);
 
-  // Filter products based on search term & status
-  const filteredProducts = products.filter(product => {
+  const filteredProducts = getTimelineProducts(products, statusFilter).filter((product) => {
     const matchesSearch = 
       product.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
       (product.genre && product.genre.toLowerCase().includes(searchTerm.toLowerCase()));
-    const isLive = product.status.toLowerCase() === 'live';
-    
-    if (statusFilter === 'LIVE') {
-      return matchesSearch && isLive;
-    } else if (statusFilter === 'REMOVED') {
-      return matchesSearch && !isLive;
-    }
+
     return matchesSearch;
   });
 
-  const formatShortRole = (role) => {
-    if (!role) return '';
-    return role
-      .replace(/Lead Developer/i, 'LEAD DEV')
-      .replace(/Game Developer/i, 'GAME DEV')
-      .toUpperCase();
-  };
+  const getPresentationStatus = (status) =>
+    status.toLowerCase() === 'removed' ? 'Archived' : status;
 
   const getStatusBadge = (status) => {
     const s = status.toLowerCase();
     if (s === 'live') {
       return (
-        <span className="px-2 py-0.5 text-[10px] font-bold bg-accent-green/10 border border-accent-green text-accent-green tracking-widest shadow-[0_0_10px_rgba(0,255,102,0.1)]">
-          LIVE // ONLINE
+        <span className="px-2.5 py-0.5 text-[10px] font-bold rounded-full bg-accent-green/10 border border-accent-green/30 text-accent-green">
+          Live
         </span>
       );
     } else if (s.includes('reup')) {
       return (
-        <span className="px-2 py-0.5 text-[10px] font-bold bg-yellow-500/10 border border-yellow-500 text-yellow-500 tracking-widest">
-          RE-UP
-        </span>
-      );
-    } else {
-      return (
-        <span className="px-2 py-0.5 text-[10px] font-bold bg-red-500/10 border border-red-500 text-red-400/90 tracking-widest">
-          REMOVED
+        <span className="px-2.5 py-0.5 text-[10px] font-bold rounded-full bg-yellow-500/10 border border-yellow-500/30 text-yellow-400">
+          Re-up
         </span>
       );
     }
+    return (
+      <span className="px-2.5 py-0.5 text-[10px] font-bold rounded-full bg-slate-500/10 border border-slate-500/30 text-slate-400">
+        Archived
+      </span>
+    );
   };
 
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
-      transition: { staggerChildren: 0.05 }
+      transition: { staggerChildren: 0.06 }
     }
   };
 
@@ -75,93 +64,86 @@ export default function ProductTimeline() {
 
   const renderCardContent = (product) => {
     return (
-      <div className="flex flex-col justify-between h-full">
+      <div className="flex flex-col justify-between h-full space-y-4">
         <div>
-          {/* Top info and status badge */}
-          <div className="flex justify-between items-start gap-4 mb-4">
-            <span className="text-[10px] text-text-secondary">
-              ID: #{product.id.toString().padStart(3, '0')}
+          {/* Top ID & Status Badge */}
+          <div className="flex justify-between items-center mb-3">
+            <span className="text-[11px] font-medium text-text-muted">
+              #{product.id.toString().padStart(2, '0')}
             </span>
-            <div className="flex items-center gap-2">
-              {product.isFavorite && (
-                <span className="px-2 py-0.5 text-[9px] font-bold bg-amber-500/10 border border-amber-500 text-amber-400 tracking-widest flex items-center gap-1 shadow-[0_0_8px_rgba(245,158,11,0.2)]">
-                  ★ FAVORITE
+            <div className="flex items-center gap-1.5">
+              {getFeaturedProducts(products).some(({ id }) => id === product.id) && (
+                <span className="px-2 py-0.5 text-[9px] font-bold rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 flex items-center gap-1">
+                  ★ Featured
                 </span>
               )}
               {getStatusBadge(product.status)}
             </div>
           </div>
 
-          <div className="flex items-start gap-4">
+          <div className="flex items-start gap-3.5">
             {/* Game Icon */}
-            <div className="w-16 h-16 bg-bg-dark border border-border-dark rounded-xl flex-shrink-0 relative overflow-hidden group-hover:border-accent-green/40 transition-colors shadow-inner flex items-center justify-center">
+            <div className="w-14 h-14 bg-gradient-to-br from-[#162035] to-[#0d1320] border border-white/10 rounded-xl flex-shrink-0 relative overflow-hidden flex items-center justify-center shadow-md">
               {product.icon ? (
                 <img 
                   src={product.icon} 
                   alt={product.title} 
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover rounded-xl"
                   onError={(e) => {
                     e.target.onerror = null;
                     e.target.style.display = 'none';
-                    e.target.parentNode.innerHTML = `<span class="text-accent-green text-lg font-bold">${product.title[0]}</span>`;
+                    e.target.parentNode.innerHTML = `<span class="text-accent-green text-base font-bold">${product.title[0]}</span>`;
                   }}
                 />
               ) : (
-                <Gamepad2 className="h-7 w-7 text-accent-green/60" />
+                <Gamepad2 className="h-6 w-6 text-accent-green/70" />
               )}
             </div>
 
-            {/* Game Metadata */}
-            <div className="space-y-1 text-left">
-              <h3 className="font-bold text-sm text-text-primary uppercase tracking-wide group-hover:text-accent-green transition-colors leading-tight">
+            <div className="flex-grow min-w-0">
+              <h3 className="font-bold text-white group-hover:text-accent-green transition-colors text-sm truncate">
                 {product.title}
               </h3>
-              {product.genre && (
-                <div className="text-[10px] text-accent-green/80 uppercase tracking-wider font-semibold">
-                  {product.genre}
-                </div>
-              )}
-              {product.role && (
-                <div className="pt-1 pb-0.5">
-                  <span className="inline-flex items-center px-2 py-0.5 text-[9.5px] font-extrabold bg-cyan-950/80 border border-cyan-400 text-cyan-300 uppercase tracking-wider shadow-[0_0_12px_rgba(6,182,212,0.25)]">
-                    {formatShortRole(product.role)}
-                  </span>
-                </div>
-              )}
-              <div className="flex items-center gap-1.5 text-[10px] text-text-secondary">
-                <Calendar className="h-3 w-3 text-accent-green" />
-                <span>RELEASE: {product.releaseDate}</span>
+              <div className="text-[11px] text-accent-green/90 font-medium truncate mt-0.5">
+                {product.genre || 'Mobile Game'}
+              </div>
+              <div className="text-[10px] text-text-muted mt-1">
+                {product.role || 'Senior Unity Developer'}
               </div>
             </div>
           </div>
+
+          {/* Release Date */}
+          <div className="mt-3 flex items-center gap-1.5 text-[11px] text-text-muted border-t border-border-dark/50 pt-2.5">
+            <Clock className="h-3 w-3 text-accent-green" />
+            <span>{product.releaseDate || '2023 - 2025'}</span>
+          </div>
         </div>
 
-        {/* Interactive Action Buttons */}
-        <div className="flex items-center justify-end gap-3 mt-5 pt-3 border-t border-border-dark/40 text-[10px]">
+        {/* Action Buttons */}
+        <div className="pt-2 border-t border-border-dark/40 flex items-center justify-end gap-2">
           {product.gameplay && (
-            <a 
+            <a
               href={product.gameplay}
               target="_blank"
               rel="noopener noreferrer"
               onClick={(e) => e.stopPropagation()}
-              className="px-2.5 py-1.5 border border-border-dark hover:border-accent-green/50 text-text-secondary hover:text-accent-green transition-all flex items-center gap-1 bg-bg-dark/50"
-              style={{ borderRadius: '0px' }}
+              className="px-2.5 py-1 rounded-lg bg-white/5 hover:bg-accent-green/10 text-text-secondary hover:text-accent-green border border-border-dark hover:border-accent-green/30 transition-all text-xs flex items-center gap-1 font-semibold"
             >
               <Play className="h-3 w-3 fill-current" />
-              <span>GAMEPLAY</span>
+              <span>Demo</span>
             </a>
           )}
           {product.storeLink && (
-            <a 
+            <a
               href={product.storeLink}
               target="_blank"
               rel="noopener noreferrer"
               onClick={(e) => e.stopPropagation()}
-              className="px-2.5 py-1.5 bg-accent-green hover:bg-accent-green/90 text-bg-dark font-bold transition-all flex items-center gap-1"
-              style={{ borderRadius: '0px' }}
+              className="px-3 py-1 rounded-lg bg-accent-green/10 hover:bg-accent-green text-accent-green hover:text-[#0a0d14] border border-accent-green/30 hover:border-accent-green transition-all text-xs flex items-center gap-1 font-bold shadow-sm"
             >
               <ExternalLink className="h-3 w-3" />
-              <span>STORE</span>
+              <span>Store</span>
             </a>
           )}
         </div>
@@ -170,76 +152,79 @@ export default function ProductTimeline() {
   };
 
   return (
-    <section id="products" className="py-20 border-b border-border-dark relative">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <section id="products" className="py-12 sm:py-16 relative">
+      <div className="w-full">
         
         {/* Section Header */}
-        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12">
-          <div className="font-mono">
-            <div className="text-accent-green text-xs mb-2">02 // RELEASE_TIMELINE</div>
-            <h2 className="text-3xl font-bold uppercase tracking-wider text-text-primary">
-              Lịch Sử Phát Hành
+        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-10">
+          <div>
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent-green/10 border border-accent-green/25 text-accent-green text-xs font-semibold tracking-wide mb-3">
+              <Sparkles className="h-3.5 w-3.5" />
+              <span>{language === 'en' ? 'RELEASE TIMELINE' : 'LỊCH SỬ SẢN PHẨM'}</span>
+            </div>
+            <h2 className="text-2xl sm:text-4xl font-extrabold text-white tracking-tight font-sans">
+              {ui.timelineTitle}
             </h2>
-            <div className="w-20 h-1 bg-accent-green mt-3"></div>
+            <p className="text-text-secondary text-sm mt-2 max-w-xl">
+              {language === 'en' 
+                ? 'Comprehensive catalog of 19+ mobile games developed and published on Android. Archived titles are prototypes retired after market testing (CPI/retention below benchmark) — a rapid 2–3 month release cycle.' 
+                : 'Toàn bộ danh mục 19+ game di động đã phát triển và phát hành trên Google Play. Các game Archived là prototype dừng sau market-test (CPI/retention chưa đạt benchmark) — chu kỳ phát hành nhanh 2–3 tháng/game.'}
+            </p>
           </div>
 
           {/* Filtering, Search & Layout Switcher */}
-          <div className="flex flex-col sm:flex-row gap-4 font-mono text-xs w-full md:w-auto items-stretch sm:items-center">
+          <div className="flex flex-col sm:flex-row gap-3 w-full md:w-auto items-stretch sm:items-center">
             {/* Search Input */}
             <div className="relative flex-grow sm:flex-grow-0">
-              <Search className="absolute left-3 top-2.5 h-4 w-4 text-text-secondary" />
+              <Search className="absolute left-3 top-2.5 h-4 w-4 text-text-muted" />
               <input 
                 type="text"
-                placeholder="FIND_PRODUCT..."
+                placeholder={ui.timelineSearch}
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
-                className="w-full sm:w-60 pl-9 pr-4 py-2 bg-card-dark/40 border border-border-dark text-text-primary focus:outline-none focus:border-accent-green/80 transition-all font-mono"
-                style={{ borderRadius: '0px' }}
+                className="w-full sm:w-56 pl-9 pr-4 py-2 bg-card-dark border border-border-dark rounded-xl text-xs text-text-primary placeholder:text-text-muted focus:outline-none focus:border-accent-green/60 transition-all font-sans"
               />
             </div>
 
             <div className="flex gap-2">
               {/* Filter Tabs */}
-              <div className="flex border border-border-dark bg-card-dark/20 p-0.5">
-                {['ALL', 'LIVE', 'REMOVED'].map((filter) => (
+              <div className="flex p-1 rounded-xl bg-card-dark border border-border-dark">
+                {timelineFilters.map((filter) => (
                   <button
                     key={filter}
                     onClick={() => setStatusFilter(filter)}
-                    className={`px-3 py-1.5 transition-all uppercase font-bold tracking-wider ${
+                    className={`px-3 py-1 text-xs font-semibold rounded-lg transition-all ${
                       statusFilter === filter 
-                        ? 'bg-accent-green text-bg-dark font-bold' 
+                        ? 'bg-accent-green text-[#0a0d14] font-bold shadow-sm' 
                         : 'text-text-secondary hover:text-text-primary'
                     }`}
-                    style={{ borderRadius: '0px' }}
                   >
                     {filter}
                   </button>
                 ))}
               </div>
 
-              {/* View Switcher */}
-              <div className="flex border border-border-dark bg-card-dark/20 p-0.5">
+              {/* View Mode Switcher */}
+              <div className="flex p-1 rounded-xl bg-card-dark border border-border-dark">
                 <button
                   onClick={() => setViewMode('GRID')}
-                  className={`px-2.5 transition-all flex items-center justify-center ${
+                  className={`p-1.5 rounded-lg transition-all ${
                     viewMode === 'GRID' 
-                      ? 'bg-accent-green text-bg-dark font-bold' 
+                      ? 'bg-accent-green text-[#0a0d14]' 
                       : 'text-text-secondary hover:text-text-primary'
                   }`}
                   title="Grid View"
-                  style={{ borderRadius: '0px' }}
                 >
                   <LayoutGrid className="h-4 w-4" />
                 </button>
                 <button
                   onClick={() => setViewMode('TIMELINE')}
-                  className={`px-2.5 transition-all flex items-center justify-center ${
+                  className={`p-1.5 rounded-lg transition-all ${
                     viewMode === 'TIMELINE' 
-                      ? 'bg-accent-green text-bg-dark font-bold' 
+                      ? 'bg-accent-green text-[#0a0d14]' 
                       : 'text-text-secondary hover:text-text-primary'
                   }`}
                   title="Timeline View"
-                  style={{ borderRadius: '0px' }}
                 >
                   <GitCommit className="h-4 w-4" />
                 </button>
@@ -256,7 +241,7 @@ export default function ProductTimeline() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: '-50px' }}
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5"
           >
             <AnimatePresence mode="popLayout">
               {filteredProducts.map((product) => (
@@ -266,9 +251,9 @@ export default function ProductTimeline() {
                   variants={cardVariants}
                   initial="hidden"
                   animate="visible"
-                  exit={{ opacity: 0, scale: 0.9 }}
+                  exit={{ opacity: 0, scale: 0.95 }}
                   onClick={() => setSelectedProduct(product)}
-                  className="border border-border-dark p-5 bg-card-dark/40 font-mono relative overflow-hidden flex flex-col justify-between tech-corner-container hover:border-accent-green/30 cursor-pointer group transition-all duration-300"
+                  className="glass-panel glass-panel-hover p-5 rounded-2xl relative overflow-hidden flex flex-col justify-between cursor-pointer group border border-border-subtle"
                 >
                   {renderCardContent(product)}
                 </motion.div>
@@ -286,7 +271,7 @@ export default function ProductTimeline() {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, margin: '-50px' }}
-              className="space-y-12 relative"
+              className="space-y-8 relative"
             >
               <AnimatePresence mode="popLayout">
                 {filteredProducts.map((product, index) => {
@@ -298,21 +283,21 @@ export default function ProductTimeline() {
                       variants={cardVariants}
                       initial="hidden"
                       animate="visible"
-                      exit={{ opacity: 0, scale: 0.9 }}
+                      exit={{ opacity: 0, scale: 0.95 }}
                       className="relative grid grid-cols-1 md:grid-cols-2 gap-0 items-start group"
                     >
                       {/* Timeline dot */}
-                      <div className="absolute left-6 md:left-1/2 top-[44px] -translate-x-1/2 -translate-y-1/2 w-3.5 h-3.5 rotate-45 bg-bg-dark border-2 border-accent-green z-20 shadow-[0_0_8px_rgba(0,255,102,0.3)] group-hover:bg-accent-green group-hover:scale-110 transition-all duration-300" />
+                      <div className="absolute left-6 md:left-1/2 top-[30px] -translate-x-1/2 -translate-y-1/2 w-3.5 h-3.5 rounded-full bg-bg-dark border-2 border-accent-green z-20 shadow-[0_0_10px_rgba(16,185,129,0.4)] group-hover:scale-125 transition-all duration-300" />
                       
                       {/* Card Container with Alternating alignment */}
                       <div className={`pl-12 pr-4 md:px-0 w-full flex ${
                         isEven 
-                          ? 'md:col-start-1 md:pr-10 md:justify-end' 
-                          : 'md:col-start-2 md:pl-10 md:justify-start'
+                          ? 'md:col-start-1 md:pr-8 md:justify-end' 
+                          : 'md:col-start-2 md:pl-8 md:justify-start'
                       }`}>
                         <div 
                           onClick={() => setSelectedProduct(product)}
-                          className="w-full max-w-md border border-border-dark p-5 bg-card-dark/40 font-mono relative overflow-hidden flex flex-col justify-between tech-corner-container hover:border-accent-green/30 cursor-pointer group transition-all duration-300"
+                          className="w-full max-w-md glass-panel glass-panel-hover p-5 rounded-2xl relative overflow-hidden flex flex-col justify-between cursor-pointer group border border-border-subtle"
                         >
                           {renderCardContent(product)}
                         </div>
@@ -327,184 +312,171 @@ export default function ProductTimeline() {
 
         {/* Empty State */}
         {filteredProducts.length === 0 && (
-          <div className="text-center py-16 border border-dashed border-border-dark/50 font-mono text-text-secondary">
-            <AlertTriangle className="h-8 w-8 text-accent-green/60 mx-auto mb-3" />
-            <p className="text-xs uppercase tracking-widest">
-              NO_PRODUCTS_MATCH_FILTER_CRITERIA
+          <div className="text-center py-16 rounded-2xl glass-panel border border-dashed border-border-dark text-text-secondary">
+            <AlertTriangle className="h-8 w-8 text-accent-green mx-auto mb-3" />
+            <p className="text-xs font-semibold">
+              {language === 'en' ? 'No games found matching filter criteria' : 'Không tìm thấy sản phẩm phù hợp bộ lọc'}
             </p>
           </div>
         )}
 
       </div>
 
-      {/* Futuristic HUD Detail Modal */}
+      {/* Modern Game Detail Modal */}
       <AnimatePresence>
         {selectedProduct && (
           <motion.div 
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-bg-dark/85 backdrop-blur-md font-mono"
+            className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-[#0a0d14]/80 backdrop-blur-xl"
             onClick={() => setSelectedProduct(null)}
           >
             <motion.div 
               initial={{ scale: 0.95, y: 15 }}
               animate={{ scale: 1, y: 0 }}
               exit={{ scale: 0.95, y: 15 }}
-              className="w-full max-w-2xl bg-card-dark border-2 border-accent-green p-6 relative overflow-hidden tech-corner-container shadow-[0_0_50px_rgba(0,255,102,0.2)] space-y-6"
+              className="w-full max-w-2xl bg-card-dark border border-white/10 p-6 sm:p-8 rounded-3xl relative overflow-hidden shadow-2xl space-y-6 max-h-[90vh] overflow-y-auto"
               onClick={(e) => e.stopPropagation()}
             >
               {/* Close Button */}
               <button 
                 onClick={() => setSelectedProduct(null)}
-                className="absolute top-4 right-4 text-text-secondary hover:text-accent-green transition-colors text-xs cursor-pointer font-bold"
+                className="absolute top-5 right-5 p-2 rounded-full bg-white/5 hover:bg-white/10 text-text-secondary hover:text-white transition-colors cursor-pointer"
               >
-                [ CLOSE_SYS_X ]
+                <X className="h-5 w-5" />
               </button>
 
               {/* Header Info */}
-              <div className="flex gap-4 items-start border-b border-border-dark pb-5">
-                <div className="w-16 h-16 border border-border-dark bg-card-dark flex items-center justify-center overflow-hidden rounded-xl shrink-0">
+              <div className="flex gap-4 items-start border-b border-border-dark/60 pb-5">
+                <div className="w-18 h-18 border border-white/10 bg-bg-dark rounded-2xl flex items-center justify-center overflow-hidden shrink-0 shadow-lg">
                   {selectedProduct.icon ? (
                     <img src={selectedProduct.icon} alt={selectedProduct.title} className="w-full h-full object-cover" />
                   ) : (
-                    <Gamepad2 className="h-8 w-8 text-accent-green/60" />
+                    <Gamepad2 className="h-8 w-8 text-accent-green" />
                   )}
                 </div>
-                <div className="space-y-1">
-                  <div className="text-[10px] text-accent-green uppercase tracking-widest font-semibold">
-                    {selectedProduct.genre || "GENRE_UNDEFINED"}
+                <div className="space-y-1.5 pr-8">
+                  <div className="text-xs text-accent-green font-semibold uppercase tracking-wider">
+                    {selectedProduct.genre || "Mobile Game"}
                   </div>
-                  <h3 className="text-xl font-bold text-text-primary uppercase tracking-wide">
+                  <h3 className="text-xl sm:text-2xl font-bold text-white tracking-tight">
                     {selectedProduct.title}
                   </h3>
-                  <div className="flex flex-wrap gap-x-4 gap-y-1 text-[10px] text-text-secondary">
-                    <span>ID: #{selectedProduct.id.toString().padStart(3, '0')}</span>
+                  <div className="flex flex-wrap gap-x-3 gap-y-1 text-xs text-text-muted">
+                    <span>Release: {selectedProduct.releaseDate}</span>
                     <span>•</span>
-                    <span>RELEASE: {selectedProduct.releaseDate}</span>
-                    <span>•</span>
-                    <span className="uppercase">STATUS: {selectedProduct.status}</span>
+                    <span>Status: {getPresentationStatus(selectedProduct.status)}</span>
                   </div>
                 </div>
               </div>
 
-                  {selectedProduct.description && (
-                <div className="text-xs text-text-secondary leading-relaxed bg-bg-dark/20 border border-border-dark/30 p-3 italic">
-                  &ldquo; {selectedProduct.description} &rdquo;
+              {/* Description */}
+              {selectedProduct.description && (
+                <div className="text-xs sm:text-sm text-text-secondary leading-relaxed p-4 rounded-xl bg-white/[0.03] border border-white/5">
+                  {selectedProduct.description}
                 </div>
               )}
 
-              {/* Metrics & Developer Note callout boxes */}
+              {/* Metrics & Technical Highlights Note */}
               {(selectedProduct.metrics || selectedProduct.note) && (
-                <div className="space-y-2 text-xs font-mono">
+                <div className="space-y-2.5 text-xs">
                   {selectedProduct.metrics && (
-                    <div className="border border-accent-green/40 bg-accent-green/5 p-2.5 text-text-primary flex items-start gap-2">
-                      <span className="text-accent-green font-bold shrink-0">// METRICS:</span>
-                      <span className="text-accent-green">{selectedProduct.metrics}</span>
+                    <div className="p-3 rounded-xl bg-accent-green/10 border border-accent-green/20 text-accent-green flex items-start gap-2.5 font-semibold">
+                      <Trophy className="h-4 w-4 shrink-0 mt-0.5" />
+                      <span>{selectedProduct.metrics}</span>
                     </div>
                   )}
                   {selectedProduct.note && (
-                    <div className="border border-amber-500/40 bg-amber-500/5 p-2.5 text-text-primary flex items-start gap-2">
-                      <span className="text-amber-400 font-bold shrink-0">// NOTE:</span>
-                      <span className="text-text-primary/90">{selectedProduct.note}</span>
+                    <div className="p-3 rounded-xl bg-amber-500/10 border border-amber-500/20 text-text-primary flex items-start gap-2.5">
+                      <Wrench className="h-4 w-4 text-amber-400 shrink-0 mt-0.5" />
+                      <span className="text-[11px] leading-relaxed text-text-secondary">{selectedProduct.note}</span>
                     </div>
                   )}
                 </div>
               )}
 
               {/* Project Specifications */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-xs">
-                {/* Left Column: Role & Tech */}
-                <div className="space-y-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs">
+                <div className="p-4 rounded-xl bg-white/[0.02] border border-white/5 space-y-3">
                   <div>
-                    <div className="text-text-secondary uppercase font-bold mb-1 tracking-wider text-[10px]">
-                      // ROLE_SPECIFICATION
+                    <div className="text-[10px] text-text-muted uppercase font-bold tracking-wider mb-1">
+                      {language === 'en' ? 'ROLE IN PROJECT' : 'VAI TRÒ TRONG DỰ ÁN'}
                     </div>
-                    <div className="text-accent-green font-semibold bg-accent-green/5 border border-accent-green/20 px-3 py-2 uppercase font-mono">
-                      {selectedProduct.role || "Awaiting Data Input..."}
+                    <div className="font-semibold text-accent-green">
+                      {selectedProduct.role || "Senior Unity Developer"}
                     </div>
                   </div>
 
                   {selectedProduct.teamSize && (
                     <div>
-                      <div className="text-text-secondary uppercase font-bold mb-1 tracking-wider text-[10px]">
-                        // TEAM_SIZE
+                      <div className="text-[10px] text-text-muted uppercase font-bold tracking-wider mb-1">
+                        {language === 'en' ? 'TEAM SIZE' : 'QUY MÔ ĐỘI NGŨ'}
                       </div>
-                      <div className="text-text-primary bg-card-dark/60 border border-border-dark px-3 py-2 font-mono">
+                      <div className="text-text-primary">
                         {selectedProduct.teamSize}
                       </div>
                     </div>
                   )}
-
-                  <div>
-                    <div className="text-text-secondary uppercase font-bold mb-1.5 tracking-wider text-[10px]">
-                      // TECHNOLOGIES_UTILIZED
-                    </div>
-                    {selectedProduct.technologies && selectedProduct.technologies.length > 0 ? (
-                      <div className="flex flex-wrap gap-1.5 pt-1">
-                        {selectedProduct.technologies.map((tech, idx) => (
-                          <span 
-                            key={idx} 
-                            className="px-2 py-1 bg-card-dark/60 border border-border-dark text-[10px] text-text-primary font-mono uppercase"
-                          >
-                            {tech}
-                          </span>
-                        ))}
-                      </div>
-                    ) : (
-                      <div className="text-text-secondary/70 italic px-1 font-mono">No tags configured. Update Project.txt to sync.</div>
-                    )}
-                  </div>
                 </div>
 
-                {/* Right Column: Achievements */}
-                <div className="flex flex-col">
-                  <div className="text-text-secondary uppercase font-bold mb-1 tracking-wider text-[10px]">
-                    // CORE_PERFORMANCE_METRICS_AND_ACHIEVEMENTS
+                <div className="p-4 rounded-xl bg-white/[0.02] border border-white/5">
+                  <div className="text-[10px] text-text-muted uppercase font-bold tracking-wider mb-2">
+                    {language === 'en' ? 'TECHNOLOGY STACK' : 'CÔNG NGHỆ ÁP DỤNG'}
                   </div>
-                  <div className="bg-bg-dark/40 border border-border-dark p-3.5 leading-relaxed text-text-primary/90 flex-grow font-sans min-h-[140px] max-h-[180px] overflow-y-auto">
-                    {selectedProduct.achievements ? (
-                      <div className="whitespace-pre-line text-xs">
-                        {selectedProduct.achievements}
-                      </div>
-                    ) : (
-                      <div className="text-text-secondary/70 italic font-mono text-xs">Awaiting metrics input in Project.txt ...</div>
-                    )}
-                  </div>
+                  {selectedProduct.technologies && selectedProduct.technologies.length > 0 ? (
+                    <div className="flex flex-wrap gap-1.5">
+                      {selectedProduct.technologies.map((tech, idx) => (
+                        <span 
+                          key={idx} 
+                          className="px-2 py-0.5 rounded-md bg-white/5 border border-white/10 text-[11px] text-text-secondary"
+                        >
+                          {tech}
+                        </span>
+                      ))}
+                    </div>
+                  ) : (
+                    <div className="text-text-muted text-[11px]">Unity, C#, Mobile SDKs</div>
+                  )}
                 </div>
               </div>
 
+              {/* Achievements / Technical Contributions */}
+              {selectedProduct.achievements && (
+                <div className="space-y-1.5 text-xs">
+                  <div className="text-[10px] text-text-muted uppercase font-bold tracking-wider">
+                    {language === 'en' ? 'TECHNICAL CONTRIBUTIONS & RESULTS' : 'ĐÓNG GÓP KỸ THUẬT & KẾT QUẢ'}
+                  </div>
+                  <div className="p-4 rounded-xl bg-white/[0.02] border border-white/5 text-text-secondary leading-relaxed whitespace-pre-line text-xs">
+                    {selectedProduct.achievements}
+                  </div>
+                </div>
+              )}
+
               {/* Actions Footer */}
-              <div className="flex items-center justify-between border-t border-border-dark pt-5 text-[10px]">
-                <div className="text-[9px] text-text-secondary font-mono">
-                  SYS_STATUS: DETAIL_TELEMETRY_ONLINE
-                </div>
-                <div className="flex items-center gap-3">
-                  {selectedProduct.gameplay && (
-                    <a 
-                      href={selectedProduct.gameplay}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="px-3 py-2 border border-border-dark hover:border-accent-green/50 text-text-secondary hover:text-accent-green transition-all flex items-center gap-1.5 bg-bg-dark/50"
-                      style={{ borderRadius: '0px' }}
-                    >
-                      <Play className="h-3.5 w-3.5 fill-current" />
-                      <span>GAMEPLAY_RECORDING</span>
-                    </a>
-                  )}
-                  {selectedProduct.storeLink && (
-                    <a 
-                      href={selectedProduct.storeLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="px-3 py-2 bg-accent-green hover:bg-accent-green/90 text-bg-dark font-bold transition-all flex items-center gap-1.5"
-                      style={{ borderRadius: '0px' }}
-                    >
-                      <ExternalLink className="h-3.5 w-3.5" />
-                      <span>ACCESS_STORE</span>
-                    </a>
-                  )}
-                </div>
+              <div className="flex items-center justify-end gap-3 border-t border-border-dark/60 pt-5">
+                {selectedProduct.gameplay && (
+                  <a 
+                    href={selectedProduct.gameplay}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-4 py-2.5 rounded-xl border border-border-dark hover:border-accent-green/40 text-text-secondary hover:text-accent-green bg-white/5 transition-all flex items-center gap-2 text-xs font-semibold"
+                  >
+                    <Play className="h-4 w-4 fill-current" />
+                    <span>Gameplay Video</span>
+                  </a>
+                )}
+                {selectedProduct.storeLink && (
+                  <a 
+                    href={selectedProduct.storeLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-5 py-2.5 rounded-xl bg-accent-green hover:bg-emerald-400 text-[#0a0d14] font-bold transition-all flex items-center gap-2 text-xs shadow-md"
+                  >
+                    <ExternalLink className="h-4 w-4" />
+                    <span>Open on Google Play</span>
+                  </a>
+                )}
               </div>
             </motion.div>
           </motion.div>
@@ -513,3 +485,4 @@ export default function ProductTimeline() {
     </section>
   );
 }
+

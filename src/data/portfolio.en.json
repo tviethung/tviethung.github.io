@@ -1,0 +1,745 @@
+{
+  "personalInfo": {
+    "fullName": "Ta Viet Hung",
+    "title": "Senior Unity Developer",
+    "location": "Hanoi, Vietnam",
+    "email": "tviethung20@gmail.com",
+    "phone": "+84 398 962 424",
+    "gitlab": "https://gitlab.com/tviethung20",
+    "summary": "Senior Unity Developer with 10+ years of Software Engineering experience and 6+ years in Unity Mobile Game Development. Shipped 19+ mobile games on Android with titles reaching millions of downloads. Specialized in C# game architecture (OOP, Design Patterns, EventBus), 60 FPS mobile optimization on low-end devices, custom Unity Editor tooling, and Addressables CDN pipelines. Combines strong engineering rigor with data-driven iteration to maximize gameplay retention."
+  },
+  "telemetry": {
+    "stats": [
+      {
+        "name": "UNITY & C# ARCHITECTURE",
+        "value": "6+ YEARS",
+        "progress": 95
+      },
+      {
+        "name": "MOBILE OPTIMIZATION (60 FPS)",
+        "value": "6+ YEARS",
+        "progress": 90
+      },
+      {
+        "name": "CUSTOM TOOLS & PIPELINES",
+        "value": "3+ YEARS",
+        "progress": 85
+      },
+      {
+        "name": "SOFTWARE ENGINEERING",
+        "value": "10+ YEARS",
+        "progress": 100
+      }
+    ],
+    "projectCount": "19+",
+    "latestPlatform": "ANDROID / CROSS-PLATFORM",
+    "memoryStatus": "OPTIMIZED // ZERO GC"
+  },
+  "skills": {
+    "languages": [
+      "C# (.NET / Unity Scripting - 6+ Years)",
+      "Java / Android Native (3+ Years)",
+      "C / C++ (Core Principles)",
+      "SQL / Firebase Realtime DB"
+    ],
+    "enginesAndFrameworks": [
+      "Unity Engine (2D/3D, URP, Physics 2D/3D)",
+      "C# Clean Architecture (EventBus, UniTask, ScriptableObject)",
+      "DOTween Pro / Cinemachine / NavMesh",
+      "Addressables / CDN Asset Management",
+      "Object Pooling / GPU Instancing / Occlusion Culling",
+      "Custom Unity Editor Tools & Level Design Tooling",
+      "Firebase (Remote Config, Analytics, Crashlytics)",
+      "Mobile Monetization (AdMob, AppLovin MAX, Unity IAP)"
+    ],
+    "platforms": [
+      "Android (Google Play / Gradle / AAB)",
+      "Cross-Platform Mobile (Android & iOS Architecture)",
+      "WebGL (Browser Deployment)"
+    ],
+    "expertises": [
+      "60 FPS Mobile Optimization (Low-end Devices, CPU/RAM profiling, Draw Calls, Zero GC, ASTC)",
+      "Custom Editor Tools & Level Editors accelerating content creation for Designers & Artists",
+      "Core Gameplay Architecture, 2D/3D Physics, and Puzzle/Arcade Mechanics",
+      "Internal Analytics & Live-Ops Tooling (GA4 & Firebase Cohort LTV, IAP/Ads LTV, Retention D0-D60, User Timeplay)",
+      "Data-Driven Gameplay Optimization (A/B testing via Firebase Remote Config, D1/D7 Retention)"
+    ]
+  },
+  "projects": [
+    {
+      "id": "drop-clash",
+      "title": "Drop Clash",
+      "description": "Mobile 2D physics puzzle game with real-time interaction. Built on a Service-Oriented MVC architecture.",
+      "role": "Senior Gameplay Programmer",
+      "technologies": [
+        "Unity 2022.3 (2D)",
+        "C# (.NET Standard 2.1)",
+        "UniTask",
+        "DOTween",
+        "Odin Inspector",
+        "Addressables"
+      ],
+      "platforms": [
+        "Android"
+      ],
+      "metrics": "Stable 60 FPS on 2GB RAM low-end devices. Reduced battery consumption by 35% via Update loop optimizations and zero-allocation GC management.",
+      "demoLink": "https://play.google.com/store",
+      "sourceLink": "https://github.com",
+      "imageUrl": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      "id": "shiro-dash",
+      "title": "Shiro Dash",
+      "description": "Fast-paced 3D endless runner featuring complex skill trees and dynamic visual effects using Custom Shaders.",
+      "role": "Senior Gameplay Developer",
+      "technologies": [
+        "Unity3D",
+        "C#",
+        "Shader Graph",
+        "Addressables",
+        "DOTween"
+      ],
+      "platforms": [
+        "Android"
+      ],
+      "metrics": "Reduced initial APK download size from 180MB down to 75MB by decoupling dynamic assets via Addressables CDN.",
+      "demoLink": "https://apps.apple.com",
+      "sourceLink": "https://github.com",
+      "imageUrl": "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      "id": "unity-editor-tools",
+      "title": "Unity Node-Based Dialog System",
+      "description": "An open-source custom Unity Editor Tool for designing non-linear dialogue branching using Graph View.",
+      "role": "Sole Creator",
+      "technologies": [
+        "Unity Editor Scripting",
+        "UIToolkit",
+        "C#"
+      ],
+      "platforms": [
+        "Editor Tool"
+      ],
+      "metrics": "Boosted narrative design productivity by 50% for studio level designers.",
+      "demoLink": "https://github.com",
+      "sourceLink": "https://github.com",
+      "imageUrl": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=600&q=80"
+    }
+  ],
+  "experience": [
+    {
+      "company": "One Percent Studio (VGP) (Hanoi)",
+      "role": "Senior Unity Developer",
+      "period": "Oct 2022 - Jul 2026",
+      "bulletPoints": [
+        "Developed and successfully published 19+ mobile games on Android. Key titles include: Merge Drop Master (~1.8M downloads), Trending AR Soundboard (>2M downloads), and My Pool Club (>200K downloads).",
+        "Architected core game systems (Unity/C#), authored core gameplay loops, and implemented complex 2D/3D physics interactions (Drag & Drop, collision detection, merge mechanics).",
+        "Led deep mobile performance optimizations: RAM/CPU profiling, draw call reduction via Sprite Atlases/GPU Instancing, ASTC texture compression, and Object Pooling, maintaining 60 FPS on low-end devices.",
+        "Engineered custom Unity Editor tools (Level Editors, Config Generators) to streamline content creation workflows for Design and Art teams.",
+        "Architected and built an internal GA4 & Firebase LTV/Retention Cohort Analytics Tool: Automated tracking and visualization for live-ops metrics (Total LTV, IAP LTV, Ads LTV, D0-D60 Cohort Retention, % LTV Growth, and User Timeplay) filterable by Country and App Version, empowering PO and UA teams to optimize marketing spend and retention loops.",
+        "Built modular data structures and dynamic event-driven architectures with Firebase Remote Config for gameplay A/B testing and ad/IAP revenue optimization (AdMob, AppLovin MAX).",
+        "Spearheaded rapid prototyping for new gameplay concepts, collaborating closely with PO, Art, and GD teams to deliver data-backed iterations based on production analytics."
+      ]
+    },
+    {
+      "company": "Gapu Studio (Hanoi)",
+      "role": "Game Developer",
+      "period": "Jun 2022 - Oct 2022",
+      "bulletPoints": [
+        "Developed 3 complete Unity game titles: 1 Hyper-Casual game, 1 Tower Hero title, and 1 Logic Puzzle game.",
+        "Programmed core gameplay & combat mechanics: Dynamic tower swapping logic, Hero equipment systems (ranged & melee combat), Boss Fight mechanics, and character animation controllers.",
+        "Built dynamic Level Config architectures and integrated third-party SDKs for analytics tracking and monetization (Ads Mediation / IAP)."
+      ]
+    },
+    {
+      "company": "Freelancer",
+      "role": "Game Developer (Client & Server)",
+      "period": "Aug 2021 - May 2022",
+      "bulletPoints": [
+        "Engineered cross-platform game features across Client & Server in a 5-person engineering team for Farm Simulation, Tower Defense, and Tactical Battle projects.",
+        "Unity Client Development: Implemented core gameplay loops, interactive inventory systems, responsive UI/UX, and unit/tower controls.",
+        "Game Server Development: Programmed server-side game logic including Hero Attribution, Equipment, Currency Systems, PvP Bot Matching, Gacha Pooling, and Hero Upgrades.",
+        "Architected secure databases and real-time client-server data synchronization (Tech stack: Unity C# client & SmartFoxServer Java backend)."
+      ]
+    },
+    {
+      "company": "Apero (Hanoi)",
+      "role": "Game Developer",
+      "period": "May 2021 - Aug 2021",
+      "bulletPoints": [
+        "Contributed to the development of a Tower Defense game project (predecessor to Rise of Defenders title).",
+        "Owned core gameplay systems: Hero Attribution, Building Tower System, Inventory, Crafting, and Item Upgrades."
+      ]
+    },
+    {
+      "company": "TTC-Solutions (Hanoi)",
+      "role": "Unity Client & Full-Stack Developer",
+      "period": "Dec 2019 - May 2021",
+      "bulletPoints": [
+        "Unity Client Development for Corona Virus Game (South Korea): Developed obstacle mechanics, medal collection/upgrade systems, inventory, and Mission Objectives.",
+        "Unity Client Development for Poker Game: Integrated UI/UX screens and gameplay logic, implementing real-time server data synchronization matching Figma designs.",
+        "Managed game application CMS: User Registration, Cashout, Recharge, Marketing Campaigns, and Giftcodes (Tech stack: Spring Boot, Angular, Docker).",
+        "Built custom OTP and marketing tracking microservices (Tech stack: Spring Boot, Golang, Docker)."
+      ]
+    },
+    {
+      "company": "Samsung Vietnam Mobile R&D Center (SVMC)",
+      "role": "Senior Engineer / Engineer III",
+      "period": "Jan 2015 - Apr 2019",
+      "bulletPoints": [
+        "Collaborated with a 6-engineer software team to analyze and develop test suites for Samsung Internal Development Library (Android System APIs) with 1000+ APIs and 5000+ Testcases using AndroidTestCase (2-year project). Responsible for Touchwiz UI/UX, Camera, Pedometer APIs, SMS, optimizing Test Suite execution speed.",
+        "Developed BFT (Basic Functional Test Suite): Tested 100+ functions for Samsung preloaded apps (My Files, Call, Messenger, Notification Bar, Contacts...), automated device binary flashing, precondition setups, and Test Suite execution (Tech stack: Java, UIAutomator).",
+        "Executed Web Service API testing.",
+        "Developed custom Trade Federation (Tradefed) automation for running Compatibility Test Suite (CTS) and Vendor Test Suite (VTS) on Samsung APIs (Tech stack: Java).",
+        "Configured Quickbuild & Jenkins CI/CD pipelines to auto-fetch Perforce (P4) source code and run automated Test Suites."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "school": "Posts and Telecommunications Institute of Technology (PTIT)",
+      "degree": "Engineer's Degree in Information Technology",
+      "period": "2009 - 2014"
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Samsung Software Certificate - Advance",
+      "issuer": "Samsung Vietnam Mobile R&D Center",
+      "year": "2015"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "title": "Crafter Legends",
+      "genre": "Hyper Casual",
+      "description": "3D voxel Idle Clicker mining simulation game combining Merge miner upgrades and monster battles to explore rare resources.",
+      "releaseDate": "05/04/2023",
+      "status": "Removed",
+      "storeLink": null,
+      "gameplay": "https://www.youtube.com/watch?v=Tn0SvI_TKbE",
+      "icon": "./icons/1.crafter_legends.png",
+      "role": "Lead Developer",
+      "teamSize": "4 members (2 Dev, 1 Artist, 1 Game Designer (PO))",
+      "technologies": [
+        "Unity",
+        "C#",
+        "DOTween",
+        "Sprite Atlas",
+        "GPU Instancing",
+        "Object Pooling",
+        "UIEffect"
+      ],
+      "achievements": "- Pathfinding System\n- Merge Upgrade System\n- Procedural Map Generation\n- Part-by-part Enemy Destruction Battle System",
+      "metrics": "",
+      "note": "First 3D Voxel project laying the architectural foundation for subsequent Idle Tycoon titles.",
+      "isFavorite": true
+    },
+    {
+      "id": 2,
+      "title": "Rumble Miners:Idle Craft Merge",
+      "genre": "Idle Tycoon",
+      "description": "3D Idle Mining Tycoon simulation game combining Merge miner upgrades, building card upgrades, and monster combat to protect treasure.",
+      "releaseDate": "16/07/2023",
+      "status": "Removed",
+      "storeLink": null,
+      "gameplay": null,
+      "icon": "./icons/2.Rumble Miners Idle Craft Merge.png",
+      "role": "Lead Developer",
+      "teamSize": "5 members (2 Dev, 2 Artist, 1 Game Designer (PO))",
+      "technologies": [
+        "Unity",
+        "C#",
+        "DOTween",
+        "Sprite Atlas",
+        "GPU Instancing",
+        "Object Pooling",
+        "UIEffect"
+      ],
+      "achievements": "- Designed income & offline income systems\n- Integrated Object Pooling\n- Card upgrade system\n- Building upgrade system",
+      "metrics": "",
+      "note": "",
+      "isFavorite": false
+    },
+    {
+      "id": 3,
+      "title": "Brave Miner: Build & Fight",
+      "genre": "Idle Tycoon",
+      "description": "3D voxel Idle Mining adventure game where players mine resources, merge miner armies to rebuild a destroyed empire, and battle monsters to defend the village.",
+      "releaseDate": "10/10/2023",
+      "status": "Removed",
+      "storeLink": null,
+      "gameplay": "https://www.youtube.com/watch?v=OyfPFI4eEqY",
+      "icon": "./icons/3.Brave Miner Build & Fight.png",
+      "role": "Lead Developer",
+      "teamSize": "6 members (2 Dev, 3 Artist, 1 Game Designer (PO))",
+      "technologies": [
+        "Unity",
+        "C#",
+        "DOTween",
+        "Sprite Atlas",
+        "GPU Instancing",
+        "Object Pooling",
+        "UIEffect"
+      ],
+      "achievements": "- Added Battle System with unique hero skills & card collection upgrades\n- Built secondary structures boosting passive income, miners, and heroes\n- Achievement System\n- Integrated Live-Ops Events",
+      "metrics": "",
+      "note": "Feature-complete game covering Gameplay, Battle, Building, and Live-Ops Events with upgraded visuals.",
+      "isFavorite": true
+    },
+    {
+      "id": 4,
+      "title": "My Pool Club: Tycoon Game",
+      "genre": "Idle Arcade",
+      "description": "Billiards club management game where players manage pool tables, recruit staff, upgrade entertainment facilities, and expand club chains across multiple regions.",
+      "releaseDate": "23/01/2024",
+      "status": "Removed",
+      "storeLink": null,
+      "gameplay": "https://www.youtube.com/watch?v=SmdquDqhTKQ",
+      "icon": "./icons/4.My Pool Club Tycoon Game.png",
+      "role": "Lead Developer",
+      "teamSize": "5 members (2 Dev, 3 Artist, 1 Game Designer (PO))",
+      "technologies": [
+        "Unity",
+        "C#",
+        "Unity Physics 3D",
+        "URP",
+        "Optimizations",
+        "Occlusion culling",
+        "Static object",
+        "Cinemachine Camera",
+        "NavMesh",
+        "Object Pooling",
+        "Sprite Atlas"
+      ],
+      "achievements": "- Character environment interaction system\n- Camera control system\n- Structure upgrade mechanics\n- Automated NPC task execution\n- Map expansion system\n- Vehicle system",
+      "metrics": "Lượt tải: 200.000+",
+      "note": "Most successful Idle Arcade game in terms of player retention metrics.",
+      "isFavorite": true
+    },
+    {
+      "id": 5,
+      "title": "My Z Base",
+      "genre": "Idle Arcade",
+      "description": "Post-apocalyptic 3D Idle Arcade survival game where players build zombie defense shelters, gather resources, recruit survivors, and expand military defense bases.",
+      "releaseDate": "09/04/2024",
+      "status": "Removed",
+      "storeLink": null,
+      "gameplay": "https://www.youtube.com/watch?v=Wkwh0-yiZ5c",
+      "icon": "./icons/5.My Z Base.png",
+      "role": "Game Developer",
+      "teamSize": "4 members (2 Dev, 1 Artist, 1 Game Designer)",
+      "technologies": [
+        "Unity",
+        "C#",
+        "URP",
+        "Occlusion culling",
+        "Static object",
+        "Cinemachine Camera",
+        "NavMesh",
+        "Object Pooling",
+        "Sprite Atlas"
+      ],
+      "achievements": "- Base building & expansion system\n- Defense weapon upgrade mechanics\n- Resource processing & recycling pipelines",
+      "metrics": "",
+      "note": "Strong gameplay core with high user retention performance.",
+      "isFavorite": true
+    },
+    {
+      "id": 6,
+      "title": "Animals inn: simulator game",
+      "genre": "Idle Arcade",
+      "description": "3D Idle Arcade animal hotel management simulation where players serve cute animal guests, expand hotel rooms, and manage catering and entertainment services.",
+      "releaseDate": "04/07/2024",
+      "status": "Removed",
+      "storeLink": null,
+      "gameplay": "https://www.youtube.com/watch?v=hqrIkg_Yo0k",
+      "icon": "./icons/6.Animals inn simulator game.png",
+      "role": "Game Developer",
+      "teamSize": "4 members (2 Dev, 1 Artist, 1 Game Designer)",
+      "technologies": [
+        "Unity",
+        "C#",
+        "URP",
+        "Occlusion culling",
+        "Static object",
+        "Cinemachine Camera",
+        "NavMesh",
+        "Object Pooling",
+        "Toony Shader",
+        "Sprite Atlas"
+      ],
+      "achievements": "- Customer AI task queue system\n- Hotel service upgrade system",
+      "metrics": "",
+      "note": "CPI did not meet benchmark targets.",
+      "isFavorite": false
+    },
+    {
+      "id": 7,
+      "title": "Military life: Idle game",
+      "genre": "Idle Arcade",
+      "description": "3D Idle Arcade military boot camp simulation game where players manage soldier recruitment, training courses, and equipment upgrades to expand military bases.",
+      "releaseDate": "15/01/2025",
+      "status": "Removed",
+      "storeLink": null,
+      "gameplay": "https://www.youtube.com/watch?v=mvxYdsbPtFI",
+      "icon": "./icons/7.Military life Idle game.png",
+      "role": "Game Developer & PM",
+      "teamSize": "4 members (1 Dev(PM), 2 Artist, 1 Game Designer)",
+      "technologies": [
+        "Unity",
+        "C#",
+        "URP",
+        "Occlusion culling",
+        "Static object",
+        "Cinemachine Camera",
+        "NavMesh",
+        "Object Pooling",
+        "Toony Shader",
+        "Sprite Atlas"
+      ],
+      "achievements": "- Soldier training flow & obstacle course mechanics\n- Base expansion & equipment upgrades",
+      "metrics": "",
+      "note": "CPI did not meet benchmark targets.",
+      "isFavorite": false
+    },
+    {
+      "id": 8,
+      "title": "Screw Pet 3D: Removal Master",
+      "genre": "Puzzle",
+      "description": "3D physics puzzle game where players rotate and unscrew pins and bolts to solve hundreds of challenging levels with simulated physics.",
+      "releaseDate": "04/03/2025",
+      "status": "Removed",
+      "storeLink": null,
+      "gameplay": "https://www.youtube.com/watch?v=SrLupquyQ3c",
+      "icon": "./icons/8.Screw Pet 3D Removal Master.png",
+      "role": "Game Developer & PM",
+      "teamSize": "4 members (1 Dev(PM), 2 Artist, 1 Game Designer)",
+      "technologies": [
+        "Unity",
+        "C#",
+        "Raycasting",
+        "Unity joints",
+        "Toony Shader"
+      ],
+      "achievements": "- Built 3D screw pin unscrewing physics mechanics\n- Created Support Editor Tool for pin placement\n- Added Home Minigames",
+      "metrics": "",
+      "note": "CPI did not meet benchmark targets.",
+      "isFavorite": false
+    },
+    {
+      "id": 9,
+      "title": "Perfect Room: Cozy Decor",
+      "genre": "Puzzle",
+      "description": "Cozy decor puzzle game where players arrange interior furniture and decorations to design aesthetic living spaces.",
+      "releaseDate": "28/04/2025",
+      "status": "Removed",
+      "storeLink": null,
+      "gameplay": "https://www.youtube.com/shorts/j750Om9jjfQ",
+      "icon": "./icons/9.Perfect Room Cozy Decor.png",
+      "role": "Game Developer & PM",
+      "teamSize": "4 members (1 Dev(PM), 2 Artist, 1 Game Designer)",
+      "technologies": [
+        "Unity",
+        "C#",
+        "Sprite Atlas",
+        "DOTween"
+      ],
+      "achievements": "Loaded hundreds of room decor assets dynamically via Addressables from CDN, cutting APK install package size by 50%. Built intuitive real-time placement UI.",
+      "metrics": "",
+      "note": "Dynamically loaded room decor assets via Addressables CDN, reducing initial APK download size by 50%.",
+      "isFavorite": false
+    },
+    {
+      "id": 10,
+      "title": "AI Fusion: Create Character",
+      "genre": "Hyper Casual",
+      "description": "AI character creator game allowing players to fuse two entities (animals, heroes, anime, or meme characters) into unique hybrid creatures.",
+      "releaseDate": "23/05/2025",
+      "status": "Removed",
+      "storeLink": null,
+      "gameplay": null,
+      "icon": "./icons/10.AI Fusion Create Character.png",
+      "role": "Game Developer & PM",
+      "teamSize": "3 members (1 Dev(PM), 1 Artist, 1 Game Designer)",
+      "technologies": [
+        "Unity",
+        "C#",
+        "WebRequest",
+        "DOTween"
+      ],
+      "achievements": "",
+      "metrics": "",
+      "note": "CPI did not meet benchmark targets.",
+      "isFavorite": false
+    },
+    {
+      "id": 11,
+      "title": "Trending AR Soundboard",
+      "genre": "Hyper Casual",
+      "description": "Viral AR audio soundboard app allowing users to interact with trending meme sound effects and record viral videos.",
+      "releaseDate": "27/05/2025",
+      "status": "Live",
+      "storeLink": "https://play.google.com/store/apps/details?id=casual.soundboard.ar.trending",
+      "gameplay": "https://www.youtube.com/watch?v=etbhQ2U3Irs",
+      "icon": "./icons/11. Viral AR Soundboard.png",
+      "role": "Game Developer & PM",
+      "teamSize": "3 members (1 Dev, 1 Artist, 1 Game Designer)",
+      "technologies": [
+        "Unity",
+        "C#",
+        "Audio Mixer",
+        "Android Plugins",
+        "Sprite Atlas",
+        "DOTween"
+      ],
+      "achievements": "- Built camera device & record scene system exporting to MP4 video\n- Record List with thumbnail generation",
+      "metrics": "Lượt tải: >2.000.000",
+      "note": "CPI met benchmark targets with stable ad revenue.",
+      "isFavorite": false
+    },
+    {
+      "id": 12,
+      "title": "Merge Drop Master",
+      "genre": "Puzzle",
+      "description": "Viral Merge Drop Puzzle game where players drop and merge trending meme characters and fruit items to evolve them into higher tiers.",
+      "releaseDate": "13/06/2025",
+      "status": "Live",
+      "storeLink": "https://play.google.com/store/apps/details?gl=US&hl=en-US&id=com.merge.master.drop.fun.viral.fruit.animal.animash",
+      "gameplay": "https://www.youtube.com/watch?v=5961LlfIXT0",
+      "icon": "./icons/12.Merge Drop Master.png",
+      "role": "Game Developer & PM",
+      "teamSize": "3 members (1 Dev, 1 Artist, 1 Game Designer)",
+      "technologies": [
+        "Unity",
+        "C#",
+        "2D Physics",
+        "Object Pooling",
+        "Sprite Atlas",
+        "DOTween",
+        "Addressables",
+        "Firebase Remote Config",
+        "Firebase Database"
+      ],
+      "achievements": "- Optimized 2D collision physics & merge logic for fruits/animals\n- Optimized skin unlock pipeline\n- Maximized ad & IAP monetization via Remote Config\n- Integrated Leaderboards, Building, and Battle Pass systems\n- Added merge combo visual effects",
+      "metrics": "Lượt tải: ~1.800.000+",
+      "note": "CPI met benchmark targets with strong revenue performance. Major long-term project with multiple expansion phases.",
+      "isFavorite": true
+    },
+    {
+      "id": 13,
+      "title": "Hidden World: Zoom & Spot",
+      "genre": "Puzzle",
+      "description": "Hidden Object Puzzle game where players utilize pinch-to-zoom controls to spot cleverly hidden clues and objects across detailed artwork.",
+      "releaseDate": "08/07/2025",
+      "status": "Removed",
+      "storeLink": null,
+      "gameplay": null,
+      "icon": "./icons/13.Hidden World Zoom & Spot.png",
+      "role": "Game Developer & PM",
+      "teamSize": "3 members (1 Dev, 1 Artist, 1 Game Designer)",
+      "technologies": [
+        "Unity",
+        "C#",
+        "Sprite Atlas",
+        "DOTween",
+        "Addressable"
+      ],
+      "achievements": "- Optimized Canvas UI rendering performance\n- Smooth multi-level zoom system",
+      "metrics": "",
+      "note": "Optimized high-resolution asset streaming from remote CDN using Addressables and RAM footprint management.",
+      "isFavorite": false
+    },
+    {
+      "id": 14,
+      "title": "Meme Music Fire",
+      "genre": "Rhythm",
+      "description": "Rhythm game where players tap and swipe to music beats to trigger meme sound effects and animated visual feedback.",
+      "releaseDate": "20/10/2025",
+      "status": "Removed",
+      "storeLink": null,
+      "gameplay": null,
+      "icon": "./icons/14.Meme Music Fire.png",
+      "role": "Game Developer",
+      "teamSize": "3 members (1 Dev, 1 Artist, 1 Game Designer)",
+      "technologies": [
+        "Unity",
+        "C#",
+        "DOTween",
+        "Sprite Atlas",
+        "Addressable"
+      ],
+      "achievements": "- Optimized rhythm beat timing, parsing and generating music notes dynamically from configuration files\n- Accurate multi-channel audio synchronization",
+      "metrics": "",
+      "note": "Engineered custom audio beat-matching algorithm generating synced note trajectories along dynamic timelines.",
+      "isFavorite": false
+    },
+    {
+      "id": 15,
+      "title": "Cute Drop World",
+      "genre": "Puzzle",
+      "description": "Adorable Merge Drop Puzzle game where players drop and combine fruits, animals, and squishy slime desserts to evolve larger cute forms.",
+      "releaseDate": "05/12/2025",
+      "status": "Live",
+      "storeLink": "https://play.google.com/store/apps/details?gl=US&hl=en-US&id=com.cute.drop.world.party.animals.merge.dessert.slime",
+      "gameplay": "https://www.youtube.com/watch?v=hCSm7xkdcS0",
+      "icon": "./icons/15.Cute Drop World.png",
+      "role": "Game Developer",
+      "teamSize": "3 members (1 Dev, 1 Artist, 1 Game Designer)",
+      "technologies": [
+        "Unity",
+        "C#",
+        "2D Physics",
+        "Object Pooling",
+        "Sprite Atlas",
+        "DOTween",
+        "Addressables",
+        "Firebase Remote Config",
+        "Firebase Database"
+      ],
+      "achievements": "- Added level theme switching & merge combo effects\n- 60 FPS 2D physics simulation optimization",
+      "metrics": "",
+      "note": "Architected extensible game loop supporting modular skin variations and dynamic physics properties via Remote Config.",
+      "isFavorite": false
+    },
+    {
+      "id": 16,
+      "title": "JigMaster: Photo Match",
+      "genre": "Puzzle",
+      "description": "Jigsaw Puzzle game featuring intuitive drag-and-snap piece alignment to complete photo puzzles across scenery and animal themes.",
+      "releaseDate": "05/01/2026",
+      "status": "Live",
+      "storeLink": "https://play.google.com/store/apps/details?gl=US&hl=en-US&id=com.jig.master.photo.match.puzzle.jigsaw",
+      "gameplay": "https://www.youtube.com/watch?v=Dl1OO2MGWaM",
+      "icon": "./icons/16.JigMaster Photo Match.png",
+      "role": "Game Developer",
+      "teamSize": "3 members (1 Dev, 1 Artist, 1 Game Designer)",
+      "technologies": [
+        "Unity",
+        "C#",
+        "DOTween",
+        "Sprite Atlas",
+        "Addressable"
+      ],
+      "achievements": "- Developed custom algorithm slicing any image into 2D puzzle pieces\n- Computed Bezier splines for piece edge interlocking\n- Optimized 60 FPS performance\n- Managed dynamic image loading via Addressables CDN",
+      "metrics": "",
+      "note": "Proprietary spline slicing algorithm fully automating 2D jigsaw level creation from arbitrary user or remote images.",
+      "isFavorite": false
+    },
+    {
+      "id": 17,
+      "title": "JigCharm : HD Beauty",
+      "genre": "Puzzle",
+      "description": "Artistic jigsaw puzzle game with smooth drag-and-drop mechanics to unlock aesthetic photo art collections.",
+      "releaseDate": "02/04/2026",
+      "status": "Live",
+      "storeLink": "https://play.google.com/store/apps/details?gl=US&hl=en-US&id=jigcharm.hd.beauty.hot.puzzle",
+      "gameplay": null,
+      "icon": "./icons/17.JigCharm-HD-Beauty.png",
+      "role": "Game Developer",
+      "teamSize": "3 members (1 Dev, 1 Artist, 1 Game Designer)",
+      "technologies": [
+        "Unity",
+        "C#",
+        "Addressables",
+        "Texture Compression ASTC",
+        "Memory Management"
+      ],
+      "achievements": "- Level progress saving system\n- Piece snap feedback effects\n- ASTC Texture Compression reducing memory by 50%",
+      "metrics": "",
+      "note": "Deep memory optimization using ASTC texture formats and asynchronous Addressables image loading pipelines.",
+      "isFavorite": false
+    },
+    {
+      "id": 18,
+      "title": "My Talking Zoo",
+      "genre": "Idle Arcade",
+      "description": "Interactive zoo simulation game where players collect cute talking animals, record custom voice lines, and manage zoo revenue.",
+      "releaseDate": "04/05/2026",
+      "status": "Live",
+      "storeLink": "https://play.google.com/store/apps/details?gl=US&hl=en-US&id=my.talking.zoo.meme.sound",
+      "gameplay": null,
+      "icon": "./icons/18.My Talking Zoo.png",
+      "role": "Game Developer",
+      "teamSize": "3 members (1 Dev, 1 Artist, 1 Game Designer)",
+      "technologies": [
+        "Unity",
+        "C#",
+        "DOTween",
+        "Audio Mixer"
+      ],
+      "achievements": "- Animal map spawn gacha logic\n- Animal purchase/sale income logic\n- Audio recording & assignment logic per animal",
+      "metrics": "",
+      "note": "Real-time audio processing with Unity AudioMixer and modular audio clip management architecture.",
+      "isFavorite": false
+    },
+    {
+      "id": 19,
+      "title": "Maze Dash Escape",
+      "genre": "Puzzle",
+      "description": "Fast-paced arcade maze action puzzle game where players swipe to dash between walls, dodging hazards to find the maze exit.",
+      "releaseDate": "26/05/2026",
+      "status": "Live",
+      "storeLink": "https://play.google.com/store/apps/details?gl=US&hl=en-US&id=com.maze.dash.escape.challenge",
+      "gameplay": null,
+      "icon": "./icons/19.Maze Dash Escape.png",
+      "role": "Game Developer",
+      "teamSize": "3 members (1 Dev, 1 Artist, 1 Game Designer)",
+      "technologies": [
+        "Unity",
+        "C#",
+        "LeanTouch",
+        "DOTween"
+      ],
+      "achievements": "- Designed level creation tool based on Tilemap supporting multiple placement strategies (Prefab or Position)\n- Character skin customization system",
+      "metrics": "",
+      "note": "Engineered custom Tilemap level editor extension inside Unity Inspector for rapid procedural maze prototyping.",
+      "isFavorite": false
+    }
+  ],
+  "hobbies": [
+    {
+      "id": "gaming",
+      "category": "GAMING & DISCOVERY",
+      "title": "Video Gaming",
+      "description": "Passionate about playing diverse game genres, especially Hack 'n' Slash titles to analyze combat pacing, combo mechanics, and hit feedback (Hit Feeling).",
+      "tag": "Hack 'n' Slash Fan"
+    },
+    {
+      "id": "football",
+      "category": "TEAMWORK & ATHLETICS",
+      "title": "Football (Soccer)",
+      "description": "Regularly playing football sharpens quick reaction times, teamwork coordination, and maintains high daily energy.",
+      "tag": "Team Captain & Player"
+    },
+    {
+      "id": "swimming",
+      "category": "ENDURANCE & HEALTH",
+      "title": "Swimming",
+      "description": "Maintaining a swimming routine builds physical endurance, relieves stress, and maintains stamina for long-term game development cycles.",
+      "tag": "Stamina & Balance"
+    },
+    {
+      "id": "detective",
+      "category": "LOGIC & INVESTIGATION",
+      "title": "Detective Novels",
+      "description": "Reading mystery and detective novels sharpens logical reasoning, cause-and-effect analysis, and complex technical problem-solving.",
+      "tag": "Logic Mindset"
+    },
+    {
+      "id": "running",
+      "category": "CARDIO & STAMINA",
+      "title": "Distance Running",
+      "description": "Frequent running builds mental perseverance, physical stamina, and keeps the mind clear and sharp.",
+      "tag": "Endurance Runner"
+    },
+    {
+      "id": "manga",
+      "category": "ART & STORYTELLING",
+      "title": "Manga & Comics",
+      "description": "Enjoying manga provides creative visual inspiration, character design concepts, and narrative storytelling insights for game design.",
+      "tag": "Visual Inspiration"
+    }
+  ]
+}
