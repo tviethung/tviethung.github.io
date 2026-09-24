@@ -1,10 +1,11 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Briefcase, Calendar, CheckSquare } from 'lucide-react';
-import portfolioData from '../data/portfolio.json';
+import { Briefcase, Calendar, CheckCircle2, Sparkles } from 'lucide-react';
+import { useLanguage } from '../context/LanguageContext';
 
 export default function Experience() {
-  const { experience } = portfolioData;
+  const { data, ui, language } = useLanguage();
+  const { experience } = data;
 
   const parseMarkdownLinks = (text) => {
     const regex = /\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)/g;
@@ -22,7 +23,7 @@ export default function Experience() {
           href={match[2]} 
           target="_blank" 
           rel="noopener noreferrer" 
-          className="text-accent-green underline hover:text-accent-green/80 transition-colors"
+          className="text-accent-green font-semibold underline hover:text-emerald-300 transition-colors"
         >
           {match[1]}
         </a>
@@ -41,30 +42,37 @@ export default function Experience() {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
-      transition: { staggerChildren: 0.15 }
+      transition: { staggerChildren: 0.12 }
     }
   };
 
   const itemVariants = {
-    hidden: { x: -20, opacity: 0 },
+    hidden: { y: 20, opacity: 0 },
     visible: {
-      x: 0,
+      y: 0,
       opacity: 1,
       transition: { type: 'spring', stiffness: 90 }
     }
   };
 
   return (
-    <section id="experience" className="py-20 border-b border-border-dark relative">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <section id="experience" className="py-12 sm:py-16 relative">
+      <div className="w-full">
         
-        {/* Section Title */}
-        <div className="mb-12 font-mono">
-          <div className="text-accent-green text-xs mb-2">04 // CAREER_LOGS</div>
-          <h2 className="text-3xl font-bold uppercase tracking-wider text-text-primary">
-            Kinh Nghiệm Làm Việc
+        {/* Section Header */}
+        <div className="mb-10 sm:mb-14">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent-green/10 border border-accent-green/25 text-accent-green text-xs font-semibold tracking-wide mb-3">
+            <Sparkles className="h-3.5 w-3.5" />
+            <span>{language === 'en' ? 'CAREER TIMELINE' : 'HÀNH TRÌNH SỰ NGHIỆP'}</span>
+          </div>
+          <h2 className="text-2xl sm:text-4xl font-extrabold text-white tracking-tight font-sans">
+            {ui.experienceTitle}
           </h2>
-          <div className="w-20 h-1 bg-accent-green mt-3"></div>
+          <p className="text-text-secondary text-sm sm:text-base mt-2 max-w-2xl">
+            {language === 'en'
+              ? 'Over a decade in software engineering, transitioning from Samsung R&D core systems to Unity Mobile game architecture.'
+              : 'Hơn 10 năm kinh nghiệm kỹ thuật phần mềm, chuyển giao từ hệ thống lõi tại Samsung R&D sang kiến trúc Unity Mobile Game.'}
+          </p>
         </div>
 
         {/* Timeline container */}
@@ -73,44 +81,47 @@ export default function Experience() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: '-100px' }}
-          className="relative border-l border-border-dark pl-6 md:pl-8 ml-4 space-y-12"
+          className="relative border-l-2 border-border-dark pl-6 sm:pl-8 ml-3 sm:ml-4 space-y-8 sm:space-y-10"
         >
           {experience.map((exp, index) => (
             <motion.div 
               key={index}
               variants={itemVariants}
-              className="relative space-y-4"
+              className="relative"
             >
-              {/* Timeline dot */}
-              <div className="absolute -left-[31px] md:-left-[39px] top-1.5 bg-bg-dark border-2 border-accent-green h-4 w-4 rounded-none rotate-45" />
+              {/* Timeline dot node */}
+              <div className="absolute -left-[31px] sm:-left-[39px] top-1.5 bg-[#0a0d14] border-2 border-accent-green h-4 w-4 rounded-full shadow-[0_0_10px_rgba(16,185,129,0.5)]" />
 
-              {/* Title & Company Metadata */}
-              <div className="font-mono space-y-1">
-                <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs">
-                  <span className="text-accent-green flex items-center gap-1">
+              {/* Card Container */}
+              <div className="glass-panel glass-panel-hover p-6 sm:p-7 rounded-2xl border border-border-subtle shadow-xl space-y-4">
+                {/* Title & Company Metadata */}
+                <div className="space-y-1.5">
+                  <div className="flex flex-wrap items-center justify-between gap-2">
+                    <h3 className="text-lg sm:text-xl font-bold text-white tracking-tight">
+                      {exp.role}
+                    </h3>
+                    <span className="px-3 py-1 rounded-full bg-accent-green/10 border border-accent-green/20 text-accent-green text-xs font-semibold flex items-center gap-1.5">
+                      <Calendar className="h-3 w-3" />
+                      {exp.period}
+                    </span>
+                  </div>
+
+                  <div className="text-xs sm:text-sm font-semibold text-accent-cyan flex items-center gap-1.5">
                     <Briefcase className="h-3.5 w-3.5" />
-                    {exp.company.toUpperCase()}
-                  </span>
-                  <span className="text-text-secondary border-l border-border-dark pl-3 flex items-center gap-1">
-                    <Calendar className="h-3.5 w-3.5" />
-                    {exp.period}
-                  </span>
+                    <span>{exp.company}</span>
+                  </div>
                 </div>
-                
-                <h3 className="text-lg font-bold text-text-primary uppercase tracking-wide">
-                  {exp.role}
-                </h3>
-              </div>
 
-              {/* Bullet points */}
-              <ul className="space-y-2.5 max-w-3xl">
-                {exp.bulletPoints.map((point, i) => (
-                  <li key={i} className="flex items-start text-sm text-text-primary/90 leading-relaxed">
-                    <CheckSquare className="h-4 w-4 text-accent-green shrink-0 mt-0.5 mr-3" />
-                    <span>{parseMarkdownLinks(point)}</span>
-                  </li>
-                ))}
-              </ul>
+                {/* Bullet points */}
+                <ul className="space-y-2.5 pt-2 border-t border-border-dark/60">
+                  {exp.bulletPoints.map((point, i) => (
+                    <li key={i} className="flex items-start text-xs sm:text-sm text-text-secondary leading-relaxed gap-2.5">
+                      <CheckCircle2 className="h-4 w-4 text-accent-green shrink-0 mt-0.5" />
+                      <span className="text-text-primary/90">{parseMarkdownLinks(point)}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </motion.div>
           ))}
         </motion.div>
@@ -118,3 +129,4 @@ export default function Experience() {
     </section>
   );
 }
+

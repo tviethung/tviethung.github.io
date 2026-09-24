@@ -8,46 +8,54 @@ import Experience from './components/Experience';
 import Contact from './components/Contact';
 import Education from './components/Education';
 import Hobbies from './components/Hobbies';
-import portfolioData from './data/portfolio.json';
+import { LanguageProvider, useLanguage } from './context/LanguageContext';
 
-function App() {
-  const { personalInfo } = portfolioData;
+function MainContent() {
+  const { data } = useLanguage();
+  const { personalInfo } = data;
 
   return (
-    <div className="hud-scanlines min-h-screen bg-bg-dark text-text-primary selection:bg-accent-green selection:text-bg-dark">
-      {/* HUD Navbar */}
+    <div className="game-backdrop min-h-screen bg-bg-dark text-text-primary selection:bg-accent-green selection:text-bg-dark font-sans relative">
+      <div className="fixed inset-0 game-grid-pattern pointer-events-none z-0 opacity-40" />
+      
+      {/* Modern Navbar */}
       <Navbar />
 
-      {/* Main Layout */}
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
-        {/* Sections */}
+      {/* Main Content Layout */}
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-12 sm:space-y-20">
         <Hero />
         <Skills />
-        <ProductTimeline />
         <Projects />
+        <ProductTimeline />
         <Experience />
         <Education />
         <Hobbies />
         <Contact />
-
       </main>
 
-      {/* Tech Footer */}
-      <footer className="border-t border-border-dark py-8 bg-card-dark/30 font-mono text-[10px] text-text-secondary">
+      {/* Modern Game Studio Footer */}
+      <footer className="border-t border-border-dark mt-20 py-10 bg-card-dark/60 backdrop-blur-md relative z-10 text-xs text-text-secondary">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <div>
-            STATUS: SECURE_LINK_ESTABLISHED // TARGET: GITHUB_PAGES
+          <div className="flex items-center gap-2">
+            <span className="inline-block w-2 h-2 rounded-full bg-accent-green animate-pulse" />
+            <span className="font-semibold text-text-primary">{personalInfo.fullName}</span>
+            <span className="text-text-muted">•</span>
+            <span>{personalInfo.title || 'Unity Developer'}</span>
           </div>
           <div>
-            © {new Date().getFullYear()} {personalInfo.fullName.toUpperCase()}. ALL RIGHTS RESERVED.
-          </div>
-          <div>
-            BUILT_WITH: REACT_19 + TAILWIND_V4
+            © {new Date().getFullYear()} Ta Viet Hung. Built with React & Tailwind CSS.
           </div>
         </div>
       </footer>
     </div>
+  );
+}
+
+function App() {
+  return (
+    <LanguageProvider>
+      <MainContent />
+    </LanguageProvider>
   );
 }
 

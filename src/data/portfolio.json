@@ -1,12 +1,12 @@
 {
   "personalInfo": {
     "fullName": "Tạ Việt Hùng",
-    "title": "Senior Unity Developer",
+    "title": "Unity Developer",
     "location": "Ha Noi, Vietnam",
     "email": "tviethung20@gmail.com",
     "phone": "0398962424",
     "gitlab": "https://gitlab.com/tviethung20",
-    "summary": "Senior Unity Developer với 10+ năm kinh nghiệm Software Engineering và 6+ năm phát triển Unity Mobile Games. Đã phát hành 19+ sản phẩm trên Android với các tựa game đạt hàng triệu lượt tải. Làm chủ kiến trúc game trên C# (OOP, Design Patterns, Event-Driven), tối ưu hóa hiệu năng 60 FPS trên Low-End devices, xây dựng Custom Editor Tools và Addressables pipeline. Kết hợp tư duy kỹ thuật vững chắc với phân tích dữ liệu sản phẩm để tối ưu gameplay loop."
+    "summary": "Unity Developer với 10+ năm kinh nghiệm Software Engineering và 6+ năm phát triển Unity Mobile Games. Đã phát hành 19+ sản phẩm trên Android với các tựa game đạt hàng triệu lượt tải. Xây dựng game trên C# (OOP, Design Patterns, Event-Driven), tối ưu hóa hiệu năng 60 FPS trên Low-End devices, xây dựng Custom Editor Tools. Kết hợp tư duy kỹ thuật vững chắc với phân tích dữ liệu sản phẩm để tối ưu gameplay loop."
   },
   "telemetry": {
     "stats": [
@@ -70,7 +70,7 @@
       "id": "drop-clash",
       "title": "Drop Clash",
       "description": "Game giải đố vật lý di động hỗ trợ tương tác thời gian thực. Được xây dựng dựa trên mô hình Service-Oriented MVC.",
-      "role": "Senior Gameplay Programmer",
+      "role": "Gameplay Programmer",
       "technologies": [
         "Unity",
         "C#",
@@ -90,7 +90,7 @@
       "id": "shiro-dash",
       "title": "Shiro Dash",
       "description": "Game chạy vô tận 3D nhịp độ nhanh với hệ thống kỹ năng phức tạp và hiệu ứng hình ảnh sống động sử dụng Custom Shaders.",
-      "role": "Senior Gameplay Developer",
+      "role": "Gameplay Developer",
       "technologies": [
         "Unity3D",
         "C#",
@@ -127,8 +127,8 @@
   ],
   "experience": [
     {
-      "company": "One Percent Studio (VGP) (Hanoi)",
-      "role": "Senior Unity Developer",
+      "company": "Viet Game Publisher (VGP) - One Percent Studio (Hanoi)",
+      "role": "Unity Developer",
       "period": "Oct 2022 - Jul 2026",
       "bulletPoints": [
         "Phát triển và phát hành thành công chuỗi 19+ game di động trên nền tảng Android. Tiêu biểu gồm: Merge Drop Master (~1.8M lượt tải), Trending AR Soundboard (>2M lượt tải) và My Pool Club (>200K lượt tải).",

@@ -1,16 +1,17 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { GraduationCap, Calendar, Award } from 'lucide-react';
-import portfolioData from '../data/portfolio.json';
+import { GraduationCap, Calendar, Award, Sparkles, CheckCircle2 } from 'lucide-react';
+import { useLanguage } from '../context/LanguageContext';
 
 export default function Education() {
-  const { education, certifications } = portfolioData;
+  const { data, ui, language } = useLanguage();
+  const { education, certifications } = data;
 
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
-      transition: { staggerChildren: 0.15 }
+      transition: { staggerChildren: 0.12 }
     }
   };
 
@@ -24,16 +25,23 @@ export default function Education() {
   };
 
   return (
-    <section id="education" className="py-20 border-b border-border-dark relative bg-card-dark/10">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <section id="education" className="py-12 sm:py-16 relative">
+      <div className="w-full">
         
-        {/* Section Title */}
-        <div className="mb-12 font-mono">
-          <div className="text-accent-green text-xs mb-2">05 // ACADEMIC_LOGS</div>
-          <h2 className="text-3xl font-bold uppercase tracking-wider text-text-primary">
-            Học Vấn & Bằng Cấp
+        {/* Section Header */}
+        <div className="mb-10 sm:mb-14">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent-green/10 border border-accent-green/25 text-accent-green text-xs font-semibold tracking-wide mb-3">
+            <Sparkles className="h-3.5 w-3.5" />
+            <span>{language === 'en' ? 'EDUCATION & CREDENTIALS' : 'HỌC VẤN & CHỨNG CHỈ'}</span>
+          </div>
+          <h2 className="text-2xl sm:text-4xl font-extrabold text-white tracking-tight font-sans">
+            {ui.educationTitle}
           </h2>
-          <div className="w-20 h-1 bg-accent-green mt-3"></div>
+          <p className="text-text-secondary text-sm sm:text-base mt-2 max-w-2xl">
+            {language === 'en'
+              ? 'Academic background in Information Technology and certified software engineering expertise.'
+              : 'Nền tảng đào tạo chính quy chuyên ngành Công nghệ thông tin cùng các chứng chỉ kỹ thuật.'}
+          </p>
         </div>
 
         {/* Education Stack */}
@@ -42,44 +50,33 @@ export default function Education() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: '-100px' }}
-          className="space-y-8"
+          className="space-y-6"
         >
           {education.map((edu, index) => (
             <motion.div 
               key={index}
               variants={itemVariants}
-              className="border border-border-dark p-6 bg-card-dark/40 font-mono relative overflow-hidden tech-corner-container"
+              className="glass-panel glass-panel-hover p-6 sm:p-7 rounded-2xl border border-border-subtle shadow-xl"
             >
-              {/* Corner decor */}
-              <div className="absolute top-0 right-0 w-16 h-16 pointer-events-none opacity-5 flex items-center justify-center">
-                <GraduationCap className="h-12 w-12 text-accent-green" />
-              </div>
-
               <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
                 <div className="space-y-2">
-                  {/* School name */}
-                  <h3 className="text-lg font-bold text-text-primary uppercase tracking-wide flex items-center gap-2">
-                    <GraduationCap className="h-5 w-5 text-accent-green shrink-0" />
-                    {edu.school}
+                  <h3 className="text-lg sm:text-xl font-bold text-white flex items-center gap-3">
+                    <div className="p-2 rounded-xl bg-accent-green/10 text-accent-green">
+                      <GraduationCap className="h-5 w-5 shrink-0" />
+                    </div>
+                    {edu.school || edu.institution}
                   </h3>
 
-                  {/* Degree name */}
-                  <p className="text-xs text-accent-green font-bold uppercase tracking-widest flex items-center gap-1.5 pl-7">
+                  <p className="text-xs sm:text-sm text-accent-green font-semibold flex items-center gap-2 pl-12">
                     <Award className="h-4 w-4" />
                     {edu.degree}
                   </p>
                 </div>
 
-                {/* Period */}
-                <div className="flex items-center gap-2 text-xs text-text-secondary pl-7 md:pl-0">
+                <div className="flex items-center gap-2 text-xs font-medium text-text-muted pl-12 md:pl-0">
                   <Calendar className="h-4 w-4 text-accent-green" />
-                  <span>{edu.period.toUpperCase()}</span>
+                  <span>{edu.period}</span>
                 </div>
-              </div>
-
-              {/* HUD decoration bar at bottom of card */}
-              <div className="w-full h-[1px] bg-border-dark/50 mt-6 relative">
-                <div className="absolute top-0 left-0 w-12 h-[1px] bg-accent-green" />
               </div>
             </motion.div>
           ))}
@@ -87,10 +84,10 @@ export default function Education() {
 
         {/* Certifications Sub-section */}
         {certifications && certifications.length > 0 && (
-          <div className="mt-16 space-y-6">
-            <div className="border-b border-border-dark pb-2 flex justify-between items-center text-text-secondary font-mono text-xs">
-              <span>CERTIFICATIONS & LICENSES</span>
-              <span className="text-accent-green">// VERIFIED_CREDENTIALS</span>
+          <div className="mt-12 sm:mt-16 space-y-6">
+            <div className="flex items-center gap-2 text-sm font-bold text-white">
+              <Award className="h-4 w-4 text-accent-green" />
+              <span>{language === 'en' ? 'Verified Certifications' : 'Chứng Chỉ Đã Xác Thực'}</span>
             </div>
             
             <motion.div 
@@ -104,21 +101,20 @@ export default function Education() {
                 <motion.div 
                   key={index}
                   variants={itemVariants}
-                  className="border border-border-dark p-6 bg-card-dark/30 font-mono relative overflow-hidden flex flex-col justify-between"
-                  style={{ borderRadius: '0px' }}
+                  className="glass-panel glass-panel-hover p-6 rounded-2xl border border-border-subtle shadow-lg flex flex-col justify-between"
                 >
                   <div className="space-y-2">
-                    <h3 className="text-base font-bold text-text-primary uppercase tracking-wide flex items-center gap-2">
-                      <Award className="h-4.5 w-4.5 text-accent-green shrink-0" />
+                    <h3 className="text-base font-bold text-white flex items-center gap-2">
+                      <CheckCircle2 className="h-4 w-4 text-accent-green shrink-0" />
                       {cert.name}
                     </h3>
-                    <p className="text-sm text-text-primary/90 pl-6 font-sans">
+                    <p className="text-xs text-text-secondary pl-6">
                       {cert.issuer}
                     </p>
                   </div>
-                  <div className="flex items-center gap-1.5 text-[10px] text-text-secondary pl-6 mt-4 pt-3 border-t border-border-dark/30">
+                  <div className="flex items-center gap-1.5 text-xs text-text-muted pl-6 mt-4 pt-3 border-t border-border-dark/40">
                     <Calendar className="h-3.5 w-3.5 text-accent-green" />
-                    <span>YEAR: {cert.year}</span>
+                    <span>{cert.year}</span>
                   </div>
                 </motion.div>
               ))}
@@ -129,3 +125,4 @@ export default function Education() {
     </section>
   );
 }
+

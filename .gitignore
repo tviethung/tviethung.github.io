@@ -25,3 +25,10 @@ dist-ssr
 
 # Job application emails (private)
 emails/
+
+# Agent and temporary directories
+.agent/
+.agents/
+.claude/
+.codex/
+scratch/

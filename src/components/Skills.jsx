@@ -1,10 +1,11 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Target, HardDrive, Cpu, ShieldCheck } from 'lucide-react';
-import portfolioData from '../data/portfolio.json';
+import { Code2, Gamepad2, Smartphone, Zap, Sparkles, CheckCircle2 } from 'lucide-react';
+import { useLanguage } from '../context/LanguageContext';
 
 export default function Skills() {
-  const { skills } = portfolioData;
+  const { data, ui, language } = useLanguage();
+  const { skills } = data;
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -24,16 +25,23 @@ export default function Skills() {
   };
 
   return (
-    <section id="skills" className="py-20 border-b border-border-dark relative">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <section id="skills" className="py-12 sm:py-16 relative">
+      <div className="w-full">
         
-        {/* Section Title */}
-        <div className="mb-12 font-mono">
-          <div className="text-accent-green text-xs mb-2">01 // SKILLSET_TELEMETRY</div>
-          <h2 className="text-3xl font-bold uppercase tracking-wider text-text-primary">
-            Hệ thống Kỹ năng & Chuyên môn
+        {/* Section Header */}
+        <div className="mb-10 sm:mb-14">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent-green/10 border border-accent-green/25 text-accent-green text-xs font-semibold tracking-wide mb-3">
+            <Sparkles className="h-3.5 w-3.5" />
+            <span>{language === 'en' ? 'TECHNICAL EXPERTISE' : 'NĂNG LỰC CHUYÊN MÔN'}</span>
+          </div>
+          <h2 className="text-2xl sm:text-4xl font-extrabold text-white tracking-tight font-sans">
+            {ui.skillsTitle}
           </h2>
-          <div className="w-20 h-1 bg-accent-green mt-3"></div>
+          <p className="text-text-secondary text-sm sm:text-base mt-2 max-w-2xl">
+            {language === 'en'
+              ? 'Proven technical foundation across Unity game engine, C# architecture, mobile optimization, and custom tooling.'
+              : 'Nền tảng kỹ thuật vững chắc trên Unity Engine, kiến trúc C#, tối ưu hiệu năng mobile và hệ thống custom tools.'}
+          </p>
         </div>
 
         <motion.div 
@@ -41,67 +49,75 @@ export default function Skills() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: '-100px' }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
         >
           {/* Core Languages */}
-          <motion.div variants={itemVariants} className="border border-border-dark p-6 bg-card-dark/40 font-mono space-y-4 tech-corner-container">
-            <div className="flex items-center space-x-2 text-accent-green pb-2 border-b border-border-dark">
-              <Cpu className="h-5 w-5" />
-              <span className="font-bold text-sm uppercase">Ngôn ngữ Lập trình</span>
+          <motion.div variants={itemVariants} className="glass-panel glass-panel-hover p-6 rounded-2xl space-y-4 border border-border-subtle shadow-lg">
+            <div className="flex items-center gap-3 pb-3 border-b border-border-dark/60">
+              <div className="p-2 rounded-xl bg-accent-green/10 text-accent-green">
+                <Code2 className="h-5 w-5" />
+              </div>
+              <span className="font-bold text-sm text-white">{ui.skillsLang}</span>
             </div>
-            <ul className="space-y-2 text-xs text-text-secondary">
+            <ul className="space-y-2.5 text-xs text-text-secondary">
               {skills.languages.map((item, index) => (
-                <li key={index} className="flex items-center space-x-2">
-                  <span className="text-accent-green">&gt;</span>
-                  <span>{item}</span>
+                <li key={index} className="flex items-start gap-2">
+                  <CheckCircle2 className="h-3.5 w-3.5 text-accent-green shrink-0 mt-0.5" />
+                  <span className="leading-tight text-text-primary/90">{item}</span>
                 </li>
               ))}
             </ul>
           </motion.div>
 
           {/* Engine & Frameworks */}
-          <motion.div variants={itemVariants} className="border border-border-dark p-6 bg-card-dark/40 font-mono space-y-4">
-            <div className="flex items-center space-x-2 text-accent-green pb-2 border-b border-border-dark">
-              <HardDrive className="h-5 w-5" />
-              <span className="font-bold text-sm uppercase">Công nghệ & Framework</span>
+          <motion.div variants={itemVariants} className="glass-panel glass-panel-hover p-6 rounded-2xl space-y-4 border border-border-subtle shadow-lg">
+            <div className="flex items-center gap-3 pb-3 border-b border-border-dark/60">
+              <div className="p-2 rounded-xl bg-accent-cyan/10 text-accent-cyan">
+                <Gamepad2 className="h-5 w-5" />
+              </div>
+              <span className="font-bold text-sm text-white">{ui.skillsEngine}</span>
             </div>
-            <ul className="space-y-2 text-xs text-text-secondary">
+            <ul className="space-y-2.5 text-xs text-text-secondary">
               {skills.enginesAndFrameworks.map((item, index) => (
-                <li key={index} className="flex items-center space-x-2">
-                  <span className="text-accent-green">&gt;</span>
-                  <span>{item}</span>
+                <li key={index} className="flex items-start gap-2">
+                  <CheckCircle2 className="h-3.5 w-3.5 text-accent-cyan shrink-0 mt-0.5" />
+                  <span className="leading-tight text-text-primary/90">{item}</span>
                 </li>
               ))}
             </ul>
           </motion.div>
 
-          {/* Platforms */}
-          <motion.div variants={itemVariants} className="border border-border-dark p-6 bg-card-dark/40 font-mono space-y-4">
-            <div className="flex items-center space-x-2 text-accent-green pb-2 border-b border-border-dark">
-              <Target className="h-5 w-5" />
-              <span className="font-bold text-sm uppercase">Nền tảng phát triển</span>
+          {/* Platforms & SDKs */}
+          <motion.div variants={itemVariants} className="glass-panel glass-panel-hover p-6 rounded-2xl space-y-4 border border-border-subtle shadow-lg">
+            <div className="flex items-center gap-3 pb-3 border-b border-border-dark/60">
+              <div className="p-2 rounded-xl bg-amber-500/10 text-amber-400">
+                <Smartphone className="h-5 w-5" />
+              </div>
+              <span className="font-bold text-sm text-white">{ui.skillsPlatform}</span>
             </div>
-            <ul className="space-y-2 text-xs text-text-secondary">
+            <ul className="space-y-2.5 text-xs text-text-secondary">
               {skills.platforms.map((item, index) => (
-                <li key={index} className="flex items-center space-x-2">
-                  <span className="text-accent-green">&gt;</span>
-                  <span>{item}</span>
+                <li key={index} className="flex items-start gap-2">
+                  <CheckCircle2 className="h-3.5 w-3.5 text-amber-400 shrink-0 mt-0.5" />
+                  <span className="leading-tight text-text-primary/90">{item}</span>
                 </li>
               ))}
             </ul>
           </motion.div>
 
-          {/* Professional Expertises */}
-          <motion.div variants={itemVariants} className="border border-border-dark p-6 bg-card-dark/40 font-mono space-y-4 tech-corner-container">
-            <div className="flex items-center space-x-2 text-accent-green pb-2 border-b border-border-dark">
-              <ShieldCheck className="h-5 w-5" />
-              <span className="font-bold text-sm uppercase">Chuyên môn sâu</span>
+          {/* Specializations & Architecture */}
+          <motion.div variants={itemVariants} className="glass-panel glass-panel-hover p-6 rounded-2xl space-y-4 border border-border-subtle shadow-lg">
+            <div className="flex items-center gap-3 pb-3 border-b border-border-dark/60">
+              <div className="p-2 rounded-xl bg-purple-500/10 text-purple-400">
+                <Zap className="h-5 w-5" />
+              </div>
+              <span className="font-bold text-sm text-white">{ui.skillsDomain}</span>
             </div>
             <ul className="space-y-2.5 text-xs text-text-secondary">
               {skills.expertises.map((item, index) => (
-                <li key={index} className="flex items-start space-x-2">
-                  <span className="text-accent-green mt-0.5">&gt;</span>
-                  <span>{item}</span>
+                <li key={index} className="flex items-start gap-2">
+                  <CheckCircle2 className="h-3.5 w-3.5 text-purple-400 shrink-0 mt-0.5" />
+                  <span className="leading-tight text-text-primary/90">{item}</span>
                 </li>
               ))}
             </ul>
@@ -112,3 +128,4 @@ export default function Skills() {
     </section>
   );
 }
+

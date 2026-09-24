@@ -1,12 +1,12 @@
 {
   "personalInfo": {
     "fullName": "Ta Viet Hung",
-    "title": "Senior Unity Developer",
+    "title": "Unity Developer",
     "location": "Hanoi, Vietnam",
     "email": "tviethung20@gmail.com",
     "phone": "+84 398 962 424",
     "gitlab": "https://gitlab.com/tviethung20",
-    "summary": "Senior Unity Developer with 10+ years of Software Engineering experience and 6+ years in Unity Mobile Game Development. Shipped 19+ mobile games on Android with titles reaching millions of downloads. Specialized in C# game architecture (OOP, Design Patterns, EventBus), 60 FPS mobile optimization on low-end devices, custom Unity Editor tooling, and Addressables CDN pipelines. Combines strong engineering rigor with data-driven iteration to maximize gameplay retention."
+    "summary": "Unity Developer with 10+ years of Software Engineering experience and 6+ years in Unity Mobile Game Development. Shipped 19+ mobile games on Android with titles reaching millions of downloads. Specialized in C# game architecture (OOP, Design Patterns, EventBus), 60 FPS mobile optimization on low-end devices, and custom Unity Editor tooling. Combines strong engineering rigor with data-driven iteration to maximize gameplay retention."
   },
   "telemetry": {
     "stats": [
@@ -70,7 +70,7 @@
       "id": "drop-clash",
       "title": "Drop Clash",
       "description": "Mobile 2D physics puzzle game with real-time interaction. Built on a Service-Oriented MVC architecture.",
-      "role": "Senior Gameplay Programmer",
+      "role": "Gameplay Programmer",
       "technologies": [
         "Unity 2022.3 (2D)",
         "C# (.NET Standard 2.1)",
@@ -91,7 +91,7 @@
       "id": "shiro-dash",
       "title": "Shiro Dash",
       "description": "Fast-paced 3D endless runner featuring complex skill trees and dynamic visual effects using Custom Shaders.",
-      "role": "Senior Gameplay Developer",
+      "role": "Gameplay Developer",
       "technologies": [
         "Unity3D",
         "C#",
@@ -128,8 +128,8 @@
   ],
   "experience": [
     {
-      "company": "One Percent Studio (VGP) (Hanoi)",
-      "role": "Senior Unity Developer",
+      "company": "Viet Game Publisher (VGP) - One Percent Studio (Hanoi)",
+      "role": "Unity Developer",
       "period": "Oct 2022 - Jul 2026",
       "bulletPoints": [
         "Developed and successfully published 19+ mobile games on Android. Key titles include: Merge Drop Master (~1.8M downloads), Trending AR Soundboard (>2M downloads), and My Pool Club (>200K downloads).",

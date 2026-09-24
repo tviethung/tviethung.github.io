@@ -108,7 +108,7 @@ export default function ProductTimeline() {
                 {product.genre || 'Mobile Game'}
               </div>
               <div className="text-[10px] text-text-muted mt-1">
-                {product.role || 'Senior Unity Developer'}
+                {product.role || 'Unity Developer'}
               </div>
             </div>
           </div>
@@ -404,7 +404,7 @@ export default function ProductTimeline() {
                       {language === 'en' ? 'ROLE IN PROJECT' : 'VAI TRÒ TRONG DỰ ÁN'}
                     </div>
                     <div className="font-semibold text-accent-green">
-                      {selectedProduct.role || "Senior Unity Developer"}
+                      {selectedProduct.role || "Unity Developer"}
                     </div>
                   </div>
 

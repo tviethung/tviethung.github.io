@@ -1,4 +1,4 @@
-﻿1.Crafter Legends
+1.Crafter Legends
 Thể loại: Hyper Casual
 Mô tả: Trò chơi mô phỏng khai thác mỏ 3D voxel Idle Clicker kết hợp cơ chế Merge nâng cấp thợ mỏ và chiến đấu quái vật để khám phá tài nguyên quý hiếm.
 Ngày ra mắt: 05/04/2023
@@ -12,7 +12,7 @@ Thành tựu kỹ thuật:
 - Hệ thống merge nâng cấp
 - Hệ thống generate map
 - Hệ thống battle phá huỷ từng phần enemy
-Chỉ số: Retention D1: 24%
+Chỉ số: 
 Ghi chú: Dự án 3D Voxel đầu tay đặt nền móng kiến trúc hệ thống cho chuỗi game Idle Tycoon. 
 Yêu thích: Có
 
@@ -30,7 +30,7 @@ Thành tựu kỹ thuật:
 - Tích hợp Object Pooling.
 - Hệ thống nâng cấp thẻ bài.
 - Hệ thống nâng cấp building
-Chỉ số: Retention D1: 30%
+Chỉ số: 
 Ghi chú: 
 Yêu thích: Không
 
@@ -48,7 +48,7 @@ Thành tựu kỹ thuật:
 - Xây dựng công trình phụ trợ với tác dụng tăng passive cho income, miner, hero.
 - Hệ thống Achievement
 - Thêm Live-ops event
-Chỉ số: Retention D1: 30%
+Chỉ số: 
 Ghi chú: Game có hệ thống đầy đủ từ Gameplay, Battle, Building, Event và được nâng cấp hình ảnh tốt hơn
 Yêu thích: Có
 
@@ -68,7 +68,7 @@ Thành tựu kỹ thuật:
 - Hệ thống NPC tự động thực hiện task
 - Hệ thống mở rộng map 
 - Hệ thống Verhicle
-Chỉ số: Retention D1: 33% | Lượt tải: 200.000+
+Chỉ số: Lượt tải: 200.000+
 Ghi chú: Tựa game Idle Arcade thành công nhất về chỉ số giữ chân người dùng.
 Yêu thích: Có
 
@@ -85,7 +85,7 @@ Thành tựu kỹ thuật:
 - Xây dựng hệ thống quản lý zombie tấn công căn cứ. 
 - Hệ thống nâng cấp vũ khí và zombie
 - Tối ưu Particle
-Chỉ số: Retention D1: 32%
+Chỉ số: 
 Ghi chú: Có gameplay thú vị và gặp nhiều vấn đề về tối ưu nhất vì số lượng zombie và particle đạn cho từng loại súng.
 Yêu thích: Có
 
@@ -103,7 +103,7 @@ Thành tựu kỹ thuật:
 - Hệ thống Pet battle
 - Thêm Battle Pass
 - Minigame
-Chỉ số: Retention D1: 27%
+Chỉ số: 
 Ghi chú: CPI đạt benchmark. Game có tiềm năng phát triển.
 Yêu thích: Không
 
@@ -121,7 +121,7 @@ Thành tựu kỹ thuật:
 - Thiết kế các phòng tính năng: huấn luyện, phòng ăn, phòng tập bắn, phòng gym và phòng y tế.
 - Cơ chế xếp hàng và NPC follow character
 - Thiết kế behavior cho NPC support
-Chỉ số: Retention D1: 25%
+Chỉ số: 
 Ghi chú: CPI không đạt benchmark.
 Yêu thích: Không
 
@@ -138,7 +138,7 @@ Thành tựu kỹ thuật:
 - Xây dựng cơ chế xoay và tháo ốc vít 3D
 - Build Support tool cho việc gắn ốc
 - Thêm minigame ở Home
-Chỉ số: Retention D1: 30%
+Chỉ số: 
 Ghi chú: CPI không đạt benchmark.
 Yêu thích: Không
 
@@ -152,7 +152,7 @@ Vai trò: Game Developer & PM
 Quy mô: 4 người (1 Dev(PM), 2 Artist, 1 Game Designer)
 Công nghệ: Unity, C#, Sprite Atlas, DOTween
 Thành tựu kỹ thuật: Tải động hàng trăm đồ nội thất trang trí phòng thông qua Addressables từ CDN, giúp giảm 50% dung lượng file cài đặt APK. Xây dựng giao diện trang trí trực quan, phản hồi tức thời.
-Chỉ số: Retention D1: 25%
+Chỉ số: 
 Ghi chú: CPI đạt benchmark, game có tiềm năng phát triển tuy nhiên không đủ nhân sự để tiếp tục phát triển
 Yêu thích: Không
 
@@ -166,7 +166,7 @@ Vai trò: Game Developer & PM
 Quy mô: 3 người (1 Dev(PM), 1 Artist, 1 Game Designer)
 Công nghệ: Unity, C#, WebRequest, DOTween
 Thành tựu kỹ thuật: 
-Chỉ số: Retention D1: 22%
+Chỉ số: 
 Ghi chú: CPI không đạt benchmark.
 Yêu thích: Không
 
@@ -174,7 +174,7 @@ Yêu thích: Không
 Thể loại: Hyper Casual
 Mô tả: Ứng dụng giải trí tương tác thực tế ảo (AR Soundboard) tích hợp camera AR cho phép đưa các nhân vật quái vật meme nhảy múa vào không gian thực tế.
 Ngày ra mắt: 27/05/2025
-Trạng thái: Removed - Reup
+Trạng thái: Live - https://play.google.com/store/apps/details?id=casual.soundboard.ar.trending&hl=vi
 Gameplay: https://www.youtube.com/watch?v=etbhQ2U3Irs
 Vai trò: Game Developer & PM
 Quy mô: 4 người (1 Dev, 2 Artist, 1 Game Designer)
@@ -182,7 +182,7 @@ Công nghệ: Unity, C#, Audio Mixer, Android Plugins, Sprite Atlas, DOTween
 Thành tựu kỹ thuật: 
 - Hệ thống sử dụng Camera device và Record Scene để export ra video mp4
 - Record List với thumbnails
-Chỉ số: Retention D1: 21% | Lượt tải: >1.000.000
+Chỉ số: Lượt tải: >1.000.000
 Ghi chú: CPI đạt benchmark và có doanh thu ổn định.
 Yêu thích: Không
 
@@ -201,7 +201,7 @@ Thành tựu kỹ thuật:
 - Tối ưu doanh thu bằng Remote Config
 - Thêm Leaderboard, Building và Battle Pass
 - Hiệu ứng combo khi merge
-Chỉ số: Retention D1: 34% | Lượt tải: ~1.800.000+ 
+Chỉ số: Lượt tải: ~1.800.000+ 
 Ghi chú: CPI đạt benchmark và có doanh thu ổn định. Đây là dự án đi sâu nhất và có nhiều phase phát triển cũng như cải tiến sản phẩm
 Yêu thích: Có
 
@@ -216,7 +216,7 @@ Quy mô: 3 người (1 Dev, 1 Artist, 1 Game Designer)
 Công nghệ: Unity, C#, Sprite Atlas, DOTween, Addressable 
 Thành tựu kỹ thuật: 
 - Tối ưu Canvas UI
-Chỉ số: Retention D1: 26%
+Chỉ số: 
 Ghi chú: CPI đạt benchmark, game có tiềm năng phát triển tuy nhiên không đủ nhân sự để tiếp tục phát triển
 Yêu thích: Không
 
@@ -231,7 +231,7 @@ Quy mô: 3 người (1 Dev, 1 Artist, 1 Game Designer)
 Công nghệ: Unity, C#, DOTween, Sprite Atlas, Addressable
 Thành tựu kỹ thuật: 
 - Tối ưu hóa nhịp điệu game, đọc và sinh các nốt nhạc theo config
-Chỉ số: Retention D1: 20%
+Chỉ số: 
 Ghi chú: CPI đạt benchmark, game có tiềm năng phát triển
 Yêu thích: Không
 
@@ -246,7 +246,7 @@ Quy mô: 3 người (1 Dev, 1 Artist, 1 Game Designer)
 Công nghệ: Unity, C#, 2D Physics, Object Pooling, Sprite Atlas, DOTween, Addressables, Firebase Remote Config, Firebase Database
 Thành tựu kỹ thuật: 
 - Thêm cơ chế thay đổi màn chơi, Combo khi merge.
-Chỉ số: Retention D1: 28%
+Chỉ số: 
 Ghi chú: CPI đạt benchmark, game có tiềm năng phát triển
 Yêu thích: Không
 
@@ -264,7 +264,7 @@ Thành tựu kỹ thuật:
 - Tính toán spline cho các cạnh của miếng ghép
 - Tối ưu hoá logic cho 60FPS
 - Quản lý tải ảnh từ máy chủ thông qua Addressables
-Chỉ số: Retention D1: 40%
+Chỉ số: 
 Ghi chú: CPI rẻ hơn benchmark, game có tiềm năng phát triển
 Yêu thích: Không
 
@@ -276,11 +276,11 @@ Trạng thái: Live - https://play.google.com/store/apps/details?gl=US&hl=en-US&
 Gameplay: None
 Vai trò: Game Developer & PM
 Quy mô: 3 người (1 Dev, 1 Artist, 1 Designer)
-Công nghệ: Unity, C#, Addressables, Texture Compression ASTC, Memory Management
+Công nghệ: Unity, C#, Addressables, Texture Compression ASTC, Memory Management, AI Coding
 Thành tựu kỹ thuật: 
 - Thêm media player để thay đổi Music Background cho game
 - Thêm Album có thể tải ảnh về máy
-Chỉ số: Retention D1: 25%
+Chỉ số: 
 Ghi chú: CPI rẻ hơn benchmark, game có tiềm năng phát triển
 Yêu thích: Không
 
@@ -292,12 +292,12 @@ Trạng thái: Live - https://play.google.com/store/apps/details?gl=US&hl=en-US&
 Gameplay: None
 Vai trò: Game Developer & PM
 Quy mô: 3 người (1 Dev, 1 Artist, 1 Designer)
-Công nghệ: Unity, C#, DOTween, Audio Mixer
+Công nghệ: Unity, C#, DOTween, Audio Mixer, AI Coding
 Thành tựu kỹ thuật: 
 - Logic Gacha ra Animal theo map.
 - Logic mua/bán và income từ animal.
 - Tạo logic record sound và gán cho 1 Animal.
-Chỉ số: Retention D1: 18%
+Chỉ số: 
 Ghi chú: CPI không đạt benchmark
 Yêu thích: Không
 
@@ -309,10 +309,10 @@ Trạng thái: Live - https://play.google.com/store/apps/details?gl=US&hl=en-US&
 Gameplay: None
 Vai trò: Game Developer & PM
 Quy mô: 3 người (1 Dev, 1 Artist, 1 Designer)
-Công nghệ: Unity, C#, LeanTouch, DOTween
+Công nghệ: Unity, C#, LeanTouch, DOTween, AI Coding
 Thành tựu kỹ thuật: 
 - Thiết kế tool xếp map dựa trên Tilemap, cho phép nhiều cơ chế xếp map (Bằng prefab hoặc Position)
 - Thêm hệ thống skin nhân vật.
-Chỉ số: Retention D1: 17%
+Chỉ số: 
 Ghi chú: CPI không đạt benchmark
 Yêu thích: Không
