@@ -146,6 +146,19 @@ export default function ProductTimeline() {
               <span>Store</span>
             </a>
           )}
+          {product.appmagicLink && (
+            <a
+              href={product.appmagicLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={(e) => e.stopPropagation()}
+              className="px-2.5 py-1 rounded-lg bg-amber-500/10 hover:bg-amber-500/20 text-amber-400 border border-amber-500/30 transition-all text-xs flex items-center gap-1 font-semibold"
+              title="View on AppMagic Intelligence"
+            >
+              <ExternalLink className="h-3 w-3" />
+              <span>AppMagic</span>
+            </a>
+          )}
         </div>
       </div>
     );
@@ -170,6 +183,18 @@ export default function ProductTimeline() {
                 ? 'Comprehensive catalog of 19+ mobile games developed and published on Android. Archived titles are prototypes retired after market testing (CPI/retention below benchmark) — a rapid 2–3 month release cycle.' 
                 : 'Toàn bộ danh mục 19+ game di động đã phát triển và phát hành trên Google Play. Các game Archived là prototype dừng sau market-test (CPI/retention chưa đạt benchmark) — chu kỳ phát hành nhanh 2–3 tháng/game.'}
             </p>
+            <div className="mt-3 flex items-center gap-2">
+              <a
+                href="https://appmagic.rocks/publisher/onepercent-studio/1_6551370592636081515"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-[11px] font-semibold hover:bg-amber-500/20 transition-all"
+                title="View Onepercent Studio Publisher Profile on AppMagic"
+              >
+                <ExternalLink className="h-3 w-3" />
+                <span>{language === 'en' ? 'Verified on AppMagic (Onepercent Studio)' : 'Xác thực AppMagic (Onepercent Studio)'}</span>
+              </a>
+            </div>
           </div>
 
           {/* Filtering, Search & Layout Switcher */}
@@ -464,6 +489,18 @@ export default function ProductTimeline() {
                   >
                     <Play className="h-4 w-4 fill-current" />
                     <span>Gameplay Video</span>
+                  </a>
+                )}
+                {selectedProduct.appmagicLink && (
+                  <a 
+                    href={selectedProduct.appmagicLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-4 py-2.5 rounded-xl border border-amber-500/30 bg-amber-500/10 hover:bg-amber-500/20 text-amber-400 font-bold transition-all flex items-center gap-2 text-xs"
+                    title="View Market Intelligence on AppMagic"
+                  >
+                    <ExternalLink className="h-4 w-4" />
+                    <span>AppMagic Intel</span>
                   </a>
                 )}
                 {selectedProduct.storeLink && (

@@ -173,6 +173,18 @@ export default function Projects() {
                         <span>Store</span>
                       </a>
                     )}
+                    {project.appmagicLink && (
+                      <a 
+                        href={project.appmagicLink} 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        className="px-3 py-1.5 rounded-lg border border-amber-500/30 hover:border-amber-400/50 text-amber-400 bg-amber-500/10 hover:bg-amber-500/20 transition-all flex items-center gap-1.5 text-xs font-semibold"
+                        title="View Market Intelligence on AppMagic"
+                      >
+                        <ExternalLink className="h-3.5 w-3.5" />
+                        <span>AppMagic</span>
+                      </a>
+                    )}
                   </div>
                 </div>
               </div>

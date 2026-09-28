@@ -217,7 +217,7 @@
       "description": "3D voxel Idle Clicker mining simulation game combining Merge miner upgrades and monster battles to explore rare resources.",
       "releaseDate": "05/04/2023",
       "status": "Removed",
-      "storeLink": null,
+      "storeLink": "https://play.google.com/store/apps/details?id=com.onepercent.crafteradventureidle",
       "gameplay": "https://www.youtube.com/watch?v=Tn0SvI_TKbE",
       "icon": "./icons/1.crafter_legends.png",
       "role": "Lead Developer",
@@ -234,7 +234,9 @@
       "achievements": "- Pathfinding System\n- Merge Upgrade System\n- Procedural Map Generation\n- Part-by-part Enemy Destruction Battle System",
       "metrics": "",
       "note": "First 3D Voxel project laying the architectural foundation for subsequent Idle Tycoon titles.",
-      "isFavorite": true
+      "isFavorite": true,
+      "packageId": "com.onepercent.crafteradventureidle",
+      "appmagicLink": "https://appmagic.rocks/app/google-play/com.onepercent.crafteradventureidle/13809002"
     },
     {
       "id": 2,
@@ -243,7 +245,7 @@
       "description": "3D Idle Mining Tycoon simulation game combining Merge miner upgrades, building card upgrades, and monster combat to protect treasure.",
       "releaseDate": "16/07/2023",
       "status": "Removed",
-      "storeLink": null,
+      "storeLink": "https://play.google.com/store/apps/details?id=com.onepercent.rumbleminersidlecraftmerge",
       "gameplay": null,
       "icon": "./icons/2.Rumble Miners Idle Craft Merge.png",
       "role": "Lead Developer",
@@ -260,7 +262,9 @@
       "achievements": "- Designed income & offline income systems\n- Integrated Object Pooling\n- Card upgrade system\n- Building upgrade system",
       "metrics": "",
       "note": "",
-      "isFavorite": false
+      "isFavorite": false,
+      "packageId": "com.onepercent.rumbleminersidlecraftmerge",
+      "appmagicLink": "https://appmagic.rocks/app/google-play/com.onepercent.rumbleminersidlecraftmerge/14171468"
     },
     {
       "id": 3,
@@ -269,7 +273,7 @@
       "description": "3D voxel Idle Mining adventure game where players mine resources, merge miner armies to rebuild a destroyed empire, and battle monsters to defend the village.",
       "releaseDate": "10/10/2023",
       "status": "Removed",
-      "storeLink": null,
+      "storeLink": "https://play.google.com/store/apps/details?id=com.onepercent.braveminer",
       "gameplay": "https://www.youtube.com/watch?v=OyfPFI4eEqY",
       "icon": "./icons/3.Brave Miner Build & Fight.png",
       "role": "Lead Developer",
@@ -286,7 +290,9 @@
       "achievements": "- Added Battle System with unique hero skills & card collection upgrades\n- Built secondary structures boosting passive income, miners, and heroes\n- Achievement System\n- Integrated Live-Ops Events",
       "metrics": "",
       "note": "Feature-complete game covering Gameplay, Battle, Building, and Live-Ops Events with upgraded visuals.",
-      "isFavorite": true
+      "isFavorite": true,
+      "packageId": "com.onepercent.braveminer",
+      "appmagicLink": "https://appmagic.rocks/app/google-play/com.onepercent.braveminer/14713346"
     },
     {
       "id": 4,
@@ -295,7 +301,7 @@
       "description": "Billiards club management game where players manage pool tables, recruit staff, upgrade entertainment facilities, and expand club chains across multiple regions.",
       "releaseDate": "23/01/2024",
       "status": "Removed",
-      "storeLink": null,
+      "storeLink": "https://play.google.com/store/apps/details?id=com.onepercent.mypoolclub",
       "gameplay": "https://www.youtube.com/watch?v=SmdquDqhTKQ",
       "icon": "./icons/4.My Pool Club Tycoon Game.png",
       "role": "Lead Developer",
@@ -316,7 +322,9 @@
       "achievements": "- Character environment interaction system\n- Camera control system\n- Structure upgrade mechanics\n- Automated NPC task execution\n- Map expansion system\n- Vehicle system",
       "metrics": "Lượt tải: 200.000+",
       "note": "Most successful Idle Arcade game in terms of player retention metrics.",
-      "isFavorite": true
+      "isFavorite": true,
+      "packageId": "com.onepercent.mypoolclub",
+      "appmagicLink": "https://appmagic.rocks/app/google-play/com.onepercent.mypoolclub/15327728"
     },
     {
       "id": 5,
@@ -325,7 +333,7 @@
       "description": "Post-apocalyptic 3D Idle Arcade survival game where players build zombie defense shelters, gather resources, recruit survivors, and expand military defense bases.",
       "releaseDate": "09/04/2024",
       "status": "Removed",
-      "storeLink": null,
+      "storeLink": "https://play.google.com/store/apps/details?id=com.onepercent.myzbase",
       "gameplay": "https://www.youtube.com/watch?v=Wkwh0-yiZ5c",
       "icon": "./icons/5.My Z Base.png",
       "role": "Game Developer",
@@ -344,7 +352,9 @@
       "achievements": "- Base building & expansion system\n- Defense weapon upgrade mechanics\n- Resource processing & recycling pipelines",
       "metrics": "",
       "note": "Strong gameplay core with high user retention performance.",
-      "isFavorite": true
+      "isFavorite": true,
+      "packageId": "com.onepercent.myzbase",
+      "appmagicLink": "https://appmagic.rocks/app/google-play/com.onepercent.myzbase/15559098"
     },
     {
       "id": 6,
@@ -353,7 +363,7 @@
       "description": "3D Idle Arcade animal hotel management simulation where players serve cute animal guests, expand hotel rooms, and manage catering and entertainment services.",
       "releaseDate": "04/07/2024",
       "status": "Removed",
-      "storeLink": null,
+      "storeLink": "https://play.google.com/store/apps/details?id=com.onepercent.monsterinn",
       "gameplay": "https://www.youtube.com/watch?v=hqrIkg_Yo0k",
       "icon": "./icons/6.Animals inn simulator game.png",
       "role": "Game Developer",
@@ -373,7 +383,9 @@
       "achievements": "- Customer AI task queue system\n- Hotel service upgrade system",
       "metrics": "",
       "note": "CPI did not meet benchmark targets.",
-      "isFavorite": false
+      "isFavorite": false,
+      "packageId": "com.onepercent.monsterinn",
+      "appmagicLink": "https://appmagic.rocks/app/google-play/com.onepercent.monsterinn/15670556"
     },
     {
       "id": 7,
@@ -382,7 +394,7 @@
       "description": "3D Idle Arcade military boot camp simulation game where players manage soldier recruitment, training courses, and equipment upgrades to expand military bases.",
       "releaseDate": "15/01/2025",
       "status": "Removed",
-      "storeLink": null,
+      "storeLink": "https://play.google.com/store/apps/details?id=com.onepercent.prisonlife",
       "gameplay": "https://www.youtube.com/watch?v=mvxYdsbPtFI",
       "icon": "./icons/7.Military life Idle game.png",
       "role": "Game Developer & PM",
@@ -402,7 +414,9 @@
       "achievements": "- Soldier training flow & obstacle course mechanics\n- Base expansion & equipment upgrades",
       "metrics": "",
       "note": "CPI did not meet benchmark targets.",
-      "isFavorite": false
+      "isFavorite": false,
+      "packageId": "com.onepercent.prisonlife",
+      "appmagicLink": "https://appmagic.rocks/app/google-play/com.onepercent.prisonlife/16275051"
     },
     {
       "id": 8,
@@ -411,7 +425,7 @@
       "description": "3D physics puzzle game where players rotate and unscrew pins and bolts to solve hundreds of challenging levels with simulated physics.",
       "releaseDate": "04/03/2025",
       "status": "Removed",
-      "storeLink": null,
+      "storeLink": "https://play.google.com/store/apps/details?id=com.onepercent.screw.pet",
       "gameplay": "https://www.youtube.com/watch?v=SrLupquyQ3c",
       "icon": "./icons/8.Screw Pet 3D Removal Master.png",
       "role": "Game Developer & PM",
@@ -426,7 +440,9 @@
       "achievements": "- Built 3D screw pin unscrewing physics mechanics\n- Created Support Editor Tool for pin placement\n- Added Home Minigames",
       "metrics": "",
       "note": "CPI did not meet benchmark targets.",
-      "isFavorite": false
+      "isFavorite": false,
+      "packageId": "com.onepercent.screw.pet",
+      "appmagicLink": "https://appmagic.rocks/app/google-play/com.onepercent.screw.pet/16463100"
     },
     {
       "id": 9,
@@ -435,7 +451,7 @@
       "description": "Cozy decor puzzle game where players arrange interior furniture and decorations to design aesthetic living spaces.",
       "releaseDate": "28/04/2025",
       "status": "Removed",
-      "storeLink": null,
+      "storeLink": "https://play.google.com/store/apps/details?id=com.onepercent.perfect.room",
       "gameplay": "https://www.youtube.com/shorts/j750Om9jjfQ",
       "icon": "./icons/9.Perfect Room Cozy Decor.png",
       "role": "Game Developer & PM",
@@ -449,7 +465,9 @@
       "achievements": "Loaded hundreds of room decor assets dynamically via Addressables from CDN, cutting APK install package size by 50%. Built intuitive real-time placement UI.",
       "metrics": "",
       "note": "Dynamically loaded room decor assets via Addressables CDN, reducing initial APK download size by 50%.",
-      "isFavorite": false
+      "isFavorite": false,
+      "packageId": "com.onepercent.perfect.room",
+      "appmagicLink": "https://appmagic.rocks/app/google-play/com.onepercent.perfect.room/16741879"
     },
     {
       "id": 10,
@@ -458,7 +476,7 @@
       "description": "AI character creator game allowing players to fuse two entities (animals, heroes, anime, or meme characters) into unique hybrid creatures.",
       "releaseDate": "23/05/2025",
       "status": "Removed",
-      "storeLink": null,
+      "storeLink": "https://play.google.com/store/apps/details?id=com.onepercent.fusion",
       "gameplay": null,
       "icon": "./icons/10.AI Fusion Create Character.png",
       "role": "Game Developer & PM",
@@ -472,7 +490,9 @@
       "achievements": "",
       "metrics": "",
       "note": "CPI did not meet benchmark targets.",
-      "isFavorite": false
+      "isFavorite": false,
+      "packageId": "com.onepercent.fusion",
+      "appmagicLink": "https://appmagic.rocks/app/google-play/com.onepercent.fusion/16841723"
     },
     {
       "id": 11,
@@ -497,7 +517,9 @@
       "achievements": "- Built camera device & record scene system exporting to MP4 video\n- Record List with thumbnail generation",
       "metrics": "Lượt tải: >2.000.000",
       "note": "CPI met benchmark targets with stable ad revenue.",
-      "isFavorite": false
+      "isFavorite": false,
+      "packageId": "casual.soundboard.ar.trending",
+      "appmagicLink": "https://appmagic.rocks/app/google-play/casual.soundboard.ar.trending/17424482"
     },
     {
       "id": 12,
@@ -525,7 +547,9 @@
       "achievements": "- Optimized 2D collision physics & merge logic for fruits/animals\n- Optimized skin unlock pipeline\n- Maximized ad & IAP monetization via Remote Config\n- Integrated Leaderboards, Building, and Battle Pass systems\n- Added merge combo visual effects",
       "metrics": "Lượt tải: ~1.800.000+",
       "note": "CPI met benchmark targets with strong revenue performance. Major long-term project with multiple expansion phases.",
-      "isFavorite": true
+      "isFavorite": true,
+      "packageId": "com.merge.master.drop.fun.viral.fruit.animal.animash",
+      "appmagicLink": "https://appmagic.rocks/app/google-play/com.merge.master.drop.fun.viral.fruit.animal.animash/16947796"
     },
     {
       "id": 13,
@@ -549,7 +573,9 @@
       "achievements": "- Optimized Canvas UI rendering performance\n- Smooth multi-level zoom system",
       "metrics": "",
       "note": "Optimized high-resolution asset streaming from remote CDN using Addressables and RAM footprint management.",
-      "isFavorite": false
+      "isFavorite": false,
+      "packageId": null,
+      "appmagicLink": null
     },
     {
       "id": 14,
@@ -573,7 +599,9 @@
       "achievements": "- Optimized rhythm beat timing, parsing and generating music notes dynamically from configuration files\n- Accurate multi-channel audio synchronization",
       "metrics": "",
       "note": "Engineered custom audio beat-matching algorithm generating synced note trajectories along dynamic timelines.",
-      "isFavorite": false
+      "isFavorite": false,
+      "packageId": null,
+      "appmagicLink": null
     },
     {
       "id": 15,
@@ -601,7 +629,9 @@
       "achievements": "- Added level theme switching & merge combo effects\n- 60 FPS 2D physics simulation optimization",
       "metrics": "",
       "note": "Architected extensible game loop supporting modular skin variations and dynamic physics properties via Remote Config.",
-      "isFavorite": false
+      "isFavorite": false,
+      "packageId": "com.cute.drop.world.party.animals.merge.dessert.slime",
+      "appmagicLink": "https://appmagic.rocks/app/google-play/com.cute.drop.world.party.animals.merge.dessert.slime/17760203"
     },
     {
       "id": 16,
@@ -625,7 +655,9 @@
       "achievements": "- Developed custom algorithm slicing any image into 2D puzzle pieces\n- Computed Bezier splines for piece edge interlocking\n- Optimized 60 FPS performance\n- Managed dynamic image loading via Addressables CDN",
       "metrics": "",
       "note": "Proprietary spline slicing algorithm fully automating 2D jigsaw level creation from arbitrary user or remote images.",
-      "isFavorite": false
+      "isFavorite": false,
+      "packageId": "com.jig.master.photo.match.puzzle.jigsaw",
+      "appmagicLink": "https://appmagic.rocks/app/google-play/com.jig.master.photo.match.puzzle.jigsaw/17906694"
     },
     {
       "id": 17,
@@ -649,7 +681,9 @@
       "achievements": "- Level progress saving system\n- Piece snap feedback effects\n- ASTC Texture Compression reducing memory by 50%",
       "metrics": "",
       "note": "Deep memory optimization using ASTC texture formats and asynchronous Addressables image loading pipelines.",
-      "isFavorite": false
+      "isFavorite": false,
+      "packageId": "jigcharm.hd.beauty.hot.puzzle",
+      "appmagicLink": "https://appmagic.rocks/app/google-play/jigcharm.hd.beauty.hot.puzzle/18505176"
     },
     {
       "id": 18,
@@ -672,7 +706,9 @@
       "achievements": "- Animal map spawn gacha logic\n- Animal purchase/sale income logic\n- Audio recording & assignment logic per animal",
       "metrics": "",
       "note": "Real-time audio processing with Unity AudioMixer and modular audio clip management architecture.",
-      "isFavorite": false
+      "isFavorite": false,
+      "packageId": "my.talking.zoo.meme.sound",
+      "appmagicLink": "https://appmagic.rocks/app/google-play/my.talking.zoo.meme.sound/18703170"
     },
     {
       "id": 19,
@@ -695,7 +731,9 @@
       "achievements": "- Designed level creation tool based on Tilemap supporting multiple placement strategies (Prefab or Position)\n- Character skin customization system",
       "metrics": "",
       "note": "Engineered custom Tilemap level editor extension inside Unity Inspector for rapid procedural maze prototyping.",
-      "isFavorite": false
+      "isFavorite": false,
+      "packageId": "com.maze.dash.escape.challenge",
+      "appmagicLink": "https://appmagic.rocks/app/google-play/com.maze.dash.escape.challenge/18889809"
     }
   ],
   "hobbies": [
@@ -741,5 +779,9 @@
       "description": "Enjoying manga provides creative visual inspiration, character design concepts, and narrative storytelling insights for game design.",
       "tag": "Visual Inspiration"
     }
-  ]
+  ],
+  "publisherLinks": {
+    "onepercentAppMagic": "https://appmagic.rocks/publisher/onepercent-studio/1_6551370592636081515",
+    "vgpStudioGooglePlay": "https://play.google.com/store/apps/dev?id=6886198565446114538"
+  }
 }

@@ -216,7 +216,7 @@
       "description": "Trò chơi mô phỏng khai thác mỏ 3D voxel Idle Clicker kết hợp cơ chế Merge nâng cấp thợ mỏ và chiến đấu quái vật để khám phá tài nguyên quý hiếm.",
       "releaseDate": "05/04/2023",
       "status": "Removed",
-      "storeLink": null,
+      "storeLink": "https://play.google.com/store/apps/details?id=com.onepercent.crafteradventureidle",
       "gameplay": "https://www.youtube.com/watch?v=Tn0SvI_TKbE",
       "icon": "./icons/1.crafter_legends.png",
       "role": "Lead Developer",
@@ -233,7 +233,9 @@
       "achievements": "- Hệ thống tìm đường\n- Hệ thống merge nâng cấp\n- Hệ thống generate map\n- Hệ thống battle phá huỷ từng phần enemy",
       "metrics": "",
       "note": "Dự án 3D Voxel đầu tay đặt nền móng kiến trúc hệ thống cho chuỗi game Idle Tycoon.",
-      "isFavorite": true
+      "isFavorite": true,
+      "packageId": "com.onepercent.crafteradventureidle",
+      "appmagicLink": "https://appmagic.rocks/app/google-play/com.onepercent.crafteradventureidle/13809002"
     },
     {
       "id": 2,
@@ -242,7 +244,7 @@
       "description": "Trò chơi mô phỏng khai thác vàng 3D Idle Mining Tycoon kết hợp cơ chế Merge nâng cấp thợ mỏ, thu thập thẻ nâng cấp building và chiến đấu chống quái vật để bảo vệ kho báu.",
       "releaseDate": "16/07/2023",
       "status": "Removed",
-      "storeLink": null,
+      "storeLink": "https://play.google.com/store/apps/details?id=com.onepercent.rumbleminersidlecraftmerge",
       "gameplay": null,
       "icon": "./icons/2.Rumble Miners Idle Craft Merge.png",
       "role": "Lead Developer",
@@ -259,7 +261,9 @@
       "achievements": "- Thiết kế hệ thống income, offline income\n- Tích hợp Object Pooling.\n- Hệ thống nâng cấp thẻ bài.\n- Hệ thống nâng cấp building",
       "metrics": "",
       "note": "",
-      "isFavorite": false
+      "isFavorite": false,
+      "packageId": "com.onepercent.rumbleminersidlecraftmerge",
+      "appmagicLink": "https://appmagic.rocks/app/google-play/com.onepercent.rumbleminersidlecraftmerge/14171468"
     },
     {
       "id": 3,
@@ -268,7 +272,7 @@
       "description": "Trò chơi phiêu lưu khai thác Idle Mining bối cảnh 3D voxel, người chơi khai thác tài nguyên, Merge đội quân thợ mỏ để xây dựng lại đế chế bị tàn phá và chiến đấu chống quái vật bảo vệ ngôi làng.",
       "releaseDate": "10/10/2023",
       "status": "Removed",
-      "storeLink": null,
+      "storeLink": "https://play.google.com/store/apps/details?id=com.onepercent.braveminer",
       "gameplay": "https://www.youtube.com/watch?v=OyfPFI4eEqY",
       "icon": "./icons/3.Brave Miner Build & Fight.png",
       "role": "Lead Developer",
@@ -285,7 +289,9 @@
       "achievements": "- Thêm hệ thống Battle với Skill cho từng hero, kết hợp với hệ thống thu thập thẻ bài để nâng cấp hero\n- Xây dựng công trình phụ trợ với tác dụng tăng passive cho income, miner, hero.\n- Hệ thống Achievement\n- Thêm Live-ops event",
       "metrics": "",
       "note": "Game có hệ thống đầy đủ từ Gameplay, Battle, Building, Event và được nâng cấp hình ảnh tốt hơn",
-      "isFavorite": true
+      "isFavorite": true,
+      "packageId": "com.onepercent.braveminer",
+      "appmagicLink": "https://appmagic.rocks/app/google-play/com.onepercent.braveminer/14713346"
     },
     {
       "id": 4,
@@ -294,7 +300,7 @@
       "description": "Trò chơi quản lý câu lạc bộ Billiards, người chơi quản lý từ bàn Billiards đến tuyển dụng nhân sự, nâng cấp trang thiết bị giải trí và mở rộng chuỗi câu lạc bộ trên nhiều khu vực.",
       "releaseDate": "23/01/2024",
       "status": "Removed",
-      "storeLink": null,
+      "storeLink": "https://play.google.com/store/apps/details?id=com.onepercent.mypoolclub",
       "gameplay": "https://www.youtube.com/watch?v=SmdquDqhTKQ",
       "icon": "./icons/4.My Pool Club Tycoon Game.png",
       "role": "Lead Developer",
@@ -315,7 +321,9 @@
       "achievements": "- Xây dựng nền tảng tương tác của Character với môi trường\n- Hệ thống điều khiển camera\n- Nâng cấp công trình\n- Hệ thống NPC tự động thực hiện task\n- Hệ thống mở rộng map\n- Hệ thống Verhicle",
       "metrics": "Lượt tải: 200.000+",
       "note": "Tựa game Idle Arcade thành công nhất về chỉ số giữ chân người dùng.",
-      "isFavorite": true
+      "isFavorite": true,
+      "packageId": "com.onepercent.mypoolclub",
+      "appmagicLink": "https://appmagic.rocks/app/google-play/com.onepercent.mypoolclub/15327728"
     },
     {
       "id": 5,
@@ -324,7 +332,7 @@
       "description": "Trò chơi Idle Defence kết hợp Merge Tower Defense, người chơi xây dựng và quản lý căn cứ, merge các đơn vị chiến đấu để chống lại làn sóng zombie tấn công và mở rộng đế chế sinh tồn.",
       "releaseDate": "09/04/2024",
       "status": "Removed",
-      "storeLink": null,
+      "storeLink": "https://play.google.com/store/apps/details?id=com.onepercent.myzbase",
       "gameplay": "https://www.youtube.com/watch?v=Wkwh0-yiZ5c",
       "icon": "./icons/5.My Z Base.png",
       "role": "Game Developer",
@@ -343,7 +351,9 @@
       "achievements": "- Xây dựng hệ thống quản lý zombie tấn công căn cứ.\n- Hệ thống nâng cấp vũ khí và zombie\n- Tối ưu Particle",
       "metrics": "",
       "note": "Có gameplay thú vị và gặp nhiều vấn đề về tối ưu nhất vì số lượng zombie và particle đạn cho từng loại súng.",
-      "isFavorite": true
+      "isFavorite": true,
+      "packageId": "com.onepercent.myzbase",
+      "appmagicLink": "https://appmagic.rocks/app/google-play/com.onepercent.myzbase/15559098"
     },
     {
       "id": 6,
@@ -352,7 +362,7 @@
       "description": "Trò chơi mô phỏng quản lý nhà trọ cho các loài động vật đáng yêu, người chơi dọn dẹp phòng, phục vụ quầy kem, hoàn thành các mini puzzle để mở khóa nhiều loài động vật mới giúp tối đa hóa thu nhập.",
       "releaseDate": "04/07/2024",
       "status": "Removed",
-      "storeLink": null,
+      "storeLink": "https://play.google.com/store/apps/details?id=com.onepercent.monsterinn",
       "gameplay": "https://www.youtube.com/watch?v=hqrIkg_Yo0k",
       "icon": "./icons/6.Animals inn simulator game.png",
       "role": "Game Developer",
@@ -372,7 +382,9 @@
       "achievements": "- Hệ thống quản lý, nâng cấp pet\n- Hệ thống Pet battle\n- Thêm Battle Pass\n- Minigame",
       "metrics": "",
       "note": "CPI đạt benchmark. Game có tiềm năng phát triển.",
-      "isFavorite": false
+      "isFavorite": false,
+      "packageId": "com.onepercent.monsterinn",
+      "appmagicLink": "https://appmagic.rocks/app/google-play/com.onepercent.monsterinn/15670556"
     },
     {
       "id": 7,
@@ -381,7 +393,7 @@
       "description": "Trò chơi mô phỏng quản lý Military Idle Simulation, người chơi huấn luyện binh lính, nâng cấp các phòng chức năng và dẫn dắt quân đội thực hiện các chiến dịch mở rộng căn cứ.",
       "releaseDate": "15/01/2025",
       "status": "Removed",
-      "storeLink": null,
+      "storeLink": "https://play.google.com/store/apps/details?id=com.onepercent.prisonlife",
       "gameplay": "https://www.youtube.com/watch?v=mvxYdsbPtFI",
       "icon": "./icons/7.Military life Idle game.png",
       "role": "Game Developer & PM",
@@ -401,7 +413,9 @@
       "achievements": "- Thiết kế hệ thống nâng cấp room.\n- Thiết kế các phòng tính năng: huấn luyện, phòng ăn, phòng tập bắn, phòng gym và phòng y tế.\n- Cơ chế xếp hàng và NPC follow character\n- Thiết kế behavior cho NPC support",
       "metrics": "",
       "note": "CPI không đạt benchmark.",
-      "isFavorite": false
+      "isFavorite": false,
+      "packageId": "com.onepercent.prisonlife",
+      "appmagicLink": "https://appmagic.rocks/app/google-play/com.onepercent.prisonlife/16275051"
     },
     {
       "id": 8,
@@ -410,7 +424,7 @@
       "description": "Trò chơi giải đố 3D (Physics Puzzle), người chơi thực hiện xoay, tháo gỡ các chốt pin và ốc vít để vượt qua hàng trăm cấp độ thử thách với cơ chế vật lý mô phỏng.",
       "releaseDate": "04/03/2025",
       "status": "Removed",
-      "storeLink": null,
+      "storeLink": "https://play.google.com/store/apps/details?id=com.onepercent.screw.pet",
       "gameplay": "https://www.youtube.com/watch?v=SrLupquyQ3c",
       "icon": "./icons/8.Screw Pet 3D Removal Master.png",
       "role": "Game Developer & PM",
@@ -425,7 +439,9 @@
       "achievements": "- Xây dựng cơ chế xoay và tháo ốc vít 3D\n- Build Support tool cho việc gắn ốc\n- Thêm minigame ở Home",
       "metrics": "",
       "note": "CPI không đạt benchmark.",
-      "isFavorite": false
+      "isFavorite": false,
+      "packageId": "com.onepercent.screw.pet",
+      "appmagicLink": "https://appmagic.rocks/app/google-play/com.onepercent.screw.pet/16463100"
     },
     {
       "id": 9,
@@ -434,7 +450,7 @@
       "description": "Trò chơi giải đố trang trí phòng phong cách dễ thương (Cozy Decor Puzzle), người chơi sắp xếp đồ nội thất.",
       "releaseDate": "28/04/2025",
       "status": "Removed",
-      "storeLink": null,
+      "storeLink": "https://play.google.com/store/apps/details?id=com.onepercent.perfect.room",
       "gameplay": "https://www.youtube.com/shorts/j750Om9jjfQ",
       "icon": "./icons/9.Perfect Room Cozy Decor.png",
       "role": "Game Developer & PM",
@@ -448,7 +464,9 @@
       "achievements": "Tải động hàng trăm đồ nội thất trang trí phòng thông qua Addressables từ CDN, giúp giảm 50% dung lượng file cài đặt APK. Xây dựng giao diện trang trí trực quan, phản hồi tức thời.",
       "metrics": "",
       "note": "CPI đạt benchmark, game có tiềm năng phát triển tuy nhiên không đủ nhân sự để tiếp tục phát triển",
-      "isFavorite": false
+      "isFavorite": false,
+      "packageId": "com.onepercent.perfect.room",
+      "appmagicLink": "https://appmagic.rocks/app/google-play/com.onepercent.perfect.room/16741879"
     },
     {
       "id": 10,
@@ -457,7 +475,7 @@
       "description": "Trò chơi sáng tạo nhân vật bằng công nghệ AI (AI Character Creator), cho phép người chơi kết hợp (merge) hai thực thể bất kỳ như động vật, anh hùng, nhân vật anime hay meme thịnh hành để tạo ra các sinh vật lai độc nhất vô nhị.",
       "releaseDate": "23/05/2025",
       "status": "Removed",
-      "storeLink": null,
+      "storeLink": "https://play.google.com/store/apps/details?id=com.onepercent.fusion",
       "gameplay": null,
       "icon": "./icons/10.AI Fusion Create Character.png",
       "role": "Game Developer & PM",
@@ -471,7 +489,9 @@
       "achievements": "",
       "metrics": "",
       "note": "CPI không đạt benchmark.",
-      "isFavorite": false
+      "isFavorite": false,
+      "packageId": "com.onepercent.fusion",
+      "appmagicLink": "https://appmagic.rocks/app/google-play/com.onepercent.fusion/16841723"
     },
     {
       "id": 11,
@@ -480,7 +500,7 @@
       "description": "Ứng dụng giải trí tương tác thực tế ảo (AR Soundboard) tích hợp camera AR cho phép đưa các nhân vật quái vật meme nhảy múa vào không gian thực tế.",
       "releaseDate": "27/05/2025",
       "status": "Live",
-      "storeLink": "https://play.google.com/store/apps/details?id=casual.soundboard.ar.trending&hl=vi",
+      "storeLink": "https://play.google.com/store/apps/details?id=casual.soundboard.ar.trending",
       "gameplay": "https://www.youtube.com/watch?v=etbhQ2U3Irs",
       "icon": "./icons/11. Viral AR Soundboard.png",
       "role": "Game Developer & PM",
@@ -496,7 +516,9 @@
       "achievements": "- Hệ thống sử dụng Camera device và Record Scene để export ra video mp4\n- Record List với thumbnails",
       "metrics": "Lượt tải: >2.000.000",
       "note": "CPI đạt benchmark và có doanh thu ổn định.",
-      "isFavorite": false
+      "isFavorite": false,
+      "packageId": "casual.soundboard.ar.trending",
+      "appmagicLink": "https://appmagic.rocks/app/google-play/casual.soundboard.ar.trending/17424482"
     },
     {
       "id": 12,
@@ -524,7 +546,9 @@
       "achievements": "- Tối ưu hóa cơ chế vật lý va chạm và gộp các loại trái cây/động vật 2D.\n- Tối ưu luồng skin cho game\n- Tối ưu doanh thu bằng Remote Config\n- Thêm Leaderboard, Building và Battle Pass\n- Hiệu ứng combo khi merge",
       "metrics": "Lượt tải: ~1.800.000+",
       "note": "CPI đạt benchmark và có doanh thu ổn định. Đây là dự án đi sâu nhất và có nhiều phase phát triển cũng như cải tiến sản phẩm",
-      "isFavorite": true
+      "isFavorite": true,
+      "packageId": "com.merge.master.drop.fun.viral.fruit.animal.animash",
+      "appmagicLink": "https://appmagic.rocks/app/google-play/com.merge.master.drop.fun.viral.fruit.animal.animash/16947796"
     },
     {
       "id": 13,
@@ -548,7 +572,9 @@
       "achievements": "- Tối ưu Canvas UI và render ảnh độ phân giải cao\n- Hệ thống zoom đa cấp mượt mà",
       "metrics": "",
       "note": "Tối ưu hóa hệ thống tải ảnh dung lượng lớn từ máy chủ thông qua Addressables và quản lý bộ nhớ RAM.",
-      "isFavorite": false
+      "isFavorite": false,
+      "packageId": null,
+      "appmagicLink": null
     },
     {
       "id": 14,
@@ -572,7 +598,9 @@
       "achievements": "- Tối ưu hóa nhịp điệu game, đọc và sinh các nốt nhạc theo config\n- Tích hợp hệ thống đồng bộ âm thanh AudioSource chính xác",
       "metrics": "",
       "note": "Xây dựng thuật toán phân tích nhịp beat và tự động tạo đường bay nốt nhạc đồng bộ với audio timeline.",
-      "isFavorite": false
+      "isFavorite": false,
+      "packageId": null,
+      "appmagicLink": null
     },
     {
       "id": 15,
@@ -600,7 +628,9 @@
       "achievements": "- Thêm cơ chế thay đổi màn chơi, Combo khi merge.\n- Tối ưu hóa va chạm vật lý 2D mượt mà",
       "metrics": "",
       "note": "Thiết kế kiến trúc mở rộng cho phép bổ sung skin và cơ chế merge mới linh hoạt qua Remote Config.",
-      "isFavorite": false
+      "isFavorite": false,
+      "packageId": "com.cute.drop.world.party.animals.merge.dessert.slime",
+      "appmagicLink": "https://appmagic.rocks/app/google-play/com.cute.drop.world.party.animals.merge.dessert.slime/17760203"
     },
     {
       "id": 16,
@@ -624,7 +654,9 @@
       "achievements": "- Viết thuật toán tự động chia nhỏ bất kỳ bức ảnh nào thành các mảnh ghép puzzle 2D\n- Tính toán spline cho các cạnh của miếng ghép\n- Tối ưu hoá logic cho 60FPS\n- Quản lý tải ảnh từ máy chủ thông qua Addressables",
       "metrics": "",
       "note": "Thuật toán cắt spline mảnh ghép độc quyền giúp tự động hóa 100% việc tạo level jigsaw từ bất kỳ ảnh nào.",
-      "isFavorite": false
+      "isFavorite": false,
+      "packageId": "com.jig.master.photo.match.puzzle.jigsaw",
+      "appmagicLink": "https://appmagic.rocks/app/google-play/com.jig.master.photo.match.puzzle.jigsaw/17906694"
     },
     {
       "id": 17,
@@ -648,7 +680,9 @@
       "achievements": "- Thêm media player để thay đổi Music Background cho game\n- Thêm Album có thể tải ảnh về máy\n- Tối ưu nén Texture ASTC tiết kiệm 50% RAM",
       "metrics": "",
       "note": "Tối ưu hóa bộ nhớ với chuẩn nén Texture ASTC và kiến trúc tải ảnh bất đồng bộ Addressables.",
-      "isFavorite": false
+      "isFavorite": false,
+      "packageId": "jigcharm.hd.beauty.hot.puzzle",
+      "appmagicLink": "https://appmagic.rocks/app/google-play/jigcharm.hd.beauty.hot.puzzle/18505176"
     },
     {
       "id": 18,
@@ -671,7 +705,9 @@
       "achievements": "- Logic Gacha ra Animal theo map.\n- Logic mua/bán và income từ animal.\n- Tạo logic record sound và gán cho 1 Animal.",
       "metrics": "",
       "note": "Xử lý luồng âm thanh thời gian thực với AudioMixer và hệ thống quản lý dữ liệu audio clip linh hoạt.",
-      "isFavorite": false
+      "isFavorite": false,
+      "packageId": "my.talking.zoo.meme.sound",
+      "appmagicLink": "https://appmagic.rocks/app/google-play/my.talking.zoo.meme.sound/18703170"
     },
     {
       "id": 19,
@@ -694,7 +730,9 @@
       "achievements": "- Thiết kế tool xếp map dựa trên Tilemap, cho phép nhiều cơ chế xếp map (Bằng prefab hoặc Position)\n- Thêm hệ thống skin nhân vật.",
       "metrics": "",
       "note": "Xây dựng Custom Level Editor Tool tích hợp trực tiếp vào Unity Inspector để sinh bản đồ tự động.",
-      "isFavorite": false
+      "isFavorite": false,
+      "packageId": "com.maze.dash.escape.challenge",
+      "appmagicLink": "https://appmagic.rocks/app/google-play/com.maze.dash.escape.challenge/18889809"
     }
   ],
   "hobbies": [
@@ -740,5 +778,9 @@
       "description": "Yêu thích đọc truyện tranh giúp kích thích trí tưởng tượng sáng tạo, học hỏi nghệ thuật kể chuyện thị giác (Visual Storytelling) và tạo hình nhân vật.",
       "tag": "Manga & Art Fan"
     }
-  ]
+  ],
+  "publisherLinks": {
+    "onepercentAppMagic": "https://appmagic.rocks/publisher/onepercent-studio/1_6551370592636081515",
+    "vgpStudioGooglePlay": "https://play.google.com/store/apps/dev?id=6886198565446114538"
+  }
 }
