@@ -316,3 +316,33 @@ Thành tựu kỹ thuật:
 Chỉ số: 
 Ghi chú: CPI không đạt benchmark
 Yêu thích: Không
+
+20. Fun Music Beats
+Thể loại: Hyper Casual
+Mô tả: Trò chơi âm nhạc sáng tạo nhịp điệu (Music Maker & Soundboard), người chơi kéo thả các sample âm thanh vui nhộn, hiệu ứng beatbox và vocal meme lên các nhân vật để mix thành bản nhạc độc đáo của riêng mình.
+Ngày ra mắt: 08/01/2025
+Trạng thái: Removed
+Gameplay: None
+Vai trò: Game Developer & PM
+Quy mô: 4 người (1 Dev(PM), 2 Artist, 1 Game Designer)
+Công nghệ: Unity, C#, Audio Mixer, Object Pooling, Sprite Atlas, DOTween, Scriptable Object
+Thành tựu kỹ thuật: 
+- Thiết kế hệ thống data config trong Scriptable Object, cho phép dễ dàng thay đổi và test.
+Chỉ số: Lượt tải: >2.000.000, Doanh thu: >$5.000
+Ghi chú: Đạt hơn 2 triệu lượt tải toàn cầu, là tựa game âm nhạc tương tác thành công nhất về lượng người chơi.
+Yêu thích: Có
+
+21. Meme Cute Beats
+Thể loại: Hyper Casual
+Mô tả: Bản remake của Fun Music Beats với phong cách nghệ thuật dễ thương và bộ sample âm thanh meme mới mẻ, cho phép người chơi thỏa sức sáng tạo và phối các beat nhạc hài hước bằng cơ chế kéo thả âm thanh lên nhân vật.
+Ngày ra mắt: 18/06/2025
+Trạng thái: Live - https://play.google.com/store/apps/details?id=meme.cute.beats.fun.music.maker.pank.mix
+Gameplay: None
+Vai trò: Game Developer & PM
+Quy mô: 3 người (1 Dev, 1 Artist, 1 Game Designer)
+Công nghệ: Unity, C#, Audio Mixer, Object Pooling, Sprite Atlas, DOTween, Scriptable Object
+Thành tựu kỹ thuật: 
+- Tích hợp hệ thống tùy biến skin nhân vật
+Chỉ số: Lượt tải: >1.000.000
+Ghi chú: Bản Remake của Fun Music Beats, tiếp tục đạt cột mốc hơn 1 triệu lượt tải trên Google Play.
+Yêu thích: Có

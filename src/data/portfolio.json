@@ -6,7 +6,7 @@
     "email": "tviethung20@gmail.com",
     "phone": "0398962424",
     "gitlab": "https://gitlab.com/tviethung20",
-    "summary": "Unity Developer với 10+ năm kinh nghiệm Software Engineering và 6+ năm phát triển Unity Mobile Games. Đã phát hành 19+ sản phẩm trên Android với các tựa game đạt hàng triệu lượt tải. Xây dựng game trên C# (OOP, Design Patterns, Event-Driven), tối ưu hóa hiệu năng 60 FPS trên Low-End devices, xây dựng Custom Editor Tools. Kết hợp tư duy kỹ thuật vững chắc với phân tích dữ liệu sản phẩm để tối ưu gameplay loop."
+    "summary": "Unity Developer với 10+ năm kinh nghiệm Software Engineering và 6+ năm phát triển Unity Mobile Games. Đã phát hành 21+ sản phẩm trên Android với các tựa game đạt hàng triệu lượt tải. Xây dựng game trên C# (OOP, Design Patterns, Event-Driven), tối ưu hóa hiệu năng 60 FPS trên Low-End devices, xây dựng Custom Editor Tools. Kết hợp tư duy kỹ thuật vững chắc với phân tích dữ liệu sản phẩm để tối ưu gameplay loop."
   },
   "telemetry": {
     "stats": [
@@ -31,7 +31,7 @@
         "progress": 100
       }
     ],
-    "projectCount": "19",
+    "projectCount": "21+",
     "latestPlatform": "ANDROID / CROSS-PLATFORM",
     "memoryStatus": "OPTIMIZED // ZERO GC"
   },
@@ -131,7 +131,7 @@
       "role": "Unity Developer",
       "period": "Oct 2022 - Jul 2026",
       "bulletPoints": [
-        "Phát triển và phát hành thành công chuỗi 19+ game di động trên nền tảng Android. Tiêu biểu gồm: Merge Drop Master (~1.8M lượt tải), Trending AR Soundboard (>2M lượt tải) và My Pool Club (>200K lượt tải).",
+        "Phát triển và phát hành thành công chuỗi 21+ game di động trên nền tảng Android. Tiêu biểu gồm: Fun Music Beats (>2M lượt tải), Trending AR Soundboard (>2M lượt tải), Merge Drop Master (~1.8M lượt tải) và Meme Cute Beats (>1M lượt tải).",
         "Chịu trách nhiệm thiết kế kiến trúc hệ thống (Unity / C#), xây dựng Core Gameplay loop và các cơ chế tương tác vật lý phức tạp (Physics 2D/3D, Drag & Drop, Merge mechanics).",
         "Đảm nhiệm tối ưu hóa hiệu năng (Deep Mobile Optimization): Profiling RAM/CPU, giảm Draw Calls bằng Sprite Atlas/GPU Instancing, tối ưu bộ nhớ với ASTC compression và Object Pooling, đảm bảo game vận hành ổn định 60 FPS trên thiết bị phân khúc thấp (Low-End Devices).",
         "Thiết kế và phát triển các hệ thống Custom Editor Tools (Level Editor, Level Config Generator), hỗ trợ đội ngũ Game Design và Art tạo nội dung nhanh chóng.",
@@ -733,6 +733,62 @@
       "isFavorite": false,
       "packageId": "com.maze.dash.escape.challenge",
       "appmagicLink": "https://appmagic.rocks/google-play/maze-dash-escape/com.maze.dash.escape.challenge"
+    },
+    {
+      "id": 20,
+      "title": "Fun Music Beats",
+      "genre": "Hyper Casual",
+      "description": "Trò chơi âm nhạc sáng tạo nhịp điệu (Music Maker & Soundboard), người chơi kéo thả các sample âm thanh vui nhộn, hiệu ứng beatbox và vocal meme lên các nhân vật để mix thành bản nhạc độc đáo của riêng mình.",
+      "releaseDate": "08/01/2025",
+      "status": "Removed",
+      "storeLink": "https://play.google.com/store/apps/details?id=com.onepercent.sprunkybeats",
+      "gameplay": null,
+      "icon": "./icons/20.Fun Music Beats.png",
+      "role": "Game Developer & PM",
+      "teamSize": "4 người (1 Dev(PM), 2 Artist, 1 Game Designer)",
+      "technologies": [
+        "Unity",
+        "C#",
+        "Audio Mixer",
+        "Object Pooling",
+        "Sprite Atlas",
+        "DOTween",
+        "Scriptable Object"
+      ],
+      "achievements": "- Thiết kế hệ thống data config trong Scriptable Object, cho phép dễ dàng thay đổi và test.",
+      "metrics": "Lượt tải: >2.000.000 | Doanh thu: >$5.000",
+      "note": "Tựa game âm nhạc tương tác viral đạt hơn 2 triệu lượt tải toàn cầu.",
+      "isFavorite": true,
+      "packageId": "com.onepercent.sprunkybeats",
+      "appmagicLink": "https://appmagic.rocks/google-play/fun-music-beats/com.onepercent.sprunkybeats"
+    },
+    {
+      "id": 21,
+      "title": "Meme Cute Beats",
+      "genre": "Hyper Casual",
+      "description": "Bản remake của Fun Music Beats với phong cách nghệ thuật dễ thương và bộ sample âm thanh meme mới mẻ, cho phép người chơi phối các beat nhạc hài hước bằng cơ chế kéo thả âm thanh lên nhân vật.",
+      "releaseDate": "18/06/2025",
+      "status": "Live",
+      "storeLink": "https://play.google.com/store/apps/details?id=meme.cute.beats.fun.music.maker.pank.mix",
+      "gameplay": null,
+      "icon": "./icons/21.Meme Cute Beats.png",
+      "role": "Game Developer & PM",
+      "teamSize": "3 người (1 Dev, 1 Artist, 1 Game Designer)",
+      "technologies": [
+        "Unity",
+        "C#",
+        "Audio Mixer",
+        "Object Pooling",
+        "Sprite Atlas",
+        "DOTween",
+        "Scriptable Object"
+      ],
+      "achievements": "- Tích hợp hệ thống tùy biến skin nhân vật",
+      "metrics": "Lượt tải: >1.000.000",
+      "note": "Bản Remake của Fun Music Beats, tiếp tục đạt cột mốc hơn 1 triệu lượt tải trên Google Play.",
+      "isFavorite": true,
+      "packageId": "meme.cute.beats.fun.music.maker.pank.mix",
+      "appmagicLink": "https://appmagic.rocks/google-play/meme-cute-beats/meme.cute.beats.fun.music.maker.pank.mix"
     }
   ],
   "hobbies": [

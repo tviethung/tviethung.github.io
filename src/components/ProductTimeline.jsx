@@ -180,8 +180,8 @@ export default function ProductTimeline() {
             </h2>
             <p className="text-text-secondary text-sm mt-2 max-w-xl">
               {language === 'en' 
-                ? 'Comprehensive catalog of 19+ mobile games developed and published on Android. Archived titles are prototypes retired after market testing (CPI/retention below benchmark) — a rapid 2–3 month release cycle.' 
-                : 'Toàn bộ danh mục 19+ game di động đã phát triển và phát hành trên Google Play. Các game Archived là prototype dừng sau market-test (CPI/retention chưa đạt benchmark) — chu kỳ phát hành nhanh 2–3 tháng/game.'}
+                ? 'Comprehensive catalog of 21+ mobile games developed and published on Android. Archived titles are prototypes retired after market testing (CPI/retention below benchmark) — a rapid 2–3 month release cycle.' 
+                : 'Toàn bộ danh mục 21+ game di động đã phát triển và phát hành trên Google Play. Các game Archived là prototype dừng sau market-test (CPI/retention chưa đạt benchmark) — chu kỳ phát hành nhanh 2–3 tháng/game.'}
             </p>
             <div className="mt-3 flex items-center gap-2">
               <a

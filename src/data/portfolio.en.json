@@ -6,7 +6,7 @@
     "email": "tviethung20@gmail.com",
     "phone": "+84 398 962 424",
     "gitlab": "https://gitlab.com/tviethung20",
-    "summary": "Unity Developer with 10+ years of Software Engineering experience and 6+ years in Unity Mobile Game Development. Shipped 19+ mobile games on Android with titles reaching millions of downloads. Specialized in C# game architecture (OOP, Design Patterns, EventBus), 60 FPS mobile optimization on low-end devices, and custom Unity Editor tooling. Combines strong engineering rigor with data-driven iteration to maximize gameplay retention."
+    "summary": "Unity Developer with 10+ years of Software Engineering experience and 6+ years in Unity Mobile Game Development. Shipped 21+ mobile games on Android with titles reaching millions of downloads. Specialized in C# game architecture (OOP, Design Patterns, EventBus), 60 FPS mobile optimization on low-end devices, and custom Unity Editor tooling. Combines strong engineering rigor with data-driven iteration to maximize gameplay retention."
   },
   "telemetry": {
     "stats": [
@@ -31,7 +31,7 @@
         "progress": 100
       }
     ],
-    "projectCount": "19+",
+    "projectCount": "21+",
     "latestPlatform": "ANDROID / CROSS-PLATFORM",
     "memoryStatus": "OPTIMIZED // ZERO GC"
   },
@@ -132,7 +132,7 @@
       "role": "Unity Developer",
       "period": "Oct 2022 - Jul 2026",
       "bulletPoints": [
-        "Developed and successfully published 19+ mobile games on Android. Key titles include: Merge Drop Master (~1.8M downloads), Trending AR Soundboard (>2M downloads), and My Pool Club (>200K downloads).",
+        "Developed and successfully published 21+ mobile games on Android. Key titles include: Fun Music Beats (>2M downloads), Trending AR Soundboard (>2M downloads), Merge Drop Master (~1.8M downloads), and Meme Cute Beats (>1M downloads).",
         "Architected core game systems (Unity/C#), authored core gameplay loops, and implemented complex 2D/3D physics interactions (Drag & Drop, collision detection, merge mechanics).",
         "Led deep mobile performance optimizations: RAM/CPU profiling, draw call reduction via Sprite Atlases/GPU Instancing, ASTC texture compression, and Object Pooling, maintaining 60 FPS on low-end devices.",
         "Engineered custom Unity Editor tools (Level Editors, Config Generators) to streamline content creation workflows for Design and Art teams.",
@@ -734,6 +734,62 @@
       "isFavorite": false,
       "packageId": "com.maze.dash.escape.challenge",
       "appmagicLink": "https://appmagic.rocks/google-play/maze-dash-escape/com.maze.dash.escape.challenge"
+    },
+    {
+      "id": 20,
+      "title": "Fun Music Beats",
+      "genre": "Hyper Casual",
+      "description": "Interactive music-maker & soundboard game where players drag and drop quirky sound samples, beatbox loops, and meme vocals onto animated characters to create original music tracks.",
+      "releaseDate": "08/01/2025",
+      "status": "Removed",
+      "storeLink": "https://play.google.com/store/apps/details?id=com.onepercent.sprunkybeats",
+      "gameplay": null,
+      "icon": "./icons/20.Fun Music Beats.png",
+      "role": "Game Developer & PM",
+      "teamSize": "4 members (1 Dev(PM), 2 Artists, 1 Game Designer)",
+      "technologies": [
+        "Unity",
+        "C#",
+        "Audio Mixer",
+        "Object Pooling",
+        "Sprite Atlas",
+        "DOTween",
+        "Scriptable Object"
+      ],
+      "achievements": "- Designed data config architecture using ScriptableObjects for rapid iteration and testing",
+      "metrics": "Downloads: >2,000,000 | Revenue: >$5,000",
+      "note": "Viral interactive music game surpassing 2 million downloads worldwide.",
+      "isFavorite": true,
+      "packageId": "com.onepercent.sprunkybeats",
+      "appmagicLink": "https://appmagic.rocks/google-play/fun-music-beats/com.onepercent.sprunkybeats"
+    },
+    {
+      "id": 21,
+      "title": "Meme Cute Beats",
+      "genre": "Hyper Casual",
+      "description": "Remake of Fun Music Beats featuring cute visuals and fresh meme sound samples, allowing players to craft custom musical beats by dropping funny sound clips onto mascot characters.",
+      "releaseDate": "18/06/2025",
+      "status": "Live",
+      "storeLink": "https://play.google.com/store/apps/details?id=meme.cute.beats.fun.music.maker.pank.mix",
+      "gameplay": null,
+      "icon": "./icons/21.Meme Cute Beats.png",
+      "role": "Game Developer & PM",
+      "teamSize": "3 members (1 Dev, 1 Artist, 1 Game Designer)",
+      "technologies": [
+        "Unity",
+        "C#",
+        "Audio Mixer",
+        "Object Pooling",
+        "Sprite Atlas",
+        "DOTween",
+        "Scriptable Object"
+      ],
+      "achievements": "- Integrated dynamic character skin customization system",
+      "metrics": "Downloads: >1,000,000",
+      "note": "Remake of Fun Music Beats, successfully reaching 1M+ downloads on Google Play.",
+      "isFavorite": true,
+      "packageId": "meme.cute.beats.fun.music.maker.pank.mix",
+      "appmagicLink": "https://appmagic.rocks/google-play/meme-cute-beats/meme.cute.beats.fun.music.maker.pank.mix"
     }
   ],
   "hobbies": [

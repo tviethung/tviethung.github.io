@@ -92,11 +92,11 @@ export default function Hero() {
             {/* Key Impact Stats */}
             <motion.div variants={itemVariants} className="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-1">
               <div className="glass-panel p-3.5 rounded-xl text-center">
-                <div className="text-2xl font-extrabold text-white">19+</div>
+                <div className="text-2xl font-extrabold text-white">21+</div>
                 <div className="text-[11px] font-medium text-text-muted mt-0.5">{language === 'en' ? 'Games Shipped' : 'Game Đã Ra Mắt'}</div>
               </div>
               <div className="glass-panel p-3.5 rounded-xl text-center">
-                <div className="text-2xl font-extrabold text-accent-green">4M+</div>
+                <div className="text-2xl font-extrabold text-accent-green">7M+</div>
                 <div className="text-[11px] font-medium text-text-muted mt-0.5">{language === 'en' ? 'Total Downloads' : 'Lượt Tải Toàn Cầu'}</div>
               </div>
               <div className="glass-panel p-3.5 rounded-xl text-center">
@@ -175,10 +175,10 @@ export default function Hero() {
                     <span className="w-2.5 h-2.5 rounded-full bg-accent-green animate-ping" />
                   </div>
                   <div className="text-xs sm:text-sm font-semibold text-accent-green">Unity Developer</div>
-                  <div className="text-xs text-text-muted mt-0.5">Ex-Samsung R&D • 19+ Android Games</div>
+                  <div className="text-xs text-text-muted mt-0.5">Ex-Samsung R&D • 21+ Android Games</div>
                   <div className="pt-1 flex flex-wrap justify-center sm:justify-start gap-1.5 text-[10px]">
                     <span className="px-2 py-0.5 rounded-full bg-accent-green/10 text-accent-green border border-accent-green/30 font-medium">Hà Nội, VN</span>
-                    <span className="px-2 py-0.5 rounded-full bg-white/5 text-text-secondary border border-white/10">4M+ Downloads</span>
+                    <span className="px-2 py-0.5 rounded-full bg-white/5 text-text-secondary border border-white/10">7M+ Downloads</span>
                   </div>
                 </div>
               </div>
