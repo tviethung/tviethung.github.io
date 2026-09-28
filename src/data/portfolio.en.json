@@ -236,7 +236,7 @@
       "note": "First 3D Voxel project laying the architectural foundation for subsequent Idle Tycoon titles.",
       "isFavorite": true,
       "packageId": "com.onepercent.crafteradventureidle",
-      "appmagicLink": "https://appmagic.rocks/app/google-play/com.onepercent.crafteradventureidle/13809002"
+      "appmagicLink": "https://appmagic.rocks/google-play/crafter-legends/com.onepercent.crafteradventureidle"
     },
     {
       "id": 2,
@@ -264,7 +264,7 @@
       "note": "",
       "isFavorite": false,
       "packageId": "com.onepercent.rumbleminersidlecraftmerge",
-      "appmagicLink": "https://appmagic.rocks/app/google-play/com.onepercent.rumbleminersidlecraftmerge/14171468"
+      "appmagicLink": "https://appmagic.rocks/google-play/rumble-miners-idle-craft-merge/com.onepercent.rumbleminersidlecraftmerge"
     },
     {
       "id": 3,
@@ -292,7 +292,7 @@
       "note": "Feature-complete game covering Gameplay, Battle, Building, and Live-Ops Events with upgraded visuals.",
       "isFavorite": true,
       "packageId": "com.onepercent.braveminer",
-      "appmagicLink": "https://appmagic.rocks/app/google-play/com.onepercent.braveminer/14713346"
+      "appmagicLink": "https://appmagic.rocks/google-play/brave-miner-build-fight/com.onepercent.braveminer"
     },
     {
       "id": 4,
@@ -324,7 +324,7 @@
       "note": "Most successful Idle Arcade game in terms of player retention metrics.",
       "isFavorite": true,
       "packageId": "com.onepercent.mypoolclub",
-      "appmagicLink": "https://appmagic.rocks/app/google-play/com.onepercent.mypoolclub/15327728"
+      "appmagicLink": "https://appmagic.rocks/google-play/my-pool-club-tycoon-game/com.onepercent.mypoolclub"
     },
     {
       "id": 5,
@@ -354,7 +354,7 @@
       "note": "Strong gameplay core with high user retention performance.",
       "isFavorite": true,
       "packageId": "com.onepercent.myzbase",
-      "appmagicLink": "https://appmagic.rocks/app/google-play/com.onepercent.myzbase/15559098"
+      "appmagicLink": "https://appmagic.rocks/google-play/my-z-base/com.onepercent.myzbase"
     },
     {
       "id": 6,
@@ -385,7 +385,7 @@
       "note": "CPI did not meet benchmark targets.",
       "isFavorite": false,
       "packageId": "com.onepercent.monsterinn",
-      "appmagicLink": "https://appmagic.rocks/app/google-play/com.onepercent.monsterinn/15670556"
+      "appmagicLink": "https://appmagic.rocks/google-play/animals-inn-simulator-game/com.onepercent.monsterinn"
     },
     {
       "id": 7,
@@ -416,7 +416,7 @@
       "note": "CPI did not meet benchmark targets.",
       "isFavorite": false,
       "packageId": "com.onepercent.prisonlife",
-      "appmagicLink": "https://appmagic.rocks/app/google-play/com.onepercent.prisonlife/16275051"
+      "appmagicLink": "https://appmagic.rocks/google-play/military-life-idle-game/com.onepercent.prisonlife"
     },
     {
       "id": 8,
@@ -442,7 +442,7 @@
       "note": "CPI did not meet benchmark targets.",
       "isFavorite": false,
       "packageId": "com.onepercent.screw.pet",
-      "appmagicLink": "https://appmagic.rocks/app/google-play/com.onepercent.screw.pet/16463100"
+      "appmagicLink": "https://appmagic.rocks/google-play/screw-pet-3d-removal-master/com.onepercent.screw.pet"
     },
     {
       "id": 9,
@@ -467,7 +467,7 @@
       "note": "Dynamically loaded room decor assets via Addressables CDN, reducing initial APK download size by 50%.",
       "isFavorite": false,
       "packageId": "com.onepercent.perfect.room",
-      "appmagicLink": "https://appmagic.rocks/app/google-play/com.onepercent.perfect.room/16741879"
+      "appmagicLink": "https://appmagic.rocks/google-play/perfect-room-cozy-decor/com.onepercent.perfect.room"
     },
     {
       "id": 10,
@@ -492,7 +492,7 @@
       "note": "CPI did not meet benchmark targets.",
       "isFavorite": false,
       "packageId": "com.onepercent.fusion",
-      "appmagicLink": "https://appmagic.rocks/app/google-play/com.onepercent.fusion/16841723"
+      "appmagicLink": "https://appmagic.rocks/google-play/ai-fusion-create-character/com.onepercent.fusion"
     },
     {
       "id": 11,
@@ -519,7 +519,7 @@
       "note": "CPI met benchmark targets with stable ad revenue.",
       "isFavorite": false,
       "packageId": "casual.soundboard.ar.trending",
-      "appmagicLink": "https://appmagic.rocks/app/google-play/casual.soundboard.ar.trending/17424482"
+      "appmagicLink": "https://appmagic.rocks/google-play/trending-ar-soundboard/casual.soundboard.ar.trending"
     },
     {
       "id": 12,
@@ -549,7 +549,7 @@
       "note": "CPI met benchmark targets with strong revenue performance. Major long-term project with multiple expansion phases.",
       "isFavorite": true,
       "packageId": "com.merge.master.drop.fun.viral.fruit.animal.animash",
-      "appmagicLink": "https://appmagic.rocks/app/google-play/com.merge.master.drop.fun.viral.fruit.animal.animash/16947796"
+      "appmagicLink": "https://appmagic.rocks/google-play/merge-drop-master/com.merge.master.drop.fun.viral.fruit.animal.animash"
     },
     {
       "id": 13,
@@ -631,7 +631,7 @@
       "note": "Architected extensible game loop supporting modular skin variations and dynamic physics properties via Remote Config.",
       "isFavorite": false,
       "packageId": "com.cute.drop.world.party.animals.merge.dessert.slime",
-      "appmagicLink": "https://appmagic.rocks/app/google-play/com.cute.drop.world.party.animals.merge.dessert.slime/17760203"
+      "appmagicLink": "https://appmagic.rocks/google-play/cute-drop-world/com.cute.drop.world.party.animals.merge.dessert.slime"
     },
     {
       "id": 16,
@@ -657,7 +657,7 @@
       "note": "Proprietary spline slicing algorithm fully automating 2D jigsaw level creation from arbitrary user or remote images.",
       "isFavorite": false,
       "packageId": "com.jig.master.photo.match.puzzle.jigsaw",
-      "appmagicLink": "https://appmagic.rocks/app/google-play/com.jig.master.photo.match.puzzle.jigsaw/17906694"
+      "appmagicLink": "https://appmagic.rocks/google-play/jigmaster-photo-match/com.jig.master.photo.match.puzzle.jigsaw"
     },
     {
       "id": 17,
@@ -683,7 +683,7 @@
       "note": "Deep memory optimization using ASTC texture formats and asynchronous Addressables image loading pipelines.",
       "isFavorite": false,
       "packageId": "jigcharm.hd.beauty.hot.puzzle",
-      "appmagicLink": "https://appmagic.rocks/app/google-play/jigcharm.hd.beauty.hot.puzzle/18505176"
+      "appmagicLink": "https://appmagic.rocks/google-play/jigcharm-hd-beauty/jigcharm.hd.beauty.hot.puzzle"
     },
     {
       "id": 18,
@@ -708,7 +708,7 @@
       "note": "Real-time audio processing with Unity AudioMixer and modular audio clip management architecture.",
       "isFavorite": false,
       "packageId": "my.talking.zoo.meme.sound",
-      "appmagicLink": "https://appmagic.rocks/app/google-play/my.talking.zoo.meme.sound/18703170"
+      "appmagicLink": "https://appmagic.rocks/google-play/my-talking-zoo/my.talking.zoo.meme.sound"
     },
     {
       "id": 19,
@@ -733,7 +733,7 @@
       "note": "Engineered custom Tilemap level editor extension inside Unity Inspector for rapid procedural maze prototyping.",
       "isFavorite": false,
       "packageId": "com.maze.dash.escape.challenge",
-      "appmagicLink": "https://appmagic.rocks/app/google-play/com.maze.dash.escape.challenge/18889809"
+      "appmagicLink": "https://appmagic.rocks/google-play/maze-dash-escape/com.maze.dash.escape.challenge"
     }
   ],
   "hobbies": [
